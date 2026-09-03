@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              LinkSwift增强
 // @namespace         github.com/dx-y
-// @version           1.1.8
+// @version           1.1.11
 // @author            Hmjz100、油小猴、WHATIFAAA
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkY1OUQ7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRDcwMDtzdG9wLW9wYWNpdHk6MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZCQzAyRDtzdG9wLW9wYWNpdHk6MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuNCwgLTIpIHNjYWxlKDAuOSkiPjxwYXRoIGQ9Ik0xMDMuNiAxMDcuNGMzLjUtMi4yIDguOS02LjEgMTMuOC0xMi41czcuMy0xMi41IDguNS0xNi41Yy41LTEuNyAyLjItNy41IDIuMi0xNC43IDAtMTAuMS0zLjMtMjUuMS0xNS40LTM2LjgtMTQuNS0xNC0zMi4xLTE0LjMtMzUuNy0xNC4zLTggMC0xNS43IDEuOS0yMi42IDUuMkM0NCAyMyAzNS43IDMxLjQgMzAuOCA0MS43Yy0xLjMgMi44LTQgNC43LTcuMSA1LTQgLjMtNy41IDQuNC04LjkgOS42LS41IDEuOS0xLjYgMy41LTMuMSA0LjdDNC40IDY2LjggMCA3NS43IDAgODVjMCA2LjggMi4zIDEzLjEgNi4xIDE4LjIgNS41IDcuNCAxNC4yIDEyLjIgMjQgMTIuMmg0Ny4xYzQuNCAwIDExLS41IDE4LjMtMy41IDMuMi0xLjQgNS45LTMgOC4xLTQuNXoiIGZpbGw9IiNBMDk5RjAiLz48cGF0aCBkPSJNMTE5LjggNjQuM2MuMS0xNy4xLTEwLjQtMjgtMTIuNS0zMC4xQzk1IDIyLjEgNzkuOSAyMS44IDc2LjkgMjEuOGMtMTcuNiAwLTMzLjMgMTAuNS0zOS45IDI2LjctLjYgMS4zLTEuOCAyLjMtMy40IDIuM2gtLjRjLTUuOCAwLTEwLjYgNC44LTEwLjYgMTAuN3YuNWMwIDEuNC0uOCAyLjYtMS45IDMuM0MxMy40IDY5IDguOCA3Ni44IDguOCA4NWMwIDEyLjIgOS45IDIyLjMgMjIuMiAyMi4zaDQ1LjJjMy42LS4xIDE3LjYtLjkgMjkuNi0xMiAyLjktMi44IDEzLjktMTMuNyAxNC0zMXoiIGZpbGw9IiM1NzRBQjgiLz48cGF0aCBkPSJNMTEwLjggNTcuNGwuMiAzLjNjMCAxLjMtMS4xIDIuNC0yLjMgMi40LTEuMyAwLTIuMy0xLjEtMi4zLTIuNGwtLjEtMi44di0uM2MwLTEuMi45LTIuMiAyLjEtMi4zaC4zYy43IDAgMS4zLjMgMS43LjctLjIuMS4zLjUuNCAxLjR6bS0zLjMtMTAuM2MwIDEuMi0xIDIuMy0yLjIgMi4zaC0uMWMtLjggMC0xLjYtLjUtMi0xLjItNC42LTguMy0xMy4zLTEzLjUtMjIuOC0xMy41LTEuMiAwLTIuMy0xLTIuMy0yLjJ2LS4xYzAtMS4yIDEtMi4zIDIuMi0yLjNoLjFhMzAuMzcgMzAuMzcgMCAwIDEgMTUuOCA0LjRjNC42IDIuOCA4LjQgNi44IDExLjEgMTEuNS4xLjMuMi43LjIgMS4xek04OC4zIDczLjhMNzMuNSA5My4yYy0xLjUgMS45LTMuNSAzLjEtNS43IDMuNWgtLjJjLS40LjEtLjguMS0xLjIuMS0uNiAwLTEuMS0uMS0xLjYtLjItMi4yLS40LTQuMi0xLjctNS42LTMuNUw0NC4zIDczLjljLTItMi42LTIuNS01LjQtMS40LTcuNy4xLS4xLjEtLjIuMi0uMiAxLjItMiAzLjUtMy4yIDYuNC0zLjJoNi42di01LjdjMC02LjggNC43LTEyIDEwLjktMTIgNC44IDAgOC41IDIuNiAxMC4zIDcuMi41IDEuMy0uMiAyLjctMS41IDMuMnMtMi44LS4xLTMuMy0xLjRjLTEuMS0yLjctMi45LTQtNS41LTQtMy41IDAtNiAzLTYgN3Y4LjFjMCAuNS0uMiAxLS42IDEuNC0uNi43LTEuNyAxLjEtMi42IDEuMWgtOC40Yy0xLjMgMC0yIC40LTIuMS43LS4yLjQgMCAxLjMuOSAyLjRMNjMuMSA5MGMuOSAxLjIgMi4xIDEuOCAzLjMgMS44czIuMy0uNiAzLjEtMS43bDE0LjgtMTkuM2MuOS0xLjEgMS4xLTIgLjktMi40LS4yLS4zLS45LS43LTIuMS0uN2gtNy42Yy0uOSAwLTEuNy0uNS0yLjEtMS4yLS4zLS40LS40LS44LS40LTEuMyAwLTEuNCAxLjEtMi41IDIuNS0yLjVoNy42YzMuMSAwIDUuNSAxLjMgNi42IDMuNWwuMy43Yy43IDIuMS4xIDQuNi0xLjcgNi45eiIgZmlsbD0iI2ZmZiIvPjwvZz48Zz48cGF0aCBkPSJNMCAxMDAgUTY0IDExNSAxMjggMTAwIEwxMjggMTI4IEwwIDEyOCBaIiBmaWxsPSIjRDMyRjJGIi8+PHBhdGggZD0iTTAgMTAwIFE2NCAxMTUgMTI4IDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkaWVudCkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjY0IiB5PSIxMjEiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InVybCgjZ29sZEdyYWRpZW50KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9InRleHQtc2hhZG93OiAwcHggMXB4IDJweCByZ2JhKDAsMCwwLDAuMyk7Ij7liIYg5LiNIOi1t+OAgOe6ryDpnaAg54ixPC90ZXh0PjwvZz48L3N2Zz4=
 // @description       基于【LinkSwift】修改 | 支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 | 改界面・添功能・修Bug | 相对原版增加了一些我认为有用的功能
@@ -57,6 +57,7 @@
 // @match             *://*.123865.com/*
 // @match             *://*.123952.com/*
 // @match             *://*.123912.com/*
+// @match             *://*.guangyapan.com/*
 // @connect           *
 // @connect           localhost
 // @connect           baidu.com
@@ -79,6 +80,8 @@
 // @connect           123952.com
 // @connect           123912.com
 // @connect           cjjd19.com
+// @connect           guangyapan.com
+// @connect           guangyacdn.com
 // @grant             unsafeWindow
 // @grant             window.close
 // @grant             GM_xmlhttpRequest
@@ -105,7 +108,7 @@
  * @author hmjz100
  * @namespace github.com/hmjz100
  * @description  一个基于 JavaScript 盘的文件下载地址获取工具  支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘  代码改自 “网盘直链下载助手”，作者油小猴
- * @version 1.1.8
+ * @version 1.1.11
  * @license AGPL-3.0-or-later
  * @see {@link https://github.com/hmjz100/LinkSwift/ Github 仓库}
  */
@@ -122,7 +125,7 @@
 	let info = {
 		author: GM_info.script?.author,
 		name: GM_info.script?.name,
-		version: (GM_info.script?.version || "1.1.8"),
+		version: (GM_info.script?.version || "1.1.9"),
 		icon: (GM_info.script?.icon || "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkY1OUQ7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRDcwMDtzdG9wLW9wYWNpdHk6MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZCQzAyRDtzdG9wLW9wYWNpdHk6MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuNCwgLTIpIHNjYWxlKDAuOSkiPjxwYXRoIGQ9Ik0xMDMuNiAxMDcuNGMzLjUtMi4yIDguOS02LjEgMTMuOC0xMi41czcuMy0xMi41IDguNS0xNi41Yy41LTEuNyAyLjItNy41IDIuMi0xNC43IDAtMTAuMS0zLjMtMjUuMS0xNS40LTM2LjgtMTQuNS0xNC0zMi4xLTE0LjMtMzUuNy0xNC4zLTggMC0xNS43IDEuOS0yMi42IDUuMkM0NCAyMyAzNS43IDMxLjQgMzAuOCA0MS43Yy0xLjMgMi44LTQgNC43LTcuMSA1LTQgLjMtNy41IDQuNC04LjkgOS42LS41IDEuOS0xLjYgMy41LTMuMSA0LjdDNC40IDY2LjggMCA3NS43IDAgODVjMCA2LjggMi4zIDEzLjEgNi4xIDE4LjIgNS41IDcuNCAxNC4yIDEyLjIgMjQgMTIuMmg0Ny4xYzQuNCAwIDExLS41IDE4LjMtMy41IDMuMi0xLjQgNS45LTMgOC4xLTQuNXoiIGZpbGw9IiNBMDk5RjAiLz48cGF0aCBkPSJNMTE5LjggNjQuM2MuMS0xNy4xLTEwLjQtMjgtMTIuNS0zMC4xQzk1IDIyLjEgNzkuOSAyMS44IDc2LjkgMjEuOGMtMTcuNiAwLTMzLjMgMTAuNS0zOS45IDI2LjctLjYgMS4zLTEuOCAyLjMtMy40IDIuM2gtLjRjLTUuOCAwLTEwLjYgNC44LTEwLjYgMTAuN3YuNWMwIDEuNC0uOCAyLjYtMS45IDMuM0MxMy40IDY5IDguOCA3Ni44IDguOCA4NWMwIDEyLjIgOS45IDIyLjMgMjIuMiAyMi4zaDQ1LjJjMy42LS4xIDE3LjYtLjkgMjkuNi0xMiAyLjktMi44IDEzLjktMTMuNyAxNC0zMXoiIGZpbGw9IiM1NzRBQjgiLz48cGF0aCBkPSJNMTEwLjggNTcuNGwuMiAzLjNjMCAxLjMtMS4xIDIuNC0yLjMgMi40LTEuMyAwLTIuMy0xLjEtMi4zLTIuNGwtLjEtMi44di0uM2MwLTEuMi45LTIuMiAyLjEtMi4zaC4zYy43IDAgMS4zLjMgMS43LjctLjIuMS4zLjUuNCAxLjR6bS0zLjMtMTAuM2MwIDEuMi0xIDIuMy0yLjIgMi4zaC0uMWMtLjggMC0xLjYtLjUtMi0xLjItNC42LTguMy0xMy4zLTEzLjUtMjIuOC0xMy41LTEuMiAwLTIuMy0xLTIuMy0yLjJ2LS4xYzAtMS4yIDEtMi4zIDIuMi0yLjNoLjFhMzAuMzcgMzAuMzcgMCAwIDEgMTUuOCA0LjRjNC42IDIuOCA4LjQgNi44IDExLjEgMTEuNS4xLjMuMi43LjIgMS4xek04OC4zIDczLjhMNzMuNSA5My4yYy0xLjUgMS45LTMuNSAzLjEtNS43IDMuNWgtLjJjLS40LjEtLjguMS0xLjIuMS0uNiAwLTEuMS0uMS0xLjYtLjItMi4yLS40LTQuMi0xLjctNS42LTMuNUw0NC4zIDczLjljLTItMi42LTIuNS01LjQtMS40LTcuNy4xLS4xLjEtLjIuMi0uMiAxLjItMiAzLjUtMy4yIDYuNC0zLjJoNi42di01LjdjMC02LjggNC43LTEyIDEwLjktMTIgNC44IDAgOC41IDIuNiAxMC4zIDcuMi41IDEuMy0uMiAyLjctMS41IDMuMnMtMi44LS4xLTMuMy0xLjRjLTEuMS0yLjctMi45LTQtNS41LTQtMy41IDAtNiAzLTYgN3Y4LjFjMCAuNS0uMiAxLS42IDEuNC0uNi43LTEuNyAxLjEtMi42IDEuMWgtOC40Yy0xLjMgMC0yIC40LTIuMS43LS4yLjQgMCAxLjMuOSAyLjRMNjMuMSA5MGMuOSAxLjIgMi4xIDEuOCAzLjMgMS44czIuMy0uNiAzLjEtMS43bDE0LjgtMTkuM2MuOS0xLjEgMS4xLTIgLjktMi40LS4yLS4zLS45LS43LTIuMS0uN2gtNy42Yy0uOSAwLTEuNy0uNS0yLjEtMS4yLS4zLS40LS40LS44LS40LTEuMyAwLTEuNCAxLjEtMi41IDIuNS0yLjVoNy42YzMuMSAwIDUuNSAxLjMgNi42IDMuNWwuMy43Yy43IDIuMS4xIDQuNi0xLjcgNi45eiIgZmlsbD0iI2ZmZiIvPjwvZz48Zz48cGF0aCBkPSJNMCAxMDAgUTY0IDExNSAxMjggMTAwIEwxMjggMTI4IEwwIDEyOCBaIiBmaWxsPSIjRDMyRjJGIi8+PHBhdGggZD0iTTAgMTAwIFE2NCAxMTUgMTI4IDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkaWVudCkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjY0IiB5PSIxMjEiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InVybCgjZ29sZEdyYWRpZW50KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9InRleHQtc2hhZG93OiAwcHggMXB4IDJweCByZ2JhKDAsMCwwLDAuMyk7Ij7liIYg5LiNIOi1t+OAgOe6ryDpnaAg54ixPC90ZXh0PjwvZz48L3N2Zz4="),
 		mhandler: GM_info.scriptHandler,
 		mversion: GM_info.version,
@@ -579,8 +582,8 @@
 				getLink: "https://api-pan.xunlei.com/drive/v1/files/"
 			},
 			mount: {
-				home: `[class^="FileMenu__menu--"]`,
-				share: `[class^="Share__batchActionBox--"]`
+				home: `[class^="FileMenu__menus--"]`,
+				share: `[class^="Share__batchActionsBox--"]`
 			},
 			dom: {
 				enhance: `+<br/>此方式可以自动设置文件名，然后下载。<br/>此方式的下载请求<b>不会</b>被 IDM 捕获。`,
@@ -622,8 +625,10 @@
 		},
 		$123pan: {
 			api: {
-				getLink: "https://www.123pan.com/api/file/download_info",
-				getShareLink: "https://www.123pan.com/api/share/download/info"
+				// 主页真实网关：https://api.123278.com/b/api/v2/file/download_info
+				// 分享页为动态 share 子域相对路径（见 getFileUrl），www.123pan.com 下均为 404，勿再用
+				getLink: "https://api.123278.com/b/api/v2/file/download_info",
+				getShareLink: ""
 			},
 			mount: {
 				home: ".home-operator .home-operator-button-group",
@@ -632,6 +637,25 @@
 			},
 			dom: {
 				enhance: `+<br/>此方式的下载请求<b>不会</b>被 IDM 捕获。`,
+				normal: `+<br/>此方式的下载请求<b>可能会</b>被 IDM 捕获。`
+			}
+		},
+		$guangya: {
+			api: {
+				ua: {
+					downloadLink: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+				},
+				getLink: "https://api.guangyapan.com/userres/v1/get_res_download_url",
+				getShareAccessToken: "https://api.guangyapan.com/userres/v1/get_share_access_token",
+				getShareFilesSize: "https://api.guangyapan.com/userres/v1/get_share_files_size",
+				getShareDownloadUrl: "https://api.guangyapan.com/userres/v1/get_share_download_url"
+			},
+			mount: {
+				home: ".ant-btn.ant-btn-primary.ant-dropdown-trigger",
+				list: ".swangpan-file-list-table__row"
+			},
+			dom: {
+				enhance: `+<br/>此方式可以自动设置用户代理(UA)，然后下载。<br/>此方式的下载请求<b>不会</b>被 IDM 捕获。`,
 				normal: `+<br/>此方式的下载请求<b>可能会</b>被 IDM 捕获。`
 			}
 		}
@@ -1030,7 +1054,12 @@
 		 * @returns {Promise<"success"|"fail">} 发送态结果
 		 */
 		async sendLinkToIDM(link, filename, filesize, headers = {}) {
-			let rpc = base.getValue("setting_idm_rpc").find(i => i.default);
+			let idmRpcList = base.getValue("setting_idm_rpc");
+			let rpc = (Array.isArray(idmRpcList) && idmRpcList.find(i => i.default)) || { id: "1", default: true };
+			if (!link || typeof link !== "string" || !/^https?:\/\//i.test(link)) {
+				base.console.error("【LinkSwift】IDM 推送失败：下载链接为空或无效", String(link).slice(0, 100));
+				return "fail";
+			}
 			if (!this.sendLinkToIDM.lock) this.sendLinkToIDM.lock = Promise.resolve();
 			return this.sendLinkToIDM.lock = this.sendLinkToIDM.lock.then(async () => {
 				headers = this.standHeaders(headers);
@@ -1077,6 +1106,7 @@
 					this.sendLinkToIDM.seq++;
 					return "success";
 				};
+				base.console.error("【LinkSwift】IDM 推送失败", { 链接: String(link).slice(0, 200), RPC_ID: rpc && rpc.id, 地址: url, IDM返回: String(res).slice(0, 300) });
 				return "fail";
 			});
 		},
@@ -4997,7 +5027,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				target.find(".pl-icon").remove();
 				target.find(".pl-loading").remove();
 				target.prepend(base.createLoading());
-				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "User-Agent": config.$baidu.api.ua.downloadLink });
+				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "User-Agent": config.$baidu.api.ua.downloadLink, "Referer": `https://${location.host}/`, "Cookie": document.cookie });
 				if (res === "success") {
 					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "IDM");
 					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
@@ -5543,7 +5573,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<span class="text" style="width:auto;">下载助手</span>
 					</span>
 					<ul class="dropdown-list nd-common-float-menu pl-dropdown-menu" style="top:37px">
-						<!--li class="sub cursor-p pl-button-mode pl-button-save"><em class="icon noicon-zhuancun_bai"></em>保存后下载</li-->
+						<li class="sub cursor-p pl-button-mode pl-button-save"><em class="icon noicon-zhuancun_bai"></em>保存后下载</li>
 						<li class="sub cursor-p pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>API 下载</li>
 						<li class="sub cursor-p pl-button-mode" data-mode="curl"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-plug"/></svg>cURL 下载</li>
 						<li class="sub cursor-p pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
@@ -6132,7 +6162,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				target.find(".pl-icon").remove();
 				target.find(".pl-loading").remove();
 				target.prepend(base.createLoading());
-				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "Referer": `https://${location.host}/` });
+				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "User-Agent": navigator.userAgent, "Referer": `https://${location.host}/`, "Cookie": document.cookie });
 				if (res === "success") {
 					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "IDM");
 					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
@@ -6250,7 +6280,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 						<li class="pl-button-mode listener-open-history"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-history"/></svg>下载历史</li><li class="pl-button-mode" data-mode="transfer"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-arrows-rotate"/></svg>转存到网盘</li>
-						<li class="pl-button-mode" data-mode="transfer"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-arrows-rotate"/></svg>转存到网盘</li>
 					</ul>
 				</div>`);
 				element.append($button);
@@ -6266,7 +6295,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 						<li class="pl-button-mode listener-open-history"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-history"/></svg>下载历史</li><li class="pl-button-mode" data-mode="transfer"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-arrows-rotate"/></svg>转存到网盘</li>
-						<li class="pl-button-mode" data-mode="transfer"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-arrows-rotate"/></svg>转存到网盘</li>
 					</ul>
 				</div>`);
 				$button.css({ "margin-right": "10px", "height": "36px", "width": "auto", "padding": "1px 30px" });
@@ -6515,7 +6543,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				target.find(".pl-icon").remove();
 				target.find(".pl-loading").remove();
 				target.prepend(base.createLoading());
-				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"));
+				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "User-Agent": navigator.userAgent, "Referer": `https://${location.host}/`, "Cookie": document.cookie });
 				if (res === "success") {
 					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "IDM");
 					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
@@ -6971,7 +6999,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				target.find(".pl-icon").remove();
 				target.find(".pl-loading").remove();
 				target.prepend(base.createLoading());
-				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"));
+				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "User-Agent": navigator.userAgent, "Referer": `https://${location.host}/`, "Cookie": document.cookie });
 				if (res === "success") {
 					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "IDM");
 					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
@@ -7344,7 +7372,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				target.find(".pl-icon").remove();
 				target.find(".pl-loading").remove();
 				target.prepend(base.createLoading());
-				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"));
+				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "User-Agent": navigator.userAgent, "Referer": `https://${location.host}/`, "Cookie": document.cookie });
 				if (res === "success") {
 					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "IDM");
 					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
@@ -8570,7 +8598,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				target.find(".pl-icon").remove();
 				target.find(".pl-loading").remove();
 				target.prepend(base.createLoading());
-				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"));
+				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "User-Agent": navigator.userAgent, "Referer": `https://${location.host}/`, "Cookie": document.cookie });
 				if (res === "success") {
 					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "IDM");
 					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
@@ -8875,11 +8903,43 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		},
 		async getFileUrl(item, index, token, ShareKey) {
 			let res = null;
+			// 字段名大小写兜底（分享页为 FileId/S3KeyFlag，主页可能为 fileId/s3keyFlag）
+			let fileId = item.FileId ?? item.fileId ?? item.id;
+			let s3KeyFlag = item.S3KeyFlag ?? item.S3keyFlag ?? item.s3keyFlag ?? item.s3KeyFlag ?? "";
+			let size = item.Size ?? item.size;
+			let etag = item.Etag ?? item.etag;
+			// 真实 API 网关：分享页为 share 子域相对路径（从 S3KeyFlag 首段取 shareId，兼容 www 打开场景）；主页为 api.123278.com
+			let apiBase = null;
 			if (ShareKey) {
-				res = await base.post(config.$123pan.api.getShareLink, { "ShareKey": ShareKey, "FileID": item.FileId, "S3keyFlag": item.S3KeyFlag, "Size": item.Size, "Etag": item.Etag }, { "Content-Type": "application/json", "Authorization": `Bearer ${token}`, "Platform": "ios" });
+				let shareId = String(s3KeyFlag).split("-")[0];
+				apiBase = location.host.includes("share.123pan") ? location.origin : (shareId ? `https://${shareId}.share.123pan.cn` : location.origin);
 			} else {
-				res = await base.post(config.$123pan.api.getLink, { "driveId": 0, "etag": item.Etag, "fileId": item.FileId, "s3keyFlag": item.S3KeyFlag, "type": item.Type, "fileName": item.FileName, "size": item.Size }, { "Content-Type": "application/json", "Authorization": `Bearer ${token}`, "Platform": "ios" });
+				apiBase = "https://api.123278.com/b";
 			}
+			let rand = `?${Math.floor(1000 + Math.random() * 9000)}=${Math.floor(Date.now() / 1000)}-${Math.floor(100000 + Math.random() * 900000)}-${Math.floor(Math.random() * 1e10)}`;
+			let headers = {
+				"Content-Type": "application/json;charset=UTF-8",
+				"platform": "web",
+				"App-Version": "139",
+				"LoginUuid": base.getStorage("LoginUuid") || "",
+				"Authorization": `Bearer ${token}`
+			};
+			if (ShareKey) {
+				res = await base.post(apiBase + "/api/v2/share/download/info" + rand, { "ShareKey": ShareKey, "FileID": fileId, "S3keyFlag": s3KeyFlag, "Size": size, "Etag": etag }, headers);
+			} else {
+				res = await base.post(apiBase + "/api/v2/file/download_info" + rand, { "FileID": fileId, "S3keyFlag": s3KeyFlag, "Size": size, "Etag": etag }, headers);
+			}
+			// 新版 v2 接口：dispatchList[].prefix + downloadPath
+			if (res?.data?.downloadPath && Array.isArray(res?.data?.dispatchList) && res.data.dispatchList.length) {
+				let downloadPath = res.data.downloadPath;
+				if (downloadPath.startsWith("/")) downloadPath = downloadPath.slice(1);
+				let url = `${res.data.dispatchList[0].prefix}/${downloadPath}`;
+				return {
+					index,
+					downloadUrl: url
+				};
+			}
+			// 旧版接口兼容：DownloadUrl / DownloadURL
 			if (res.data?.DownloadUrl || res.data?.DownloadURL) {
 				let url = res.data.DownloadUrl ? res.data.DownloadUrl : res.data?.DownloadURL;
 				let surl = new URL(url).searchParams.get("params");
@@ -8944,7 +9004,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 						<li class="pl-button-mode listener-open-history"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-history"/></svg>下载历史</li><li class="pl-button-mode" data-mode="transfer"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-arrows-rotate"/></svg>转存到网盘</li>
-						<li class="pl-button-mode" data-mode="transfer"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-arrows-rotate"/></svg>转存到网盘</li>
 					</ul>
 				</button>`);
 				element.prepend($button);
@@ -8964,7 +9023,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 						<li class="pl-button-mode listener-open-history"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-history"/></svg>下载历史</li><li class="pl-button-mode" data-mode="transfer"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-arrows-rotate"/></svg>转存到网盘</li>
-						<li class="pl-button-mode" data-mode="transfer"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-arrows-rotate"/></svg>转存到网盘</li>
 					</ul>
 				</div>`);
 				$button.css({ "width": "100px" });
@@ -8986,7 +9044,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 						<li class="pl-button-mode listener-open-history"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-history"/></svg>下载历史</li><li class="pl-button-mode" data-mode="transfer"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-arrows-rotate"/></svg>转存到网盘</li>
-						<li class="pl-button-mode" data-mode="transfer"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-arrows-rotate"/></svg>转存到网盘</li>
 					</ul>
 				</button>`);
 				$(".single-file-sharing-container-content").css({ "width": "415px" });
@@ -9042,6 +9099,375 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		},
 	};
 
+	/**
+	 * 光鸭云盘
+	 * @author 油小猴
+	 * @author hmjz100
+	 */
+	let $guangya = {
+		addPageListener() {
+			$doc.on("click", ".listener-api-download.enhance", async function (e) {
+				e.preventDefault();
+				var status = base._EventFactory(e);
+				var file = {
+					index: status.item.data("index"),
+					link: status.item.data("link"),
+					name: status.item.data("name"),
+					size: status.item.data("size") || 0,
+				}
+				base._resetData(file.index);
+				status.down_normal.hide();
+				status.down_enhance.hide();
+				status.down_idm.hide();
+				status.link_message.hide();
+				status.link_copy.hide();
+				status.down_enhance_downing.find(".stop").show();
+				status.down_enhance_downing.show();
+				let startTime = Date.now();
+				let lastTime = startTime;
+				let lastLoaded = 0;
+				let emaSpeed = 0;
+				var tau = 2;
+				base.download(file.link, { "User-Agent": config.$guangya.api.ua.downloadLink }, {
+					...file,
+					onProgress: (prog, loaded, total) => {
+						status.down_enhance_downing.find(".pl-progress .head").css("background", "");
+						status.down_enhance_downing.find(".pl-progress .num").text(prog + "%");
+						status.down_enhance_downing.find(".pl-progress .num").css("background", "");
+						status.down_enhance_downing.find(".pl-progress").css("--width", prog + "%");
+
+						let nowTime = Date.now();
+						let deltaTime = (nowTime - lastTime) / 1000;
+						let deltaLoaded = loaded - lastLoaded;
+						let currentSpeed = deltaLoaded / deltaTime;
+						if (Number.isFinite(currentSpeed)) {
+							let alpha = 1 - Math.exp(-deltaTime / tau);
+							emaSpeed = emaSpeed + alpha * (currentSpeed - emaSpeed);
+						}
+						lastTime = nowTime;
+						lastLoaded = loaded;
+						let speedText = base.formatSpeed(emaSpeed || (loaded / (nowTime - startTime) * 1000));
+						let sizeText = base.formatSize(loaded) + (total != 0 ? " / " + base.formatSize(total) : "");
+						status.down_enhance_downing.find(".pl-progress .text").text(`${speedText} · ${sizeText}`);
+					}
+				})
+					.then(async (res) => {
+						status.down_enhance_downing.find(".pl-progress .head").css("background", "rgb(52, 199, 89)");
+						status.down_enhance_downing.find(".pl-progress .num").text("100%");
+						status.down_enhance_downing.find(".pl-progress .num").css("background", "rgb(52, 199, 89)");
+						status.down_enhance_downing.find(".pl-progress .text").text("下载完成啦~😀");
+						downloadHistory.addRecord(file.name, file.size, "API下载");
+						temp.request[file.index] = null;
+						await base.sleep(3000);
+						status.down_enhance_downing.find(".back").click();
+					})
+					.catch(async (error) => {
+						status.down_enhance_downing.find(".stop").hide();
+						status.down_enhance_downing.find(".back").show();
+						status.down_enhance_downing.find(".pl-progress .head").css("background", "rgb(215, 0, 0)");
+						status.down_enhance_downing.find(".pl-progress .num").css("background", "rgb(215, 0, 0)");
+						status.down_enhance_downing.find(".pl-progress .num").text("提示");
+						status.down_enhance_downing.find(".pl-progress .text").text(error.message);
+						await base.sleep(3000);
+						status.down_enhance_downing.find(".back").click();
+					});
+			});
+			$doc.on("click", ".listener-idm-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "User-Agent": config.$guangya.api.ua.downloadLink, "Referer": `https://${location.host}/`, "Cookie": document.cookie });
+				if (res === "success") {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "IDM");
+					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
+			$doc.on("click", ".listener-aria2-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToAria2(target.data("link"), target.data("filename"), target.data("filesize"));
+				if (res) {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "Aria2");
+					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
+			$doc.on("click", ".listener-bitcomet-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToBitComet(target.data("link"), target.data("filename"), target.data("filesize"));
+				if (res) {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "比特彗星");
+					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
+			$doc.on("click", ".listener-abdm-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToABDM(target.data("link"), target.data("filename"), target.data("filesize"));
+				if (res) {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "AB Download Manager");
+					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
+		},
+		svg: `<svg class="pl-icon" aria-hidden="true"><use xlink:href="#pl-icon-fa-download"></use></svg>`,
+		addButton() {
+			base.waitForKeyElements(config.$guangya.mount.home, (element) => {
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== "home") return;
+				let $button = $(`<div class="pl-button guangya-button">
+					<svg class="pl-icon" aria-hidden="true"><use xlink:href="#pl-icon-fa-download"></use></svg><span style="margin-left:6px;">下载助手</span>
+					<ul class="pl-dropdown-menu" style="top:34px;">
+						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
+						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
+						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
+						<li class="pl-button-mode listener-open-history"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-history"/></svg>下载历史</li>
+					</ul>
+				</div>`);
+				element.prepend($button);
+			})
+			base.waitForKeyElements(config.$guangya.mount.list, (element) => {
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== "share") return;
+				let $button = $(`<div class="pl-button guangya-button" style="position:fixed;right:24px;bottom:48px;z-index:9999;">
+					<svg class="pl-icon" aria-hidden="true"><use xlink:href="#pl-icon-fa-download"></use></svg><span style="margin-left:6px;">下载助手</span>
+					<ul class="pl-dropdown-menu" style="top:34px;">
+						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
+						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
+						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
+						<li class="pl-button-mode listener-open-history"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-history"/></svg>下载历史</li>
+					</ul>
+				</div>`);
+				$("body").append($button);
+			})
+		},
+		addInitButton() {
+			let $button = $(`<div class="pl-button-init"><svg class="pl-icon" aria-hidden="true"><use xlink:href="#pl-icon-fa-download"></use></svg><span style="margin-left:6px;">点我点亮</span></div>`);
+			$button.click(base.showInitDialog);
+			base.waitForKeyElements(config.$guangya.mount.home, (element) => {
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== "home") return;
+				element.prepend($button);
+			})
+			base.waitForKeyElements(config.$guangya.mount.list, (element) => {
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== "share") return;
+				$button.css("position", "fixed").css("right", "24px").css("bottom", "48px").css("z-index", "9999");
+				$("body").append($button);
+			})
+		},
+		getUserToken() {
+			for (let i = 0; i < localStorage.length; i++) {
+				let k = localStorage.key(i);
+				if (k && /^credentials_/.test(k)) {
+					try {
+						let raw = base.getStorage(k);
+						if (raw && raw.access_token) return raw.access_token;
+						if (raw && raw.accessToken) return raw.accessToken;
+						if (typeof raw === "string" && raw.startsWith("eyJ")) return raw;
+					} catch (e) { }
+				}
+			}
+			return "";
+		},
+		_findFileListProps(container) {
+			let key = Object.keys(container).find(k => k.startsWith("__reactFiber$") || k.startsWith("__reactInternalInstance$"));
+			if (!key) return null;
+			let node = container[key];
+			for (let depth = 0; node && depth < 40; depth++, node = node.return) {
+				let props = (node.stateNode && node.stateNode.props) || node.memoizedProps || node.props;
+				if (props && props.FileList && (props.FileList.dataSource || props.FileList.list || props.FileList.selectedItems)) {
+					return props.FileList;
+				}
+			}
+			return null;
+		},
+		getSelectedList() {
+			try {
+				let container = document.querySelector('.swangpan-file-list-table');
+				let selectList = [];
+				if (container) {
+					let fileList = this._findFileListProps(container);
+					if (fileList) {
+						let source = fileList.dataSource || fileList.fileDataSource || fileList.list || [];
+						let selected = fileList.selectedItems || fileList.selectedRows || fileList.selectedRowKeys || [];
+						let selectedMap = {};
+						(selected || []).forEach(s => {
+							let id = (s && (s.fileId || s.id)) || s;
+							selectedMap[id] = 1;
+						});
+						(source || []).forEach(item => {
+							let id = item.fileId ?? item.id;
+							let isSelected = selectedMap[id] === 1 || item.checked === true;
+							if (isSelected) {
+								selectList.push({
+									fileId: id,
+									fileName: item.fileName ?? item.name ?? item.file_name ?? "",
+									fileSize: item.fileSize ?? item.size ?? 0,
+									isDir: item.dirType === 1 || item.isDir === true
+								});
+							}
+						});
+					}
+				}
+				return selectList;
+			} catch (e) {
+				return [];
+			}
+		},
+		detectPage() {
+			let path = location.pathname;
+			if (/^\/$/.test(path) || /^\/drive/.test(path) || /^\/home/.test(path)) return "home";
+			if (/^\/s\//.test(path)) return "share";
+			return "";
+		},
+		async getShareAccessToken() {
+			let headers = { "Content-Type": "application/json" };
+			let token = this.getUserToken();
+			if (token) headers["Authorization"] = `Bearer ${token}`;
+			let shareId = location.pathname.split("/")[2];
+			if (!shareId) return { error: "无法提取分享 ID 哦~" };
+			let res = await base.post(config.$guangya.api.getShareAccessToken, { "shareId": shareId }, headers);
+			if (res?.data?.accessToken) return { accessToken: res.data.accessToken };
+			if (res?.code == 209 || /验证|提取码|密码/.test(res?.msg || "")) {
+				return { error: "该分享需要提取码或页面验证，请先在页面完成验证后再试哦~" };
+			}
+			return { error: `获取分享访问令牌失败（${res?.code || ""} ${res?.msg || ""}）` };
+		},
+		async getLink() {
+			let selectList = this.getSelectedList();
+			if (selectList.length === 0) return message.error("提示：<br/>请勾选要下载的文件哦~");
+			if (temp.page === "home") {
+				let token = this.getUserToken();
+				if (!token) return message.error("提示：<br/>请先登录光鸭网盘哦~");
+				let data = [];
+				let batchSize = 15;
+				let processed = 0;
+				$doc.find(".loading-popup .loading-title").html(`链接获取中`);
+				$doc.find(".loading-popup .swal2-html-container").html(`<div>正在获取文件对应的下载链接~</div>`);
+				for (let i = 0; i < selectList.length; i += batchSize) {
+					let batch = selectList.slice(i, i + batchSize);
+					let pushes = batch.map(async item => {
+						let res = await base.post(config.$guangya.api.getLink, { "fileId": item.fileId }, {
+							"Content-Type": "application/json",
+							"Authorization": `Bearer ${token}`
+						});
+						if (res?.data?.signedURL || res?.data?.downloadUrl) {
+							return {
+								...item,
+								downloadUrl: res?.data?.signedURL || res?.data?.downloadUrl
+							};
+						}
+						if (res?.code == 401 || res?.code == 106) return message.error("提示：<br/>请先登录光鸭网盘哦~<br/>代码：" + res.code);
+						return message.error(`提示：<br/>获取链接失败了~<br/>代码：${res.code || ""} ${res.msg || res.message || ""}`);
+					});
+					let results = await Promise.all(pushes);
+					data.push(...results.filter(r => r));
+					processed += batch.length;
+					$doc.find(".loading-popup .swal2-html-container").html(`<div>正在获取文件对应的下载链接 (${processed}/${selectList.length})~</div>`);
+				}
+				temp.links = [data, {
+					isFolder: v => v.isDir,
+					getFileName: v => v.fileName,
+					getFileSize: v => v.fileSize,
+					getFileLink: v => v.downloadUrl,
+					convert: {
+						aria2: `--header "User-Agent:${config.$guangya.api.ua.downloadLink}" --header "Referer:https://${location.host}/"`,
+						curl: `-A "${config.$guangya.api.ua.downloadLink}" -e "https://${location.host}/" -b "${document.cookie}"`,
+						bitcomet: `user_agent=${encodeURIComponent(config.$guangya.api.ua.downloadLink)}&refer=${encodeURIComponent(`https://${location.host}/`)}&cookie=${encodeURIComponent(document.cookie)}`
+					},
+					tooltip: config.$guangya.dom
+				}];
+				base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
+			} else if (temp.page === "share") {
+				let tokenInfo = await this.getShareAccessToken();
+				if (tokenInfo.error) return message.error(`提示：<br/>${tokenInfo.error}`);
+				let accessToken = tokenInfo.accessToken;
+				let data = [];
+				let batchSize = 15;
+				let processed = 0;
+				$doc.find(".loading-popup .loading-title").html(`链接获取中`);
+				$doc.find(".loading-popup .swal2-html-container").html(`<div>正在获取分享文件的下载链接~</div>`);
+				for (let i = 0; i < selectList.length; i += batchSize) {
+					let batch = selectList.slice(i, i + batchSize);
+					let pushes = batch.map(async item => {
+						let res = await base.post(config.$guangya.api.getShareDownloadUrl, { "fileId": item.fileId, "accessToken": accessToken }, {
+							"Content-Type": "application/json",
+						});
+						if (res?.data?.downloadUrl || res?.data?.signedURL) {
+							return {
+								...item,
+								downloadUrl: res?.data?.downloadUrl || res?.data?.signedURL
+							};
+						}
+						return message.error(`提示：<br/>获取链接失败了~<br/>代码：${res.code || ""} ${res.msg || res.message || ""}`);
+					});
+					let results = await Promise.all(pushes);
+					data.push(...results.filter(r => r));
+					processed += batch.length;
+					$doc.find(".loading-popup .swal2-html-container").html(`<div>正在获取分享文件的下载链接 (${processed}/${selectList.length})~</div>`);
+				}
+				temp.links = [data, {
+					isFolder: v => v.isDir,
+					getFileName: v => v.fileName,
+					getFileSize: v => v.fileSize,
+					getFileLink: v => v.downloadUrl,
+					convert: {
+						aria2: `--header "User-Agent:${config.$guangya.api.ua.downloadLink}" --header "Referer:https://${location.host}/"`,
+						curl: `-A "${config.$guangya.api.ua.downloadLink}" -e "https://${location.host}/" -b "${document.cookie}"`,
+						bitcomet: `user_agent=${encodeURIComponent(config.$guangya.api.ua.downloadLink)}&refer=${encodeURIComponent(`https://${location.host}/`)}&cookie=${encodeURIComponent(document.cookie)}`
+					},
+					tooltip: config.$guangya.dom
+				}];
+				base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
+			}
+		},
+		async initPanLinker() {
+			base.registerMenuCommand();
+			if (config.base.num === base.getValue("setting_init").code || config.base.license === base.getValue("setting_init").license) {
+				this.addButton();
+			} else {
+				this.addInitButton();
+			}
+			this.addPageListener();
+		},
+	};
+
 	// 主代码
 	let main = {
 		async init() {
@@ -9071,6 +9497,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			else if (/pan.quark.cn/.test(location.host)) temp.main = $quark;
 			else if (/drive.uc.cn/.test(location.host)) temp.main = $uc;
 			else if (/(www|login).(123(pan|684|865|952|912).com|123pan.cn)/.test(location.host)) temp.main = $123pan;
+			else if (/www.guangyapan.com/.test(location.host)) temp.main = $guangya;
 
 			// 智能默认设置
 			base.initDefaultConfig();
