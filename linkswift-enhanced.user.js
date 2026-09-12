@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              LinkSwift增强
 // @namespace         github.com/dx-y
-// @version           1.1.11
+// @version           1.1.14
 // @author            Hmjz100、油小猴、WHATIFAAA
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkY1OUQ7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRDcwMDtzdG9wLW9wYWNpdHk6MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZCQzAyRDtzdG9wLW9wYWNpdHk6MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuNCwgLTIpIHNjYWxlKDAuOSkiPjxwYXRoIGQ9Ik0xMDMuNiAxMDcuNGMzLjUtMi4yIDguOS02LjEgMTMuOC0xMi41czcuMy0xMi41IDguNS0xNi41Yy41LTEuNyAyLjItNy41IDIuMi0xNC43IDAtMTAuMS0zLjMtMjUuMS0xNS40LTM2LjgtMTQuNS0xNC0zMi4xLTE0LjMtMzUuNy0xNC4zLTggMC0xNS43IDEuOS0yMi42IDUuMkM0NCAyMyAzNS43IDMxLjQgMzAuOCA0MS43Yy0xLjMgMi44LTQgNC43LTcuMSA1LTQgLjMtNy41IDQuNC04LjkgOS42LS41IDEuOS0xLjYgMy41LTMuMSA0LjdDNC40IDY2LjggMCA3NS43IDAgODVjMCA2LjggMi4zIDEzLjEgNi4xIDE4LjIgNS41IDcuNCAxNC4yIDEyLjIgMjQgMTIuMmg0Ny4xYzQuNCAwIDExLS41IDE4LjMtMy41IDMuMi0xLjQgNS45LTMgOC4xLTQuNXoiIGZpbGw9IiNBMDk5RjAiLz48cGF0aCBkPSJNMTE5LjggNjQuM2MuMS0xNy4xLTEwLjQtMjgtMTIuNS0zMC4xQzk1IDIyLjEgNzkuOSAyMS44IDc2LjkgMjEuOGMtMTcuNiAwLTMzLjMgMTAuNS0zOS45IDI2LjctLjYgMS4zLTEuOCAyLjMtMy40IDIuM2gtLjRjLTUuOCAwLTEwLjYgNC44LTEwLjYgMTAuN3YuNWMwIDEuNC0uOCAyLjYtMS45IDMuM0MxMy40IDY5IDguOCA3Ni44IDguOCA4NWMwIDEyLjIgOS45IDIyLjMgMjIuMiAyMi4zaDQ1LjJjMy42LS4xIDE3LjYtLjkgMjkuNi0xMiAyLjktMi44IDEzLjktMTMuNyAxNC0zMXoiIGZpbGw9IiM1NzRBQjgiLz48cGF0aCBkPSJNMTEwLjggNTcuNGwuMiAzLjNjMCAxLjMtMS4xIDIuNC0yLjMgMi40LTEuMyAwLTIuMy0xLjEtMi4zLTIuNGwtLjEtMi44di0uM2MwLTEuMi45LTIuMiAyLjEtMi4zaC4zYy43IDAgMS4zLjMgMS43LjctLjIuMS4zLjUuNCAxLjR6bS0zLjMtMTAuM2MwIDEuMi0xIDIuMy0yLjIgMi4zaC0uMWMtLjggMC0xLjYtLjUtMi0xLjItNC42LTguMy0xMy4zLTEzLjUtMjIuOC0xMy41LTEuMiAwLTIuMy0xLTIuMy0yLjJ2LS4xYzAtMS4yIDEtMi4zIDIuMi0yLjNoLjFhMzAuMzcgMzAuMzcgMCAwIDEgMTUuOCA0LjRjNC42IDIuOCA4LjQgNi44IDExLjEgMTEuNS4xLjMuMi43LjIgMS4xek04OC4zIDczLjhMNzMuNSA5My4yYy0xLjUgMS45LTMuNSAzLjEtNS43IDMuNWgtLjJjLS40LjEtLjguMS0xLjIuMS0uNiAwLTEuMS0uMS0xLjYtLjItMi4yLS40LTQuMi0xLjctNS42LTMuNUw0NC4zIDczLjljLTItMi42LTIuNS01LjQtMS40LTcuNy4xLS4xLjEtLjIuMi0uMiAxLjItMiAzLjUtMy4yIDYuNC0zLjJoNi42di01LjdjMC02LjggNC43LTEyIDEwLjktMTIgNC44IDAgOC41IDIuNiAxMC4zIDcuMi41IDEuMy0uMiAyLjctMS41IDMuMnMtMi44LS4xLTMuMy0xLjRjLTEuMS0yLjctMi45LTQtNS41LTQtMy41IDAtNiAzLTYgN3Y4LjFjMCAuNS0uMiAxLS42IDEuNC0uNi43LTEuNyAxLjEtMi42IDEuMWgtOC40Yy0xLjMgMC0yIC40LTIuMS43LS4yLjQgMCAxLjMuOSAyLjRMNjMuMSA5MGMuOSAxLjIgMi4xIDEuOCAzLjMgMS44czIuMy0uNiAzLjEtMS43bDE0LjgtMTkuM2MuOS0xLjEgMS4xLTIgLjktMi40LS4yLS4zLS45LS43LTIuMS0uN2gtNy42Yy0uOSAwLTEuNy0uNS0yLjEtMS4yLS4zLS40LS40LS44LS40LTEuMyAwLTEuNCAxLjEtMi41IDIuNS0yLjVoNy42YzMuMSAwIDUuNSAxLjMgNi42IDMuNWwuMy43Yy43IDIuMS4xIDQuNi0xLjcgNi45eiIgZmlsbD0iI2ZmZiIvPjwvZz48Zz48cGF0aCBkPSJNMCAxMDAgUTY0IDExNSAxMjggMTAwIEwxMjggMTI4IEwwIDEyOCBaIiBmaWxsPSIjRDMyRjJGIi8+PHBhdGggZD0iTTAgMTAwIFE2NCAxMTUgMTI4IDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkaWVudCkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjY0IiB5PSIxMjEiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InVybCgjZ29sZEdyYWRpZW50KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9InRleHQtc2hhZG93OiAwcHggMXB4IDJweCByZ2JhKDAsMCwwLDAuMyk7Ij7liIYg5LiNIOi1t+OAgOe6ryDpnaAg54ixPC90ZXh0PjwvZz48L3N2Zz4=
 // @description       基于【LinkSwift】修改 | 支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 | 改界面・添功能・修Bug | 相对原版增加了一些我认为有用的功能
@@ -108,7 +108,7 @@
  * @author hmjz100
  * @namespace github.com/hmjz100
  * @description  一个基于 JavaScript 盘的文件下载地址获取工具  支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘  代码改自 “网盘直链下载助手”，作者油小猴
- * @version 1.1.11
+ * @version 1.1.14
  * @license AGPL-3.0-or-later
  * @see {@link https://github.com/hmjz100/LinkSwift/ Github 仓库}
  */
@@ -473,6 +473,10 @@
 					abdm: {
 						title: "ABDM 下载",
 						footer: `<p>适用于 <a href="https://abdownloadmanager.com/" target="_blank" class="pl-a" data-no-instant="1"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-link"></use></svg>AB Download Manager</a></p>`
+					},
+					hydra: {
+						title: "Hydra 下载",
+						footer: `<p>适用于 <a href="https://hydralauncher.site/" target="_blank" class="pl-a" data-no-instant="1"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-link"></use></svg>Hydra Launcher</a>（需经本地中转,桥会跟随 Hydra 启停）</p>`
 					}
 				},
 				themes: [
@@ -1053,9 +1057,84 @@
 		 * @param {Array} [headers] - 自定义请求头参数（可选）
 		 * @returns {Promise<"success"|"fail">} 发送态结果
 		 */
+		async probeIDMClient(seq) {
+			// IDM 扩展升级/重装后 client id 会变化，导致旧 id 404（IDM Client X Not Found）。
+			// 自动探测 1..16 中能被 IDM 本地服务成功应答的 client id。
+			for (let i = 1; i <= 16; i++) {
+				let url = `http://127.0.0.1:1001/client/${i}?seq=${seq}`;
+				let data = `MSG#${seq}#13#1#10241:${seq + 1000}:0:${Date.now()}:0:1:2:1:0,4=3:txt,6=8:http://p,7=10:http://p/,11=2:\n,100=1:p,122=1:4;`;
+				let res = await base.post(url, data, {}, "text").catch(() => false);
+				if (res && String(res).endsWith(`${seq}:3;`)) return String(i);
+			}
+			return null;
+		},
+
+		/**
+		 * 诊断 IDM 推送失败的具体原因
+		 * @author WHATIFAAA
+		 * @description 区分三类失败：404(id 漂移) / status0(扩展会话未激活) / 连接失败(IDM 未运行)
+		 * @param {String|Boolean} res - base.post 的返回值（body 文本；false=网络层失败）
+		 * @param {Number} seq - 本次推送序号
+		 * @returns {String} "ok" | "id-missing" | "session-inactive" | "idm-down" | "unknown"
+		 */
+		diagnoseIDMFailure(res, seq) {
+			let s = String(res || "");
+			if (res && s.endsWith(`${seq}:3;`)) return "ok";
+			if (!res) return "idm-down";                 // 连不上 127.0.0.1:1001，IDM 未运行
+			if (s.includes("404") || /Client .* Not Found/i.test(s)) return "id-missing";
+			if (s.includes("X-IDM-Status: 0") || /:0;$/.test(s)) return "session-inactive";
+			return "unknown";
+		},
+
+		/**
+		 * 自动恢复 IDM 扩展会话（status 0 自愈）
+		 * @author WHATIFAAA
+		 * @description 扩展 SW 休眠导致 WebSocket 会话断开时，推送给 IDM 无效果。
+		 * 脚本无法直接拉起扩展 SW，但可做两层自动恢复：
+		 *   A. 自动重试：等待扩展 SW 被浏览器事件唤醒后自动重连 WS（延续 maxRetries 次）；
+		 *   B. 聚焦重推：监听 window 聚焦，用户点击浏览器工具栏 IDM 扩展图标唤活 SW 回到本页后，
+		 *      自动补推一次，做到“点一下就恢复”，无需手动重点下载。
+		 * @param {Function} pushOnce - 执行单次推送的回调，返回 body 文本
+		 * @param {Object} opts - { seq, maxRetries, interval, link, filename }
+		 * @returns {Promise<"success"|"fail">}
+		 */
+		async recoverIDMSession(pushOnce, opts = {}) {
+			let { seq, maxRetries = 8, interval = 800, link = "", filename = "" } = opts;
+			let delay = (ms) => new Promise(r => setTimeout(r, ms));
+
+			// A. 自动重试等待扩展 SW 唤醒重连
+			for (let i = 1; i <= maxRetries; i++) {
+				await delay(interval);
+				let res = await pushOnce().catch(() => false);
+				if (res && String(res).endsWith(`${seq}:3;`)) return "success";
+			}
+
+			// B. 窗口聚焦自动补推：最多等 90s，期间用户只要回到页面即可恢复
+			base.console.log("【LinkSwift】IDM 会话未激活，已启用聚焦自动重推（点击扩展图标唤活后回本页即可自动恢复）");
+			try {
+				message.warning("IDM 会话未激活。请点击浏览器工具栏的 IDM 扩展图标（或重载页面），回到本页后会自动重新推送。");
+			} catch (e) { }
+			return await new Promise((resolve) => {
+				let timer = setTimeout(() => {
+					window.removeEventListener("focus", onFocus);
+					resolve("fail");
+				}, 90 * 1000);
+				async function onFocus() {
+					let res = await pushOnce().catch(() => false);
+					if (res && String(res).endsWith(`${seq}:3;`)) {
+						clearTimeout(timer);
+						window.removeEventListener("focus", onFocus);
+						resolve("success");
+					}
+				}
+				window.addEventListener("focus", onFocus);
+			});
+		},
+
 		async sendLinkToIDM(link, filename, filesize, headers = {}) {
 			let idmRpcList = base.getValue("setting_idm_rpc");
 			let rpc = (Array.isArray(idmRpcList) && idmRpcList.find(i => i.default)) || { id: "1", default: true };
+			if (!rpc || rpc.id === undefined || rpc.id === null || rpc.id === "") rpc.id = "1";
 			if (!link || typeof link !== "string" || !/^https?:\/\//i.test(link)) {
 				base.console.error("【LinkSwift】IDM 推送失败：下载链接为空或无效", String(link).slice(0, 100));
 				return "fail";
@@ -1106,7 +1185,48 @@
 					this.sendLinkToIDM.seq++;
 					return "success";
 				};
-				base.console.error("【LinkSwift】IDM 推送失败", { 链接: String(link).slice(0, 200), RPC_ID: rpc && rpc.id, 地址: url, IDM返回: String(res).slice(0, 300) });
+
+				// 失败诊断：区分 id 漂移(404) / 会话未激活(status 0) / IDM 未运行(连接失败)
+				let idmErr = this.diagnoseIDMFailure(res, seq);
+				let lastCause = idmErr;
+				let rePush = () => {
+					let r = base.post(url, data, {}, "text").catch(() => false);
+					return Promise.race([r, timeout]).catch(() => false);
+				};
+
+				// ① id 漂移：IDM 扩展 client id 变更（重装/升级）后旧 id 会 404，自动探测正确 id 并重推一次
+				if (idmErr === "id-missing") {
+					let newId = await this.probeIDMClient(seq).catch(() => null);
+					if (newId && String(newId) !== String(rpc.id)) {
+						base.console.log("【LinkSwift】IDM client id 已变更，自动探测到新 id：" + newId);
+						try {
+							let list = base.getValue("setting_idm_rpc");
+							if (Array.isArray(list)) {
+								let def = list.find(i => i.default);
+								if (def) { def.id = newId; base.setValue("setting_idm_rpc", list); }
+							}
+						} catch (e) { }
+						rpc.id = newId;
+						url = `http://127.0.0.1:1001/client/${newId}?seq=${seq}`;
+						let retry = await rePush();
+						if (retry && retry.endsWith(`${seq}:3;`)) {
+							this.sendLinkToIDM.seq++;
+							return "success";
+						}
+						lastCause = this.diagnoseIDMFailure(retry, seq);
+					}
+				}
+
+				// ② 会话未激活(status 0) / IDM 未运行 / 未知：进入自动恢复流程
+				if (idmErr === "session-inactive" || idmErr === "idm-down" || idmErr === "unknown") {
+					let healed = await this.recoverIDMSession(rePush, { seq, link, filename }).catch(() => "fail");
+					if (healed === "success") {
+						this.sendLinkToIDM.seq++;
+						return "success";
+					}
+				}
+
+				base.console.error("【LinkSwift】IDM 推送失败", { 链接: String(link).slice(0, 200), RPC_ID: rpc && rpc.id, 地址: url, IDM返回: String(res).slice(0, 300), 原因: idmErr, 兜底结果: lastCause });
 				return "fail";
 			});
 		},
@@ -1305,8 +1425,8 @@
 		 * @returns {Promise<"success"|"fail">} 发送态结果
 		 */
 		async sendLinkToABDM(link, filename, headers) {
-			if (!this.sendLinkToBitcomet.lock) this.sendLinkToBitcomet.lock = Promise.resolve();
-			return this.sendLinkToBitcomet.lock = this.sendLinkToBitcomet.lock.then(async () => {
+			if (!this.sendLinkToABDM.lock) this.sendLinkToABDM.lock = Promise.resolve();
+			return this.sendLinkToABDM.lock = this.sendLinkToABDM.lock.then(async () => {
 				let newHeaders = {};
 				for (let key in headers) {
 					newHeaders[key.toLowerCase().split("-").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join("-")] = headers[key];
@@ -1339,6 +1459,36 @@
 					return "fail";
 				}
 			});
+		},
+
+		/**
+		 * Hydra 下载（经本地中转桥）
+		 * @description 将下载链接经本地中转桥（127.0.0.1:33581）推送至 Hydra 下载管理器；桥会跟随 Hydra 客户端启动/退出
+		 * @param {String} link - 下载链接
+		 * @param {String} filename - 文件名
+		 * @param {Object} [headers] - 自定义请求头参数（可选）
+		 * @returns {Promise<"success"|"fail">} 发送态结果
+		 */
+		async sendLinkToHydra(link, filename, headers) {
+			let list = base.getValue("setting_hydra_rpc");
+			if (!list || !list.length) return "fail";
+			let selected = list.find(i => i.default) || list[0];
+			let host = `${selected.domain}:${selected.port}${selected.path || "/send"}`;
+			let data = {
+				"url": link,
+				"filename": filename || "",
+				"cookies": (headers && headers.Cookie) || document.cookie || "",
+				"user_agent": (headers && (headers["User-Agent"] || headers.user_agent)) || navigator.userAgent,
+				"referer": (headers && (headers.Referer || headers.referer)) || `${location.origin}/`
+			};
+			try {
+				let res = await base.post(host, data, { "Content-Type": "application/json;charset=UTF-8" }, "text");
+				if (res && (res.ok === true || String(res.message).trim() === "ok")) return "success";
+				if (res === "ok" || res === "OK") return "success";
+				return "fail";
+			} catch (e) {
+				return "fail";
+			}
 		},
 
 		/**
@@ -2402,6 +2552,17 @@
 					]
 				},
 				{
+					name: "setting_hydra_rpc",
+					value: [
+						{
+							domain: "http://127.0.0.1",
+							port: "33581",
+							path: "/send",
+							default: true
+						}
+					]
+				},
+				{
 					name: "setting_curl_terminal",
 					value: "wc"
 				},
@@ -2983,6 +3144,22 @@
 				<div class="block">(ﾉ◕ヮ◕)ﾉ 遇到 Bug 要记得去 <a class="pl-a" href="https://github.com/hmjz100/LinkSwift/issues" target="_blank">Github 议题</a> 向我报告哦~</div>
 				<div class="block">(o゜▽゜)o☆ 觉得好用？来一同完善本项目吧~ 欢迎提交<a class="pl-a" href="https://github.com/hmjz100/LinkSwift/pulls" target="_blank">拉取请求</a>为本项目做贡献~</div>
 				<div class="block">
+					<name>V1.1.13</name>
+					<div>
+					<div>1、修复 - IDM 推送偶发「发送失败!」，新增自动探测 IDM Client ID；</div>
+					<div>2、修复 - 多盘同时推送失败时因配置漂移导致的 client/undefined 问题；</div>
+					<div>3、优化 - 探测到新 Client ID 后自动重推，无需手动改配置。</div>
+					</div>
+				</div>
+								<div class="block">
+					<name>V1.1.14</name>
+					<div>
+					<div>1、优化 - IDM 推送失败三级自愈：新增会话探测 diagnoseIDMFailure 与自动恢复 recoverIDMSession；</div>
+					<div>2、优化 - 推送失败时自动重连 IDM 扩展 WebSocket 会话，减少手动干预；</div>
+					<div>3、优化 - 会话状态异常时尝试自动唤醒重建，提升多盘批量推送稳定性。</div>
+					</div>
+				</div>
+<div class="block">
 					<name>V1.1.3</name>
 					<div>
 					<div>LinkSwift 开发者在此祝您新春快乐！</div>
@@ -3717,6 +3894,12 @@
 						content.find(".pl-main").append(`<div class="pl-item">
 							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
 							<button class="pl-item-link pl-btn-primary pl-btn-default listener-abdm-download slient" data-filename="${filename}" data-link="${dlink}"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送链接到 ABDM 下载器</span></button>
+						</div>`);
+					}
+					if (temp.mode === "hydra") {
+						content.find(".pl-main").append(`<div class="pl-item">
+							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
+							<button class="pl-item-link pl-btn-primary pl-btn-default listener-hydra-download" data-filename="${filename}" data-link="${dlink}"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送链接到 Hydra 下载器</span></button>
 						</div>`);
 					}
 				}
@@ -5105,6 +5288,24 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				await base.sleep(3000);
 				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
 			});
+			$doc.on("click", ".listener-hydra-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToHydra(target.data("link"), target.data("filename"), { "User-Agent": navigator.userAgent, "Referer": `${location.origin}/`, "Cookie": document.cookie });
+				if (res === "success") {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "Hydra");
+					target.removeClass("pl-btn-danger").html("发送成功啦!已在 Hydra 中下载~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败，请检查 Hydra 客户端与本地中转是否开启!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
 		},
 		greenerPage() {
 			temp.page = temp.main.detectPage();
@@ -5510,6 +5711,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<div class="g-button-menu pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg> Aria2 下载</div>
 						<div class="g-button-menu pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg> 彗星下载</div>
 						<div class="g-button-menu pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg> ABDM 下载</div>
+						<div class="g-button-menu pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg> Hydra 下载</div>
 						<div class="g-button-menu pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg> 助手设置</div>
 						<div class="g-button-menu pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg> 助手美化</div>
 						<div class="g-button-menu pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg> 更新日志</div>
@@ -5534,6 +5736,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 							<li class="sub cursor-p pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 							<li class="sub cursor-p pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 							<li class="sub cursor-p pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+							<li class="sub cursor-p pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 							<li class="sub cursor-p pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 							<li class="sub cursor-p pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 							<li class="sub cursor-p pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -5579,6 +5782,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="sub cursor-p pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 						<li class="sub cursor-p pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="sub cursor-p pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="sub cursor-p pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 						<li class="sub cursor-p pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="sub cursor-p pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="sub cursor-p pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -6227,6 +6431,24 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				await base.sleep(3000);
 				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
 			});
+			$doc.on("click", ".listener-hydra-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToHydra(target.data("link"), target.data("filename"), { "User-Agent": navigator.userAgent, "Referer": `${location.origin}/`, "Cookie": document.cookie });
+				if (res === "success") {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "Hydra");
+					target.removeClass("pl-btn-danger").html("发送成功啦!已在 Hydra 中下载~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败，请检查 Hydra 客户端与本地中转是否开启!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
 		},
 		greenerPage() {
 			base.waitForKeyElements(`[class*="share-list-banner"]`, function (tag) {
@@ -6276,6 +6498,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -6608,6 +6831,24 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				await base.sleep(3000);
 				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
 			});
+			$doc.on("click", ".listener-hydra-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToHydra(target.data("link"), target.data("filename"), { "User-Agent": navigator.userAgent, "Referer": `${location.origin}/`, "Cookie": document.cookie });
+				if (res === "success") {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "Hydra");
+					target.removeClass("pl-btn-danger").html("发送成功啦!已在 Hydra 中下载~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败，请检查 Hydra 客户端与本地中转是否开启!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
 		},
 		greenerPage() {
 			base.waitForKeyElements(".adv_swiper_menu", function (tag) {
@@ -6672,6 +6913,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -7064,6 +7306,24 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				await base.sleep(3000);
 				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
 			});
+			$doc.on("click", ".listener-hydra-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToHydra(target.data("link"), target.data("filename"), { "User-Agent": navigator.userAgent, "Referer": `${location.origin}/`, "Cookie": document.cookie });
+				if (res === "success") {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "Hydra");
+					target.removeClass("pl-btn-danger").html("发送成功啦!已在 Hydra 中下载~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败，请检查 Hydra 客户端与本地中转是否开启!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
 		},
 		greenerPage() {
 			base.waitForKeyElements(".advertising-mask", function (tag) {
@@ -7103,6 +7363,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 					<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 					<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+					<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 					<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 					<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 					<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -7437,6 +7698,24 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				await base.sleep(3000);
 				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
 			});
+			$doc.on("click", ".listener-hydra-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToHydra(target.data("link"), target.data("filename"), { "User-Agent": navigator.userAgent, "Referer": `${location.origin}/`, "Cookie": document.cookie });
+				if (res === "success") {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "Hydra");
+					target.removeClass("pl-btn-danger").html("发送成功啦!已在 Hydra 中下载~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败，请检查 Hydra 客户端与本地中转是否开启!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
 		},
 		beautifyPage() {
 			if (base.getValue("setting_ui_theme").custom.$xunlei !== true) return;
@@ -7465,6 +7744,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -7815,6 +8095,24 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				await base.sleep(3000);
 				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
 			});
+			$doc.on("click", ".listener-hydra-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToHydra(target.data("link"), target.data("filename"), { "User-Agent": navigator.userAgent, "Referer": `${location.origin}/`, "Cookie": document.cookie });
+				if (res === "success") {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "Hydra");
+					target.removeClass("pl-btn-danger").html("发送成功啦!已在 Hydra 中下载~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败，请检查 Hydra 客户端与本地中转是否开启!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
 		},
 		greenerPage() {
 			base.waitForKeyElements(`[class*="Activity--video-toolbar-activity"]`, function (tag) {
@@ -7887,6 +8185,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 							<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 							<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 							<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+							<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 							<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 							<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 							<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -7912,6 +8211,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -8268,6 +8568,24 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				await base.sleep(3000);
 				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
 			});
+			$doc.on("click", ".listener-hydra-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToHydra(target.data("link"), target.data("filename"), { "User-Agent": navigator.userAgent, "Referer": `${location.origin}/`, "Cookie": document.cookie });
+				if (res === "success") {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "Hydra");
+					target.removeClass("pl-btn-danger").html("发送成功啦!已在 Hydra 中下载~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败，请检查 Hydra 客户端与本地中转是否开启!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
 		},
 		greenerPage() {
 			base.waitForKeyElements(`[class*="VideoDetail--content-footer"]`, function (tag) {
@@ -8312,6 +8630,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -8334,6 +8653,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -8659,6 +8979,24 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					target.removeClass("pl-btn-danger").html("发送成功啦!快去看看吧~").animate({ opacity: "0.5" }, "slow");
 				} else {
 					target.addClass("pl-btn-danger").text("发送失败，检查一下您的配置信息哦!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
+			$doc.on("click", ".listener-hydra-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToHydra(target.data("link"), target.data("filename"), { "User-Agent": navigator.userAgent, "Referer": `${location.origin}/`, "Cookie": document.cookie });
+				if (res === "success") {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "Hydra");
+					target.removeClass("pl-btn-danger").html("发送成功啦!已在 Hydra 中下载~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败，请检查 Hydra 客户端与本地中转是否开启!").animate({ opacity: "0.5" }, "slow");
 				}
 				await base.sleep(3000);
 				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
@@ -9000,6 +9338,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -9019,6 +9358,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -9040,6 +9380,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -9240,6 +9581,24 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
 				} else {
 					target.addClass("pl-btn-danger").text("发送失败!").animate({ opacity: "0.5" }, "slow");
+				}
+				await base.sleep(3000);
+				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
+			});
+			$doc.on("click", ".listener-hydra-download", async function (e) {
+				let target = $(e.currentTarget);
+				if (target.attr("data-processing") === "true") return;
+				target.attr("data-processing", "true");
+				let originalHtml = target.html();
+				target.find(".pl-icon").remove();
+				target.find(".pl-loading").remove();
+				target.prepend(base.createLoading());
+				let res = await base.sendLinkToHydra(target.data("link"), target.data("filename"), { "User-Agent": navigator.userAgent, "Referer": `${location.origin}/`, "Cookie": document.cookie });
+				if (res === "success") {
+					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "Hydra");
+					target.removeClass("pl-btn-danger").html("发送成功啦!已在 Hydra 中下载~").animate({ opacity: "0.5" }, "slow");
+				} else {
+					target.addClass("pl-btn-danger").text("发送失败，请检查 Hydra 客户端与本地中转是否开启!").animate({ opacity: "0.5" }, "slow");
 				}
 				await base.sleep(3000);
 				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
