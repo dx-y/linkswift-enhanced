@@ -529,7 +529,7 @@
 			dom: {
 				enhance: `+<br/>此方式可以自动设置用户代理(UA)，然后下载。<br/>此方式的下载请求<b>可能会</b>被<b>旧版 IDM</b> 捕获。`,
 				normal: `+<br/>此方式<b>无法下载超过 50MB 的文件</b>，若超过点击会无反应（服务器 403）。<br/>此方式的下载请求<b>可能会</b>被 IDM 捕获。`,
-				copy: `注：此服务直接访问超过 50MB 文件的直链会导致服务器回报 403 错误<br/>如需访问，<b>请修改用户代理(UA)为 "pan.baidu.com"</b>`
+				copy: `注：此方式直接访问超过 50MB 的文件会导致服务器回报 403 错误<br/>如需访问，<b>请修改用户代理(UA)为 "pan.baidu.com"</b>`
 			}
 		},
 		$aliyun: {
@@ -547,7 +547,7 @@
 			dom: {
 				enhance: `+<br/>此方式可以自动设置 Referer，然后下载。<br/>此方式的下载请求<b>不会</b>被 IDM 捕获。`,
 				normal: `+<br/>此方式的下载请求<b>可能会</b>被 IDM 捕获。`,
-				copy: `注：此服务直接访问直链会导致服务器回报 403 错误<br/>如需访问，<b>请修改 Referer 为 "https://${location.host}/"</b>`,
+				copy: `注：此方式直接访问下载地址会导致服务器回报 403 错误<br/>如需访问，<b>请修改 Referer 为 "https://${location.host}/"</b>`,
 				filename: `注：此服务在下载高峰期时<b>可能不会</b>向客户端回报文件名，下载时需要复制文件名。`
 			}
 		},
@@ -3154,9 +3154,9 @@
 								<div class="block">
 					<name>V1.1.14</name>
 					<div>
-					<div>1、优化 - IDM 推送失败三级自愈：新增会话探测 diagnoseIDMFailure 与自动恢复 recoverIDMSession；</div>
-					<div>2、优化 - 推送失败时自动重连 IDM 扩展 WebSocket 会话，减少手动干预；</div>
-					<div>3、优化 - 会话状态异常时尝试自动唤醒重建，提升多盘批量推送稳定性。</div>
+					<div>1、优化 - IDM 推送失败自动重连并重推，无需手动改配置；</div>
+					<div>2、优化 - 修复多盘同时推送时 client/undefined 的问题；</div>
+					<div>3、新增 - Hydra 下载管理器支持。</div>
 					</div>
 				</div>
 <div class="block">
@@ -6153,9 +6153,9 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						...temp.swalDefault,
 						icon: "info",
 						title: `提示`,
-						html: `<p>(◍•ᴗ•◍) 你好呀，为了获取百度网盘文件的下载直链<br/>“下载助手” 需要你的授权，以获取网盘文件的访问令牌</p><br/>
+						html: `<p>(◍•ᴗ•◍) 你好呀，为了获取百度网盘文件的下载地址<br/>“下载助手” 需要你的授权，以获取网盘文件的访问令牌</p><br/>
 						<p>由于在百度 OAuth 页面使用了其他应用的 Client ID<br/>所以显示的应用名称可能会有所不同，敬请理解</p><br/>
-						<p>获取到的令牌仅用于调用百度网盘 API 生成直链<br/>不会用于其他用途，请放心授权</p>`,
+						<p>获取到的令牌仅用于调用百度网盘 API 生成下载地址<br/>不会用于其他用途，请放心授权</p>`,
 						showConfirmButton: true,
 						showDenyButton: true,
 						allowOutsideClick: false,
@@ -6195,7 +6195,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 								...temp.swalDefault,
 								icon: "success",
 								title: `成功啦`,
-								html: `<p>(◍•ᴗ•◍) 您已<b>成功授权/授权过</b>脚本获取网盘访问令牌~</p><p>获取到的令牌<b>仅用于调用百度网盘 API 生成直链</b><br/>不会用于其他用途</p><p>等待 <span id="second">/</span> 秒之后将关闭此页面</p>`,
+								html: `<p>(◍•ᴗ•◍) 您已<b>成功授权/授权过</b>脚本获取网盘访问令牌~</p><p>获取到的令牌<b>仅用于调用百度网盘 API 生成下载地址</b><br/>不会用于其他用途</p><p>等待 <span id="second">/</span> 秒之后将关闭此页面</p>`,
 								timer: 5000,
 								timerProgressBar: true,
 								showConfirmButton: true,
