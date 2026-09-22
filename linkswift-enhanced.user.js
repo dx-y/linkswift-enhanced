@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              LinkSwift增强
 // @namespace         github.com/dx-y
-// @version           1.1.16
+// @version           1.1.19
 // @author            Hmjz100、油小猴、WHATIFAAA
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkY1OUQ7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRDcwMDtzdG9wLW9wYWNpdHk6MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZCQzAyRDtzdG9wLW9wYWNpdHk6MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuNCwgLTIpIHNjYWxlKDAuOSkiPjxwYXRoIGQ9Ik0xMDMuNiAxMDcuNGMzLjUtMi4yIDguOS02LjEgMTMuOC0xMi41czcuMy0xMi41IDguNS0xNi41Yy41LTEuNyAyLjItNy41IDIuMi0xNC43IDAtMTAuMS0zLjMtMjUuMS0xNS40LTM2LjgtMTQuNS0xNC0zMi4xLTE0LjMtMzUuNy0xNC4zLTggMC0xNS43IDEuOS0yMi42IDUuMkM0NCAyMyAzNS43IDMxLjQgMzAuOCA0MS43Yy0xLjMgMi44LTQgNC43LTcuMSA1LTQgLjMtNy41IDQuNC04LjkgOS42LS41IDEuOS0xLjYgMy41LTMuMSA0LjdDNC40IDY2LjggMCA3NS43IDAgODVjMCA2LjggMi4zIDEzLjEgNi4xIDE4LjIgNS41IDcuNCAxNC4yIDEyLjIgMjQgMTIuMmg0Ny4xYzQuNCAwIDExLS41IDE4LjMtMy41IDMuMi0xLjQgNS45LTMgOC4xLTQuNXoiIGZpbGw9IiNBMDk5RjAiLz48cGF0aCBkPSJNMTE5LjggNjQuM2MuMS0xNy4xLTEwLjQtMjgtMTIuNS0zMC4xQzk1IDIyLjEgNzkuOSAyMS44IDc2LjkgMjEuOGMtMTcuNiAwLTMzLjMgMTAuNS0zOS45IDI2LjctLjYgMS4zLTEuOCAyLjMtMy40IDIuM2gtLjRjLTUuOCAwLTEwLjYgNC44LTEwLjYgMTAuN3YuNWMwIDEuNC0uOCAyLjYtMS45IDMuM0MxMy40IDY5IDguOCA3Ni44IDguOCA4NWMwIDEyLjIgOS45IDIyLjMgMjIuMiAyMi4zaDQ1LjJjMy42LS4xIDE3LjYtLjkgMjkuNi0xMiAyLjktMi44IDEzLjktMTMuNyAxNC0zMXoiIGZpbGw9IiM1NzRBQjgiLz48cGF0aCBkPSJNMTEwLjggNTcuNGwuMiAzLjNjMCAxLjMtMS4xIDIuNC0yLjMgMi40LTEuMyAwLTIuMy0xLjEtMi4zLTIuNGwtLjEtMi44di0uM2MwLTEuMi45LTIuMiAyLjEtMi4zaC4zYy43IDAgMS4zLjMgMS43LjctLjIuMS4zLjUuNCAxLjR6bS0zLjMtMTAuM2MwIDEuMi0xIDIuMy0yLjIgMi4zaC0uMWMtLjggMC0xLjYtLjUtMi0xLjItNC42LTguMy0xMy4zLTEzLjUtMjIuOC0xMy41LTEuMiAwLTIuMy0xLTIuMy0yLjJ2LS4xYzAtMS4yIDEtMi4zIDIuMi0yLjNoLjFhMzAuMzcgMzAuMzcgMCAwIDEgMTUuOCA0LjRjNC42IDIuOCA4LjQgNi44IDExLjEgMTEuNS4xLjMuMi43LjIgMS4xek04OC4zIDczLjhMNzMuNSA5My4yYy0xLjUgMS45LTMuNSAzLjEtNS43IDMuNWgtLjJjLS40LjEtLjguMS0xLjIuMS0uNiAwLTEuMS0uMS0xLjYtLjItMi4yLS40LTQuMi0xLjctNS42LTMuNUw0NC4zIDczLjljLTItMi42LTIuNS01LjQtMS40LTcuNy4xLS4xLjEtLjIuMi0uMiAxLjItMiAzLjUtMy4yIDYuNC0zLjJoNi42di01LjdjMC02LjggNC43LTEyIDEwLjktMTIgNC44IDAgOC41IDIuNiAxMC4zIDcuMi41IDEuMy0uMiAyLjctMS41IDMuMnMtMi44LS4xLTMuMy0xLjRjLTEuMS0yLjctMi45LTQtNS41LTQtMy41IDAtNiAzLTYgN3Y4LjFjMCAuNS0uMiAxLS42IDEuNC0uNi43LTEuNyAxLjEtMi42IDEuMWgtOC40Yy0xLjMgMC0yIC40LTIuMS43LS4yLjQgMCAxLjMuOSAyLjRMNjMuMSA5MGMuOSAxLjIgMi4xIDEuOCAzLjMgMS44czIuMy0uNiAzLjEtMS43bDE0LjgtMTkuM2MuOS0xLjEgMS4xLTIgLjktMi40LS4yLS4zLS45LS43LTIuMS0uN2gtNy42Yy0uOSAwLTEuNy0uNS0yLjEtMS4yLS4zLS40LS40LS44LS40LTEuMyAwLTEuNCAxLjEtMi41IDIuNS0yLjVoNy42YzMuMSAwIDUuNSAxLjMgNi42IDMuNWwuMy43Yy43IDIuMS4xIDQuNi0xLjcgNi45eiIgZmlsbD0iI2ZmZiIvPjwvZz48Zz48cGF0aCBkPSJNMCAxMDAgUTY0IDExNSAxMjggMTAwIEwxMjggMTI4IEwwIDEyOCBaIiBmaWxsPSIjRDMyRjJGIi8+PHBhdGggZD0iTTAgMTAwIFE2NCAxMTUgMTI4IDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkaWVudCkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjY0IiB5PSIxMjEiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InVybCgjZ29sZEdyYWRpZW50KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9InRleHQtc2hhZG93OiAwcHggMXB4IDJweCByZ2JhKDAsMCwwLDAuMyk7Ij7liIYg5LiNIOi1t+OAgOe6ryDpnaAg54ixPC90ZXh0PjwvZz48L3N2Zz4=
 // @description       基于【LinkSwift】修改 | 支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 | 改界面・添功能・修Bug | 相对原版增加了一些我认为有用的功能
@@ -85,6 +85,7 @@
 // @grant             unsafeWindow
 // @grant             window.close
 // @grant             GM_xmlhttpRequest
+// @grant             GM_download
 // @grant             GM_setClipboard
 // @grant             GM_setValue
 // @grant             GM_getValue
@@ -108,7 +109,7 @@
  * @author hmjz100
  * @namespace github.com/hmjz100
  * @description  一个基于 JavaScript 盘的文件下载地址获取工具  支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘  代码改自 “网盘直链下载助手”，作者油小猴
- * @version 1.1.16
+ * @version 1.1.17
  * @license AGPL-3.0-or-later
  * @see {@link https://github.com/hmjz100/LinkSwift/ Github 仓库}
  */
@@ -1080,8 +1081,8 @@
 		diagnoseIDMFailure(res, seq) {
 			let s = String(res || "");
 			if (res && s.endsWith(`${seq}:3;`)) return "ok";
-			// 网络层失败（连接不上 / 连接被重置 / 连接被意外关闭 / 基础连接已经关闭等）→ IDM 服务未就绪，归入 idm-down
-			if (!res || /连接|closed|reset|refused|ECONN/i.test(s)) return "idm-down";                 // 连不上 127.0.0.1:1001，IDM 未运行
+			// 网络层失败（连接不上 / 连接被重置 / 连接被意外关闭 / 超时 / 拒连等）→ IDM 服务未就绪，归入 idm-down
+			if (!res || /连接|closed|reset|refused|timeout|超时|ECONN|ETIMEDOUT/i.test(s)) return "idm-down";                 // 连不上 127.0.0.1:1001，IDM 未运行
 			if (s.includes("404") || /Client .* Not Found/i.test(s)) return "id-missing";
 			if (s.includes("X-IDM-Status: 0") || /:0;$/.test(s)) return "session-inactive";
 			return "unknown";
@@ -1109,15 +1110,22 @@
 			//    - 默认：等待扩展 SW 被浏览器事件唤醒后自动重连 WS；
 			//    - idmDown：IDM 服务未就绪，等待系统守护自动重启 IDM 后重推（60 次 × 2 秒 ≈ 120 秒）
 			if (idmDown) {
-				base.console.log("【LinkSwift】IDM 服务未就绪，正在自动等待恢复…（最长约 120 秒，配合系统守护自动重启 IDM，恢复后自动重推）");
+				base.console.log("【LinkSwift】IDM 服务未就绪（IDM 可能未运行或正在启动）。已进入自动等待：最长约 120 秒，系统守护会自动重启 IDM，服务恢复后自动重新推送。");
 				try {
-					message.warning("IDM 服务未就绪，正在自动等待恢复…恢复后将自动重新推送。");
+					message.warning("IDM 服务未就绪（IDM 可能未运行或正在启动）。已进入自动等待，最长约 120 秒；服务恢复后将自动重新推送，无需手动操作。");
 				} catch (e) { }
 			}
 			for (let i = 1; i <= maxRetries; i++) {
 				await delay(interval);
 				let res = await pushOnce().catch(() => false);
 				if (res && String(res).endsWith(`${seq}:3;`)) return "success";
+			}
+
+			if (idmDown) {
+				base.console.log("【LinkSwift】IDM 服务长时间未恢复（已等待约 120 秒）。请检查 IDM 是否已安装并运行；服务恢复后回到本页将自动重新推送。");
+				try {
+					message.warning("IDM 服务长时间未恢复，请检查 IDM 是否已安装并处于运行状态；服务恢复后回到本页将自动重新推送。");
+				} catch (e) { }
 			}
 
 			// B. 窗口聚焦自动补推：最多等 90s，期间用户只要回到页面即可恢复
@@ -1143,13 +1151,17 @@
 		},
 
 		async sendLinkToIDM(link, filename, filesize, headers = {}) {
-			let idmRpcList = base.getValue("setting_idm_rpc");
-			let rpc = (Array.isArray(idmRpcList) && idmRpcList.find(i => i.default)) || { id: "1", default: true };
-			if (!rpc || rpc.id === undefined || rpc.id === null || rpc.id === "") rpc.id = "1";
+			// 【修复 v5】恢复 RPC 直推为主方案：
+			// IDM 6.43 本地 RPC 端点为 127.0.0.1:1001（旧版 1001 已废弃，此前死代码端口写老导致不可用）。
+			// 直推由 IDM 主程序发起下载（携带 Referer/Cookie/UA 等完整请求头），不依赖浏览器扩展接管链路，
+			// 不会出现"发送成功但浏览器原生下载"的假成功；成功以 IDM 本地服务确认响应为准。
 			if (!link || typeof link !== "string" || !/^https?:\/\//i.test(link)) {
 				base.console.error("【LinkSwift】IDM 推送失败：下载链接为空或无效", String(link).slice(0, 100));
 				return "fail";
 			}
+			filename = (typeof filename === "string" && filename) ? filename : "";
+			filesize = parseInt(filesize, 10);
+			if (isNaN(filesize) || filesize < 0) filesize = 0;
 			if (!this.sendLinkToIDM.lock) this.sendLinkToIDM.lock = Promise.resolve();
 			return this.sendLinkToIDM.lock = this.sendLinkToIDM.lock.then(async () => {
 				headers = this.standHeaders(headers);
@@ -1157,29 +1169,30 @@
 				if (!this.sendLinkToIDM.seq) this.sendLinkToIDM.seq = 1;
 				let seq = this.sendLinkToIDM.seq;
 				let time = Date.now();
+				let idmRpcList = base.getValue("setting_idm_rpc");
+				let rpc = (Array.isArray(idmRpcList) && idmRpcList.find(i => i.default)) || { id: "1", default: true };
+				if (!rpc || rpc.id === undefined || rpc.id === null || rpc.id === "") rpc.id = "1";
 				let url = `http://127.0.0.1:1001/client/${rpc.id}?seq=${seq}`;
 				let ext = base.getExtension(filename);
 
-				let headersText = Object.entries(headers).map(([key, value]) => `${key}: ${value}`).join("\n") + "\n"; // 坑1：IDM 对 Header 的解码比较死板，最后不加换行不肯解析
+				let headersText = Object.entries(headers).map(([key, value]) => `${key}: ${value}`).join("\n") + "\n";
 
 				function format(key, val) {
 					if (val === undefined || val === null) return "";
 					var strVal = String(val);
-					var len = new Blob([strVal]).size; // 坑2：使用 blob.size，而不是 length
+					var len = new Blob([strVal]).size;
 					return `${key}=${len}:${strVal}`;
 				};
 
 				let fields = [
-					format(4, ext), // 4: 文件类型
-					format(6, link), // 6: 链接
-					format(7, location.origin), // 7: 来源页面（“该文件来自网页”）
-					format(11, headersText), // 11: 请求头
-					format(100, filename), // 100: 文件名
-					format(122, 4), // 122: 代理
+					format(4, ext),
+					format(6, link),
+					format(7, location.origin),
+					format(11, headersText),
+					format(100, filename),
+					format(122, 4),
 				];
 
-				// 坑3：神秘的请求格式
-				// MSG# {请求指示} #13#1# {10241/20xx}(是/否 使用扩展提供的文件信息) : {?}(可能是距离扩展启动的时间?) :0: {当前时间戳} :0:1: {2/1}(是/否 优先弹窗，再获取文件信息) : {文件大小} :0,{表单}(格式如上);
 				let data = `MSG#${seq}#13#1#10241:${seq + 1000}:0:${time}:0:1:2:${filesize}:0,${fields.join(",")};`;
 
 				let request = base.post(url, data, {}, "text").catch(() => false);
@@ -1192,7 +1205,8 @@
 
 				let res = await Promise.race([request, timeout]).catch(() => false);
 
-				if (res && res.endsWith(`${seq}:3;`)) {
+				// 成功判据：IDM 本地服务确认接收（seq:3; 为旧版确认；新版返回 MSG# 响应头或含 :seq: 确认均可）
+				if (res && (res.endsWith(`${seq}:3;`) || res.indexOf("MSG#") === 0 || res.indexOf(`:${seq}:`) >= 0)) {
 					this.sendLinkToIDM.seq++;
 					return "success";
 				};
@@ -1220,7 +1234,7 @@
 						rpc.id = newId;
 						url = `http://127.0.0.1:1001/client/${newId}?seq=${seq}`;
 						let retry = await rePush();
-						if (retry && retry.endsWith(`${seq}:3;`)) {
+						if (retry && (retry.endsWith(`${seq}:3;`) || retry.indexOf("MSG#") === 0 || retry.indexOf(`:${seq}:`) >= 0)) {
 							this.sendLinkToIDM.seq++;
 							return "success";
 						}
@@ -1230,7 +1244,6 @@
 
 				// ② 会话未激活(status 0) / IDM 未运行 / 未知：进入自动恢复流程
 				if (idmErr === "session-inactive" || idmErr === "idm-down" || idmErr === "unknown") {
-					// idm-down：IDM 服务未就绪，进入增强版自愈（60 次 × 2 秒 ≈ 120 秒，配合系统守护自动重启 IDM 后重推）
 					let healOpts = { seq, link, filename };
 					if (idmErr === "idm-down") { healOpts.maxRetries = 60; healOpts.interval = 2000; healOpts.idmDown = true; }
 					let healed = await this.recoverIDMSession(rePush, healOpts).catch(() => "fail");
@@ -3166,6 +3179,12 @@
 					</div>
 				</div>
 				<div class="block">
+					<name>V1.1.17</name>
+					<div>
+					<div>1、修复 - 修复按钮 undefined 显示，优化 IDM 服务未就绪提示。</div>
+					</div>
+				</div>
+				<div class="block">
 					<name>V1.1.16</name>
 					<div>
 					<div>1、优化 - IDM 服务未就绪时的自动等待与恢复重推。</div>
@@ -3856,9 +3875,9 @@
 			list.forEach((v, i) => {
 				i = i + 1;
 				if (isFolder(v)) return;
-				let filename = getFileName(v);
-				let size = getFileSize(v);
-				let dlink = getFileLink(v);
+				let filename = getFileName(v) || "";
+				let size = getFileSize(v) ?? 0;
+				let dlink = getFileLink(v) || "";
 				let mirror = base.isType(getFileMirror) !== "undefined" ? getFileMirror(getFileLink(v)) : undefined;
 				
 				// 应用过滤
