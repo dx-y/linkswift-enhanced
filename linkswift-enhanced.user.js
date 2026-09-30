@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              LinkSwift增强
 // @namespace         github.com/dx-y
-// @version           1.1.27
+// @version           1.1.28
 // @author            Hmjz100、油小猴、WHATIFAAA
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkY1OUQ7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRDcwMDtzdG9wLW9wYWNpdHk6MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZCQzAyRDtzdG9wLW9wYWNpdHk6MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuNCwgLTIpIHNjYWxlKDAuOSkiPjxwYXRoIGQ9Ik0xMDMuNiAxMDcuNGMzLjUtMi4yIDguOS02LjEgMTMuOC0xMi41czcuMy0xMi41IDguNS0xNi41Yy41LTEuNyAyLjItNy41IDIuMi0xNC43IDAtMTAuMS0zLjMtMjUuMS0xNS40LTM2LjgtMTQuNS0xNC0zMi4xLTE0LjMtMzUuNy0xNC4zLTggMC0xNS43IDEuOS0yMi42IDUuMkM0NCAyMyAzNS43IDMxLjQgMzAuOCA0MS43Yy0xLjMgMi44LTQgNC43LTcuMSA1LTQgLjMtNy41IDQuNC04LjkgOS42LS41IDEuOS0xLjYgMy41LTMuMSA0LjdDNC40IDY2LjggMCA3NS43IDAgODVjMCA2LjggMi4zIDEzLjEgNi4xIDE4LjIgNS41IDcuNCAxNC4yIDEyLjIgMjQgMTIuMmg0Ny4xYzQuNCAwIDExLS41IDE4LjMtMy41IDMuMi0xLjQgNS45LTMgOC4xLTQuNXoiIGZpbGw9IiNBMDk5RjAiLz48cGF0aCBkPSJNMTE5LjggNjQuM2MuMS0xNy4xLTEwLjQtMjgtMTIuNS0zMC4xQzk1IDIyLjEgNzkuOSAyMS44IDc2LjkgMjEuOGMtMTcuNiAwLTMzLjMgMTAuNS0zOS45IDI2LjctLjYgMS4zLTEuOCAyLjMtMy40IDIuM2gtLjRjLTUuOCAwLTEwLjYgNC44LTEwLjYgMTAuN3YuNWMwIDEuNC0uOCAyLjYtMS45IDMuM0MxMy40IDY5IDguOCA3Ni44IDguOCA4NWMwIDEyLjIgOS45IDIyLjMgMjIuMiAyMi4zaDQ1LjJjMy42LS4xIDE3LjYtLjkgMjkuNi0xMiAyLjktMi44IDEzLjktMTMuNyAxNC0zMXoiIGZpbGw9IiM1NzRBQjgiLz48cGF0aCBkPSJNMTEwLjggNTcuNGwuMiAzLjNjMCAxLjMtMS4xIDIuNC0yLjMgMi40LTEuMyAwLTIuMy0xLjEtMi4zLTIuNGwtLjEtMi44di0uM2MwLTEuMi45LTIuMiAyLjEtMi4zaC4zYy43IDAgMS4zLjMgMS43LjctLjIuMS4zLjUuNCAxLjR6bS0zLjMtMTAuM2MwIDEuMi0xIDIuMy0yLjIgMi4zaC0uMWMtLjggMC0xLjYtLjUtMi0xLjItNC42LTguMy0xMy4zLTEzLjUtMjIuOC0xMy41LTEuMiAwLTIuMy0xLTIuMy0yLjJ2LS4xYzAtMS4yIDEtMi4zIDIuMi0yLjNoLjFhMzAuMzcgMzAuMzcgMCAwIDEgMTUuOCA0LjRjNC42IDIuOCA4LjQgNi44IDExLjEgMTEuNS4xLjMuMi43LjIgMS4xek04OC4zIDczLjhMNzMuNSA5My4yYy0xLjUgMS45LTMuNSAzLjEtNS43IDMuNWgtLjJjLS40LjEtLjguMS0xLjIuMS0uNiAwLTEuMS0uMS0xLjYtLjItMi4yLS40LTQuMi0xLjctNS42LTMuNUw0NC4zIDczLjljLTItMi42LTIuNS01LjQtMS40LTcuNy4xLS4xLjEtLjIuMi0uMiAxLjItMiAzLjUtMy4yIDYuNC0zLjJoNi42di01LjdjMC02LjggNC43LTEyIDEwLjktMTIgNC44IDAgOC41IDIuNiAxMC4zIDcuMi41IDEuMy0uMiAyLjctMS41IDMuMnMtMi44LS4xLTMuMy0xLjRjLTEuMS0yLjctMi45LTQtNS41LTQtMy41IDAtNiAzLTYgN3Y4LjFjMCAuNS0uMiAxLS42IDEuNC0uNi43LTEuNyAxLjEtMi42IDEuMWgtOC40Yy0xLjMgMC0yIC40LTIuMS43LS4yLjQgMCAxLjMuOSAyLjRMNjMuMSA5MGMuOSAxLjIgMi4xIDEuOCAzLjMgMS44czIuMy0uNiAzLjEtMS43bDE0LjgtMTkuM2MuOS0xLjEgMS4xLTIgLjktMi40LS4yLS4zLS45LS43LTIuMS0uN2gtNy42Yy0uOSAwLTEuNy0uNS0yLjEtMS4yLS4zLS40LS40LS44LS40LTEuMyAwLTEuNCAxLjEtMi41IDIuNS0yLjVoNy42YzMuMSAwIDUuNSAxLjMgNi42IDMuNWwuMy43Yy43IDIuMS4xIDQuNi0xLjcgNi45eiIgZmlsbD0iI2ZmZiIvPjwvZz48Zz48cGF0aCBkPSJNMCAxMDAgUTY0IDExNSAxMjggMTAwIEwxMjggMTI4IEwwIDEyOCBaIiBmaWxsPSIjRDMyRjJGIi8+PHBhdGggZD0iTTAgMTAwIFE2NCAxMTUgMTI4IDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkaWVudCkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjY0IiB5PSIxMjEiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InVybCgjZ29sZEdyYWRpZW50KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9InRleHQtc2hhZG93OiAwcHggMXB4IDJweCByZ2JhKDAsMCwwLDAuMyk7Ij7liIYg5LiNIOi1t+OAgOe6ryDpnaAg54ixPC90ZXh0PjwvZz48L3N2Zz4=
 // @description       基于【LinkSwift】修改 | 支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 | 改界面・添功能・修Bug | 相对原版增加了一些我认为有用的功能
@@ -1116,20 +1116,48 @@
 		 * 配合系统守护自动重启 IDM 服务后自动重推。
 		 * @returns {Promise<"success"|"fail">}
 		 */
+		/**
+		 * 主动唤醒 IDM 扩展 Service Worker（自动唤活，替代手动点图标）
+		 * @author Marvis
+		 * @description 油猴脚本无法直接操纵扩展生命周期；但 Chrome 版 IDM 扩展为 MV3(Service Worker)，
+		 * 其 background.js 注册了 webNavigation.onHistoryStateUpdated 监听。页面 history.pushState 改变 URL
+		 * 会触发该事件，Chrome 事件驱动机制随即唤醒休眠中的 SW，SW 重建 native messaging 会话并重新注册
+		 * client id，RPC 推送随之恢复。副作用仅限 URL hash 短暂变化（随后还原），不刷新页面、不动登录态。
+		 * Edge 版扩展为 MV2 常驻后台页（persistent），永不休眠，本逻辑对其无害。
+		 * @returns {Promise<void>}
+		 */
+		async wakeIDMExtension() {
+			try {
+				let origHash = location.hash;
+				let clean = location.href.slice(0, location.href.length - origHash.length);
+				let marker = origHash ? origHash + "-idm-wake-" + Date.now() : "#idm-wake-" + Date.now();
+				history.pushState({ idmWake: Date.now() }, "", clean + marker);
+				// 等待 SW 启动 + nativeMessaging 握手 + client 会话注册
+				await new Promise(r => setTimeout(r, 1800));
+				history.replaceState({}, "", clean + origHash);
+				base.console.log("【LinkSwift】已尝试自动唤醒 IDM 扩展 SW（pushState 触发 webNavigation.onHistoryStateUpdated）");
+			} catch (e) {
+				base.console.warn("【LinkSwift】自动唤醒 IDM 扩展 SW 失败", e);
+			}
+		},
+
 		async recoverIDMSession(pushOnce, opts = {}) {
 			let { seq, maxRetries = 8, interval = 800, link = "", filename = "", idmDown = false } = opts;
 			let delay = (ms) => new Promise(r => setTimeout(r, ms));
 
 			// A. 自动重试等待服务恢复
-			//    - 默认：等待扩展 SW 被浏览器事件唤醒后自动重连 WS；
+			//    - 默认：主动唤醒扩展 SW 后等待其重连 WS（前 3 轮先唤醒，免去手动点图标）；
 			//    - idmDown：IDM 服务未就绪，等待系统守护自动重启 IDM 后重推（60 次 × 2 秒 ≈ 120 秒）
 			if (idmDown) {
 				base.console.log("【LinkSwift】IDM 服务未就绪（IDM 可能未运行或正在启动）。已进入自动等待：最长约 120 秒，系统守护会自动重启 IDM，服务恢复后自动重新推送。");
 				try {
 					message.warning("IDM 服务未就绪（IDM 可能未运行或正在启动）。已进入自动等待，最长约 120 秒；服务恢复后将自动重新推送，无需手动操作。");
 				} catch (e) { }
+			} else {
+				base.console.log("【LinkSwift】IDM 会话未激活，将自动唤醒扩展 SW（pushState 触发 webNavigation 事件）并重推，免去手动点图标");
 			}
 			for (let i = 1; i <= maxRetries; i++) {
+				if (!idmDown && i <= 3) await this.wakeIDMExtension();
 				await delay(interval);
 				let res = await pushOnce().catch(() => false);
 				if (res && String(res).endsWith(`${seq}:3;`)) return "success";
@@ -3211,6 +3239,12 @@
 				</div>
 				<div class="block">(ﾉ◕ヮ◕)ﾉ 遇到 Bug 要记得去 <a class="pl-a" href="https://github.com/hmjz100/LinkSwift/issues" target="_blank">Github 议题</a> 向我报告哦~</div>
 				<div class="block">(o゜▽゜)o☆ 觉得好用？来一同完善本项目吧~ 欢迎提交<a class="pl-a" href="https://github.com/hmjz100/LinkSwift/pulls" target="_blank">拉取请求</a>为本项目做贡献~</div>
+				<div class="block">
+					<name>V1.1.28</name>
+					<div>
+					<div>1、新增 - IDM 扩展 SW 自动唤醒：推送失败时脚本通过 history.pushState 触发 IDM 扩展注册的 webNavigation 事件，自动唤醒休眠的扩展 Service Worker 并重建会话，免去手动点击工具栏 IDM 图标（Chrome MV3 版扩展专用；Edge 版为常驻后台页不受影响）；</div>
+					</div>
+				</div>
 				<div class="block">
 					<name>V1.1.27</name>
 					<div>

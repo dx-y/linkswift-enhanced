@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.1.28] - 2026-09-30
+
+- 新增 IDM 扩展 SW 自动唤醒：推送失败时脚本通过 history.pushState 触发 IDM 扩展注册的 webNavigation 事件，自动唤醒休眠的扩展 Service Worker 并重建会话，免去手动点击工具栏 IDM 图标（Chrome MV3 版扩展专用；Edge 版为常驻后台页不受影响）。
+
 ## [1.1.27] - 2026-09-29
 - 修复 123 网盘个人盘/分享页勾选文件后提示"请勾选要下载的文件哦~"的问题
 - getSelectedList 容器选择器补入新版类名 mfy_h-table-module，支持向上两层 fiber 兜底

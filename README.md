@@ -2,7 +2,7 @@
 
 基于 [LinkSwift](https://github.com/hmjz100/LinkSwift) 二次开发的油猴脚本增强版。在官方原版能力之上，补充日常转存整理工作流所需的多项自动化能力，并持续进行稳定性与可维护性优化。
 
-> 当前版本：**v1.1.27**
+> 当前版本：**v1.1.28**
 > 许可：**AGPL-3.0-or-later**
 
 ## 功能简介
@@ -29,7 +29,11 @@
 
 脚本头部已配置 `@updateURL` / `@downloadURL` 指向本仓库，后续发布新版本后油猴会自动检测并提示更新。更新记录见 `CHANGELOG.md`。
 
-## 最近更新（v1.1.27）
+## 最近更新（v1.1.28）
+
+- 新增 IDM 扩展 SW 自动唤醒：推送失败时脚本通过 history.pushState 触发 IDM 扩展注册的 webNavigation 事件，自动唤醒休眠的扩展 Service Worker 并重建会话，免去手动点击工具栏 IDM 图标（Chrome MV3 版扩展专用；Edge 版为常驻后台页不受影响）。
+
+### v1.1.27
 
 - 修复 123 网盘个人盘/分享页勾选文件后提示"请勾选要下载的文件哦~"的问题。
 - getSelectedList 容器选择器补入新版类名 mfy_h-table-module，支持向上两层 fiber 兜底。
