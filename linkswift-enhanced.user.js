@@ -1,7 +1,7 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name              LinkSwift增强
 // @namespace         github.com/dx-y
-// @version           1.1.28
+// @version           1.1.29
 // @author            Hmjz100、油小猴、WHATIFAAA
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkY1OUQ7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRDcwMDtzdG9wLW9wYWNpdHk6MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZCQzAyRDtzdG9wLW9wYWNpdHk6MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuNCwgLTIpIHNjYWxlKDAuOSkiPjxwYXRoIGQ9Ik0xMDMuNiAxMDcuNGMzLjUtMi4yIDguOS02LjEgMTMuOC0xMi41czcuMy0xMi41IDguNS0xNi41Yy41LTEuNyAyLjItNy41IDIuMi0xNC43IDAtMTAuMS0zLjMtMjUuMS0xNS40LTM2LjgtMTQuNS0xNC0zMi4xLTE0LjMtMzUuNy0xNC4zLTggMC0xNS43IDEuOS0yMi42IDUuMkM0NCAyMyAzNS43IDMxLjQgMzAuOCA0MS43Yy0xLjMgMi44LTQgNC43LTcuMSA1LTQgLjMtNy41IDQuNC04LjkgOS42LS41IDEuOS0xLjYgMy41LTMuMSA0LjdDNC40IDY2LjggMCA3NS43IDAgODVjMCA2LjggMi4zIDEzLjEgNi4xIDE4LjIgNS41IDcuNCAxNC4yIDEyLjIgMjQgMTIuMmg0Ny4xYzQuNCAwIDExLS41IDE4LjMtMy41IDMuMi0xLjQgNS45LTMgOC4xLTQuNXoiIGZpbGw9IiNBMDk5RjAiLz48cGF0aCBkPSJNMTE5LjggNjQuM2MuMS0xNy4xLTEwLjQtMjgtMTIuNS0zMC4xQzk1IDIyLjEgNzkuOSAyMS44IDc2LjkgMjEuOGMtMTcuNiAwLTMzLjMgMTAuNS0zOS45IDI2LjctLjYgMS4zLTEuOCAyLjMtMy40IDIuM2gtLjRjLTUuOCAwLTEwLjYgNC44LTEwLjYgMTAuN3YuNWMwIDEuNC0uOCAyLjYtMS45IDMuM0MxMy40IDY5IDguOCA3Ni44IDguOCA4NWMwIDEyLjIgOS45IDIyLjMgMjIuMiAyMi4zaDQ1LjJjMy42LS4xIDE3LjYtLjkgMjkuNi0xMiAyLjktMi44IDEzLjktMTMuNyAxNC0zMXoiIGZpbGw9IiM1NzRBQjgiLz48cGF0aCBkPSJNMTEwLjggNTcuNGwuMiAzLjNjMCAxLjMtMS4xIDIuNC0yLjMgMi40LTEuMyAwLTIuMy0xLjEtMi4zLTIuNGwtLjEtMi44di0uM2MwLTEuMi45LTIuMiAyLjEtMi4zaC4zYy43IDAgMS4zLjMgMS43LjctLjIuMS4zLjUuNCAxLjR6bS0zLjMtMTAuM2MwIDEuMi0xIDIuMy0yLjIgMi4zaC0uMWMtLjggMC0xLjYtLjUtMi0xLjItNC42LTguMy0xMy4zLTEzLjUtMjIuOC0xMy41LTEuMiAwLTIuMy0xLTIuMy0yLjJ2LS4xYzAtMS4yIDEtMi4zIDIuMi0yLjNoLjFhMzAuMzcgMzAuMzcgMCAwIDEgMTUuOCA0LjRjNC42IDIuOCA4LjQgNi44IDExLjEgMTEuNS4xLjMuMi43LjIgMS4xek04OC4zIDczLjhMNzMuNSA5My4yYy0xLjUgMS45LTMuNSAzLjEtNS43IDMuNWgtLjJjLS40LjEtLjguMS0xLjIuMS0uNiAwLTEuMS0uMS0xLjYtLjItMi4yLS40LTQuMi0xLjctNS42LTMuNUw0NC4zIDczLjljLTItMi42LTIuNS01LjQtMS40LTcuNy4xLS4xLjEtLjIuMi0uMiAxLjItMiAzLjUtMy4yIDYuNC0zLjJoNi42di01LjdjMC02LjggNC43LTEyIDEwLjktMTIgNC44IDAgOC41IDIuNiAxMC4zIDcuMi41IDEuMy0uMiAyLjctMS41IDMuMnMtMi44LS4xLTMuMy0xLjRjLTEuMS0yLjctMi45LTQtNS41LTQtMy41IDAtNiAzLTYgN3Y4LjFjMCAuNS0uMiAxLS42IDEuNC0uNi43LTEuNyAxLjEtMi42IDEuMWgtOC40Yy0xLjMgMC0yIC40LTIuMS43LS4yLjQgMCAxLjMuOSAyLjRMNjMuMSA5MGMuOSAxLjIgMi4xIDEuOCAzLjMgMS44czIuMy0uNiAzLjEtMS43bDE0LjgtMTkuM2MuOS0xLjEgMS4xLTIgLjktMi40LS4yLS4zLS45LS43LTIuMS0uN2gtNy42Yy0uOSAwLTEuNy0uNS0yLjEtMS4yLS4zLS40LS40LS44LS40LTEuMyAwLTEuNCAxLjEtMi41IDIuNS0yLjVoNy42YzMuMSAwIDUuNSAxLjMgNi42IDMuNWwuMy43Yy43IDIuMS4xIDQuNi0xLjcgNi45eiIgZmlsbD0iI2ZmZiIvPjwvZz48Zz48cGF0aCBkPSJNMCAxMDAgUTY0IDExNSAxMjggMTAwIEwxMjggMTI4IEwwIDEyOCBaIiBmaWxsPSIjRDMyRjJGIi8+PHBhdGggZD0iTTAgMTAwIFE2NCAxMTUgMTI4IDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkaWVudCkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjY0IiB5PSIxMjEiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InVybCgjZ29sZEdyYWRpZW50KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9InRleHQtc2hhZG93OiAwcHggMXB4IDJweCByZ2JhKDAsMCwwLDAuMyk7Ij7liIYg5LiNIOi1t+OAgOe6ryDpnaAg54ixPC90ZXh0PjwvZz48L3N2Zz4=
 // @description       基于【LinkSwift】修改 | 支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 | 改界面・添功能・修Bug | 相对原版增加了一些我认为有用的功能
@@ -60,6 +60,7 @@
 // @match             *://*.guangyapan.com/*
 // @connect           *
 // @connect           localhost
+// @connect           127.0.0.1
 // @connect           baidu.com
 // @connect           baidupcs.com
 // @connect           aliyundrive.com
@@ -1320,6 +1321,11 @@
 				}
 
 				base.console.error("【LinkSwift】IDM 推送失败", { 链接: String(link).slice(0, 200), RPC_ID: rpc && rpc.id, 地址: url, IDM返回: String(res).slice(0, 300), 原因: idmErr, 兜底结果: lastCause });
+				return "fail";
+			}).catch((err) => {
+				// 兜底：防止 Promise 链中意外异常污染串行锁，导致后续所有推送全部 reject
+				base.console.error("【LinkSwift】IDM 推送链异常，已复位串行锁", err);
+				try { message.error("IDM 推送发生异常，请稍后重试。"); } catch (e) { }
 				return "fail";
 			});
 		},
@@ -4006,6 +4012,8 @@
 			} = (base.isType(configs[1]) === "object" ? configs[1] : {});
 			let content = $(`<div><div class="pl-main"></div><div class="pl-extra"></div></div>`);
 			let allLink = [];
+			// HTML 转义：防止文件名/链接中的特殊字符截断 data-* 属性或破坏 DOM
+			let escHtml = (s) => String(s ?? "").replace(/[&<>"']/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[m]));
 			list.forEach((v, i) => {
 				i = i + 1;
 				if (isFolder(v)) return;
@@ -4019,19 +4027,19 @@
 				
 				if (!dlink || !dlink.includes("http")) {
 					content.find(".pl-main").append(`<div class="pl-item">
-						<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
-						<div class="pl-item-message">${dlink ? dlink : "获取下载链接失败，刷新网页后再试试吧~"}</div>
+						<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${escHtml(filename)}</div><div class="size">${base.sizeFormat(size)}</div></div>
+						<div class="pl-item-message">${escHtml(dlink ? dlink : "获取下载链接失败，刷新网页后再试试吧~")}</div>
 					</div>`)
 				} else {
 					if (temp.mode === "api") {
 						allLink.push(dlink);
-						content.find(".pl-main").append(`<div class="pl-item" data-index="${i}" data-link="${dlink}" data-name="${filename}" data-size="${size}">
-							<div class="pl-item-name listener-tip"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
+						content.find(".pl-main").append(`<div class="pl-item" data-index="${i}" data-link="${escHtml(dlink)}" data-name="${escHtml(filename)}" data-size="${size}">
+							<div class="pl-item-name listener-tip"><div class="name">${escHtml(filename)}</div><div class="size">${base.sizeFormat(size)}</div></div>
 							<button class="pl-item-link pl-btn-primary pl-btn-default listener-api-download enhance listener-tip" data-title="通过脚本跨域请求下载文件，已支持多线程、智能多分片，显示预估剩余时间、下载速度；<br/>具体线程取决于浏览器的限制，所以非<b>必要情况（例如系统环境无法安装程序）</b>下，不建议使用此功能!"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>增强下载 (Beta)</button>
-							<button class="pl-item-link pl-btn-primary pl-btn-info listener-api-download normal listener-tip" data-link="${dlink}" data-filename="${filename}" data-title="通过浏览器访问链接下载文件，适用于支持 iframe 的浏览器<br/>点击后需等待浏览器弹出提示才可点击下个下载，否则只会下载后者"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>直接下载</button>
-							<button class="pl-btn-primary pl-btn-default listener-idm-download listener-tip" data-filename="${filename}" data-filesize="${size}" data-link="${dlink}" data-title="通过 IDM 扩展的捕获协议，将链接推送至 IDM，理论上仅适用于版本较新的 IDM。"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送至 IDM (Beta)</span></button>
-							<button class="pl-item-copy pl-btn-primary pl-btn-success listener-copy listener-tip" data-copy='${filename}' data-title="点击复制文件名"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制名称</button>
-							<button class="pl-item-copy pl-btn-primary pl-btn-warning listener-copy copy listener-tip" data-copy='${dlink}' data-title="点击复制下载链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制链接</button>
+							<button class="pl-item-link pl-btn-primary pl-btn-info listener-api-download normal listener-tip" data-link="${escHtml(dlink)}" data-filename="${escHtml(filename)}" data-title="通过浏览器访问链接下载文件，适用于支持 iframe 的浏览器<br/>点击后需等待浏览器弹出提示才可点击下个下载，否则只会下载后者"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>直接下载</button>
+							<button class="pl-btn-primary pl-btn-default listener-idm-download listener-tip" data-filename="${escHtml(filename)}" data-filesize="${size}" data-link="${escHtml(dlink)}" data-title="通过 IDM 扩展的捕获协议，将链接推送至 IDM，理论上仅适用于版本较新的 IDM。"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送至 IDM (Beta)</span></button>
+							<button class="pl-item-copy pl-btn-primary pl-btn-success listener-copy listener-tip" data-copy='${escHtml(filename)}' data-title="点击复制文件名"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制名称</button>
+							<button class="pl-item-copy pl-btn-primary pl-btn-warning listener-copy copy listener-tip" data-copy='${escHtml(dlink)}' data-title="点击复制下载链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制链接</button>
 							<div class="pl-item-downing" style="display:none">
 								<div class="pl-progress">
 									<div class="progress foot"><span class="text">正在加载...</span></div>
@@ -4046,39 +4054,39 @@
 						let finalink = base.convertLinkToCurl(dlink, filename, convert?.curl);
 						allLink.push(finalink);
 						content.find(".pl-main").append(`<div class="pl-item">
-							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
-							<a class="pl-item-link listener-copy listener-tip" data-copy='${finalink}' data-title="点击复制 curl 命令行">${finalink}<br/><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制 ${filename} 下载命令行</a>
+							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${escHtml(filename)}</div><div class="size">${base.sizeFormat(size)}</div></div>
+							<a class="pl-item-link listener-copy listener-tip" data-copy='${escHtml(finalink)}' data-title="点击复制 curl 命令行">${escHtml(finalink)}<br/><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制 ${escHtml(filename)} 下载命令行</a>
 						</div>`);
 					}
 					if (temp.mode === "aria2") {
 						let finalink = base.convertLinkToAria2(dlink, filename, convert?.aria2);
 						allLink.push(finalink);
 						content.find(".pl-main").append(`<div class="pl-item">
-							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
-							<button class="pl-item-link pl-btn-primary pl-btn-default listener-aria2-download" data-filename="${filename}" data-path="${v.path || ''}" data-link="${dlink}" data-filesize="${size}"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送链接到 Aria2 下载器</span></button>
-							<button class="pl-btn-primary pl-btn-info listener-copy listener-tip" data-copy='${finalink}' data-title="Aria2 没启用 RPC？点击复制 aria2c 命令行手动下载"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制下载命令行</button>
+							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${escHtml(filename)}</div><div class="size">${base.sizeFormat(size)}</div></div>
+							<button class="pl-item-link pl-btn-primary pl-btn-default listener-aria2-download" data-filename="${escHtml(filename)}" data-path="${escHtml(v.path || '')}" data-link="${escHtml(dlink)}" data-filesize="${size}"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送链接到 Aria2 下载器</span></button>
+							<button class="pl-btn-primary pl-btn-info listener-copy listener-tip" data-copy='${escHtml(finalink)}' data-title="Aria2 没启用 RPC？点击复制 aria2c 命令行手动下载"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制下载命令行</button>
 						</div>`);
 					}
 					if (temp.mode === "bitcomet") {
 						let finalink = base.convertLinkToBitComet(dlink, filename, convert?.bitcomet);
 						allLink.push(finalink);
 						content.find(".pl-main").append(`<div class="pl-item">
-							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
-							<a class="pl-item-link pl-btn-primary pl-btn-default listener-tip" href="${finalink}" data-title="点击打开 BC 链接以手动调起比特彗星下载，右键可复制 BC 链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>使用 BC 链接下载</a>
-							${mirror ? `<button class="pl-btn-primary pl-btn-success listener-copy listener-tip" data-copy='${mirror}' data-title="点击复制镜像地址"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制镜像</a>` : ""}
-							<button class="pl-btn-primary pl-btn-info listener-bitcomet-download listener-tip" data-filename="${filename}" data-link="${dlink}" data-title="除非 BC 链接无法调起比特彗星，否则不建议使用此方式<br/><br/>由于比特彗星内置的远程下载 Web API 服务代码存在缺陷，请求可能会随机出现“发送失败 - 服务器返回空请求”错误，实际上客户端已成功开始下载<br/>由于脚本无法准确判断请求是否真正成功，即使出现错误，也会提示“成功”"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送至下载器</span></button>
+							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${escHtml(filename)}</div><div class="size">${base.sizeFormat(size)}</div></div>
+							<a class="pl-item-link pl-btn-primary pl-btn-default listener-tip" href="${escHtml(finalink)}" data-title="点击打开 BC 链接以手动调起比特彗星下载，右键可复制 BC 链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>使用 BC 链接下载</a>
+							${mirror ? `<button class="pl-btn-primary pl-btn-success listener-copy listener-tip" data-copy='${escHtml(mirror)}' data-title="点击复制镜像地址"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制镜像</a>` : ""}
+							<button class="pl-btn-primary pl-btn-info listener-bitcomet-download listener-tip" data-filename="${escHtml(filename)}" data-link="${escHtml(dlink)}" data-title="除非 BC 链接无法调起比特彗星，否则不建议使用此方式<br/><br/>由于比特彗星内置的远程下载 Web API 服务代码存在缺陷，请求可能会随机出现“发送失败 - 服务器返回空请求”错误，实际上客户端已成功开始下载<br/>由于脚本无法准确判断请求是否真正成功，即使出现错误，也会提示“成功”"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送至下载器</span></button>
 						</div>`);
 					}
 					if (temp.mode === "abdm") {
 						content.find(".pl-main").append(`<div class="pl-item">
-							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
-							<button class="pl-item-link pl-btn-primary pl-btn-default listener-abdm-download slient" data-filename="${filename}" data-link="${dlink}"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送链接到 ABDM 下载器</span></button>
+							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${escHtml(filename)}</div><div class="size">${base.sizeFormat(size)}</div></div>
+							<button class="pl-item-link pl-btn-primary pl-btn-default listener-abdm-download slient" data-filename="${escHtml(filename)}" data-link="${escHtml(dlink)}"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送链接到 ABDM 下载器</span></button>
 						</div>`);
 					}
 					if (temp.mode === "hydra") {
 						content.find(".pl-main").append(`<div class="pl-item">
-							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
-							<button class="pl-item-link pl-btn-primary pl-btn-default listener-hydra-download" data-filename="${filename}" data-link="${dlink}"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送链接到 Hydra 下载器</span></button>
+							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${escHtml(filename)}</div><div class="size">${base.sizeFormat(size)}</div></div>
+							<button class="pl-item-link pl-btn-primary pl-btn-default listener-hydra-download" data-filename="${escHtml(filename)}" data-link="${escHtml(dlink)}"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送链接到 Hydra 下载器</span></button>
 						</div>`);
 					}
 				}
@@ -4145,11 +4153,11 @@
 					<button class="pl-btn-primary api listener-download-all enhance listener-tip" data-title="通过脚本跨域请求下载文件，已支持多线程、智能多分片，显示预估剩余时间、下载速度；<br/>具体线程取决于浏览器的限制，所以非<b>必要情况（例如系统环境无法安装程序）</b>下，不建议使用此功能!"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>全部增强下载 (Beta)</button>
 					<button class="pl-btn-primary pl-btn-default idm listener-send-rpc listener-tip" data-type="idm" data-title="通过 IDM 扩展的捕获协议，将链接推送至 IDM，理论上仅适用于版本较新的 IDM。<br/>使用前请确保您的 IDM 的 “设置” > “文件类型” > “接管下载文件扩展名” 里有上述文件的扩展名，若无请添加。"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>全部推送至 IDM (Beta)</button>
 					<button class="pl-btn-primary pl-btn-warning idm listener-open-idm-setting listener-tip" data-title="${rpc.id}" data-back-to-downloads="true"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>修改服务参数</button>
-					<button class="pl-btn-primary pl-btn-warning api listener-copy listener-tip" data-copy='${allLink}' data-title="点击复制全部下载链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制全部链接</button>
+					<button class="pl-btn-primary pl-btn-warning api listener-copy listener-tip" data-copy='${escHtml(allLink)}' data-title="点击复制全部下载链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制全部链接</button>
 				</div>`);
 			} else if (temp.mode === "curl") {
 				content.find(".pl-extra").append(`<button class="pl-btn-primary pl-btn-warning curl listener-open-setting listener-tip" data-title="${temp.terminalType[base.getValue("setting_curl_terminal")]}" data-back-to-downloads="true"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>修改终端类型</button>`);
-				if (list.length >= 2) content.find(".pl-extra").append(`<button class="pl-btn-primary curl listener-copy listener-tip" data-copy='${allLink}' data-title="点击复制全部 curl 命令行"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制全部命令行</button>`);
+				if (list.length >= 2) content.find(".pl-extra").append(`<button class="pl-btn-primary curl listener-copy listener-tip" data-copy='${escHtml(allLink)}' data-title="点击复制全部 curl 命令行"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制全部命令行</button>`);
 			} else if (temp.mode === "aria2") {
 				let rpc = base.getValue("setting_aria2_rpc").find(i => i.default);
 				content.find(".pl-extra").append(`<div style="display:flex;flex-direction:column;gap:10px;margin-bottom:12px;">
@@ -4165,12 +4173,12 @@
 				content.find(".pl-extra").append(`<div style="display:flex;flex-wrap:wrap;gap:10px;">
 					<button class="pl-btn-primary pl-btn-warning aria2 listener-open-aria2-setting listener-tip" data-title="${rpc.domain + ":" + rpc.port + rpc.path}" data-back-to-downloads="true"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>修改服务参数</button>
 					${list.length >= 2 ? `<button class="pl-btn-primary pl-btn-default aria2 listener-send-rpc" data-type="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>全部推送至下载器</button>` : ""}
-					${list.length >= 2 ? `<button class="pl-btn-primary pl-btn-info aria2 listener-copy listener-tip" data-copy='${allLink}' data-title="Aria2 没启用 RPC？点击复制 aria2c 命令行手动下载"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制全部命令行</button>` : ""}
+					${list.length >= 2 ? `<button class="pl-btn-primary pl-btn-info aria2 listener-copy listener-tip" data-copy='${escHtml(allLink)}' data-title="Aria2 没启用 RPC？点击复制 aria2c 命令行手动下载"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制全部命令行</button>` : ""}
 				</div>`);
 			} else if (temp.mode === "bitcomet") {
 				let rpc = base.getValue("setting_bitcomet_rpc").find(i => i.default);
 				content.find(".pl-extra").append(`<button class="pl-btn-primary pl-btn-warning bitcomet listener-open-bitcomet-setting listener-tip" data-title="${rpc.domain + ":" + rpc.port + rpc.path}" data-back-to-downloads="true"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>修改服务参数</button>`);
-				if (list.length >= 2) content.find(".pl-extra").append(`<button class="pl-btn-primary pl-btn-default bitcomet listener-copy listener-tip" data-copy='${allLink}' data-title="点击复制全部 BC 链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制全部 BC 链接</button>`);
+				if (list.length >= 2) content.find(".pl-extra").append(`<button class="pl-btn-primary pl-btn-default bitcomet listener-copy listener-tip" data-copy='${escHtml(allLink)}' data-title="点击复制全部 BC 链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制全部 BC 链接</button>`);
 				if (list.length >= 2) content.find(".pl-extra").append(`<button class="pl-btn-primary pl-btn-info bitcomet listener-send-rpc listener-tip" data-type="bitcomet" data-title="除非 BC 链接无法调起比特彗星，否则不建议使用此方式<br/><br/>由于比特彗星内置的远程下载 Web API 服务代码存在缺陷，请求可能会随机出现“发送失败 - 服务器返回空请求”错误，实际上客户端已成功开始下载<br/>由于脚本无法准确判断请求是否真正成功，即使出现错误，也会提示“成功”"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>全部推送至下载器</button>`);
 			} else if (temp.mode === "abdm") {
 				let rpc = base.getValue("setting_abdm_rpc").find(i => i.default);
@@ -4515,6 +4523,59 @@
 				if (!temp.mode) return;
 				if (!base.isType(temp.main?.getLink).includes("function")) return;
 				
+				// IDM 批量推送：复用 api 模式取链，逐个推送至 IDM
+				if (temp.mode === "idm") {
+					temp.mode = "api";
+					Swal.fire({
+						...temp.swalDefault,
+						showConfirmButton: false,
+						allowOutsideClick: false,
+						allowEscapeKey: false,
+						allowEnterKey: false,
+						title: "获取中",
+						html: `...`,
+						footer: "如果选的文件较多，请耐心等待获取完成哦！",
+						customClass: {
+							popup: "loading-popup",
+							header: "loading-header",
+							title: "loading-title",
+							content: "loading-content",
+							input: "loading-input",
+							footer: "loading-footer"
+						},
+						willOpen: async () => {
+							Swal.showLoading();
+							try {
+								await temp.main.getLink();
+								let files = temp.links[0].filter(v => !temp.links[1].isFolder || !temp.links[1].isFolder(v));
+								let links = files.map(v => temp.links[1].getFileLink(v)).filter(link => link && link.includes("http"));
+								if (!links.length) {
+									Swal.close();
+									message.warning("没有可推送的文件，请检查是否正确选择了文件");
+									return;
+								}
+								Swal.close();
+								let ok = 0, fail = 0;
+								for (let i = 0; i < links.length; i++) {
+									let fname = (temp.links[1].getFileName && files[i]) ? (temp.links[1].getFileName(files[i]) || "") : "";
+									let r = await base.sendLinkToIDM(links[i], fname, 0, { "Referer": `${location.origin}/`, "Cookie": document.cookie });
+									if (r === "success") ok++; else fail++;
+								}
+								if (fail === 0) {
+									message.success(`已将 ${ok} 个文件推送至 IDM`);
+								} else {
+									message.warning(`推送完成：成功 ${ok} 个，失败 ${fail} 个`);
+								}
+							} catch (error) {
+								console.error("【LinkSwift】IDM 批量推送获取链接失败", error);
+								Swal.close();
+								message.error("获取链接失败，请刷新页面后重试");
+							}
+						}
+					});
+					return;
+				}
+				
 				// 转存模式单独处理
 				if (temp.mode === "transfer") {
 					// 使用 api 模式获取链接（与API下载完全相同）
@@ -4651,7 +4712,13 @@
 					},
 					willOpen: async () => {
 						Swal.showLoading();
-						await temp.main.getLink();
+						try {
+							await temp.main.getLink();
+						} catch (e) {
+							console.error("【LinkSwift】获取下载链接失败", e);
+							Swal.close();
+							message.error("获取下载链接失败，请刷新页面后重试");
+						}
 					},
 				});
 			});
@@ -5891,6 +5958,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<div class="g-button-menu pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg> 彗星下载</div>
 						<div class="g-button-menu pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg> ABDM 下载</div>
 						<div class="g-button-menu pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg> Hydra 下载</div>
+						<div class="g-button-menu pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg> 推送 IDM</div>
 						<div class="g-button-menu pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg> 助手设置</div>
 						<div class="g-button-menu pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg> 助手美化</div>
 						<div class="g-button-menu pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg> 更新日志</div>
@@ -5916,6 +5984,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 							<li class="sub cursor-p pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 							<li class="sub cursor-p pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 							<li class="sub cursor-p pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+							<li class="sub cursor-p pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 							<li class="sub cursor-p pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 							<li class="sub cursor-p pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 							<li class="sub cursor-p pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -5962,6 +6031,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="sub cursor-p pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="sub cursor-p pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="sub cursor-p pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+						<li class="sub cursor-p pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 						<li class="sub cursor-p pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="sub cursor-p pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="sub cursor-p pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -6678,6 +6748,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+						<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -7093,6 +7164,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+						<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -7543,6 +7615,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 					<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 					<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+					<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 					<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 					<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 					<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -7924,6 +7997,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+						<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -8196,15 +8270,22 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				target.find(".pl-icon").remove();
 				target.find(".pl-loading").remove();
 				target.prepend(base.createLoading());
-				let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "User-Agent": config.$quark.api.ua.downloadLink, "Referer": `https://${location.host}/`, "Cookie": document.cookie });
-				if (res === "success") {
-					downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "IDM");
-					target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
-				} else {
-					target.addClass("pl-btn-danger").text("发送失败!").animate({ opacity: "0.5" }, "slow");
+				try {
+					let res = await base.sendLinkToIDM(target.data("link"), target.data("filename"), target.data("filesize"), { "User-Agent": config.$quark.api.ua.downloadLink, "Referer": `https://${location.host}/`, "Cookie": document.cookie });
+					if (res === "success") {
+						downloadHistory.addRecord(target.data("filename"), target.data("filesize"), "IDM");
+						target.removeClass("pl-btn-danger").html("发送成功啦~").animate({ opacity: "0.5" }, "slow");
+					} else {
+						target.addClass("pl-btn-danger").text("发送失败!").animate({ opacity: "0.5" }, "slow");
+					}
+				} catch (err) {
+					base.console.error("【LinkSwift】IDM 推送异常", err);
+					target.addClass("pl-btn-danger").text("推送异常!").animate({ opacity: "0.5" }, "slow");
+					try { message.error("IDM 推送发生异常：" + ((err && err.message) || err)); } catch (e) { }
+				} finally {
+					await base.sleep(3000);
+					target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
 				}
-				await base.sleep(3000);
-				target.removeClass("pl-btn-danger").removeAttr("data-processing").html(originalHtml).css("opacity", "");
 			});
 			$doc.on("click", ".listener-aria2-download", async function (e) {
 				let target = $(e.currentTarget);
@@ -8365,6 +8446,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 							<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 							<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 							<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+							<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 							<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 							<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 							<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -8391,6 +8473,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+						<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -8810,6 +8893,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+						<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -8833,6 +8917,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+						<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -9541,6 +9626,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+						<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -9563,6 +9649,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+						<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
@@ -9587,6 +9674,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode" data-mode="hydra"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Hydra 下载</li>
+						<li class="pl-button-mode" data-mode="idm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg>推送 IDM</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
