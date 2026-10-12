@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.29] - 2026-10-12
+- 修复夸克网盘「推送至 IDM」按钮可能永久卡死的问题：点击 handler 增加 try/catch/finally，推送完成/异常均恢复按钮状态，异常时给出可见错误提示
+- 修复 sendLinkToIDM 串行锁被 rejected Promise 污染导致后续推送全部失败的问题：锁链尾增加 catch 兜底
+- 补充 @connect 127.0.0.1 显式声明，规避部分油猴管理器（Violentmonkey 旧版 / Greasemonkey 4+）对 IP 字面量连接的白名单差异
+- 修复文件名/链接含特殊字符（" & < > '）时拼接 HTML 导致推送链接损坏的问题：增加 HTML 转义
+- 修复全局菜单取链失败时界面卡在「获取中」无提示的问题：增加 try/catch 与错误提示
+- 新增「下载助手」主菜单「推送 IDM」入口，无需打开 API 下载对话框即可推送 IDM
+
 ## [1.1.28] - 2026-09-30
 
 - 新增 IDM 扩展 SW 自动唤醒：推送失败时脚本通过 history.pushState 触发 IDM 扩展注册的 webNavigation 事件，自动唤醒休眠的扩展 Service Worker 并重建会话，免去手动点击工具栏 IDM 图标（Chrome MV3 版扩展专用；Edge 版为常驻后台页不受影响）。
