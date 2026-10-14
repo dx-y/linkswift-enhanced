@@ -1,11 +1,11 @@
 ﻿// ==UserScript==
-// @name              LinkSwift增强
+// @name              IDMPush增强
 // @namespace         github.com/dx-y
-// @version           1.1.29
-// @author            Hmjz100、油小猴、WHATIFAAA
+// @version           1.1.35
+// @author            dx-y
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdvbGRHcmFkaWVudCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkY1OUQ7c3RvcC1vcGFjaXR5OjEiLz48c3RvcCBvZmZzZXQ9IjUwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZGRDcwMDtzdG9wLW9wYWNpdHk6MSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I0ZCQzAyRDtzdG9wLW9wYWNpdHk6MSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuNCwgLTIpIHNjYWxlKDAuOSkiPjxwYXRoIGQ9Ik0xMDMuNiAxMDcuNGMzLjUtMi4yIDguOS02LjEgMTMuOC0xMi41czcuMy0xMi41IDguNS0xNi41Yy41LTEuNyAyLjItNy41IDIuMi0xNC43IDAtMTAuMS0zLjMtMjUuMS0xNS40LTM2LjgtMTQuNS0xNC0zMi4xLTE0LjMtMzUuNy0xNC4zLTggMC0xNS43IDEuOS0yMi42IDUuMkM0NCAyMyAzNS43IDMxLjQgMzAuOCA0MS43Yy0xLjMgMi44LTQgNC43LTcuMSA1LTQgLjMtNy41IDQuNC04LjkgOS42LS41IDEuOS0xLjYgMy41LTMuMSA0LjdDNC40IDY2LjggMCA3NS43IDAgODVjMCA2LjggMi4zIDEzLjEgNi4xIDE4LjIgNS41IDcuNCAxNC4yIDEyLjIgMjQgMTIuMmg0Ny4xYzQuNCAwIDExLS41IDE4LjMtMy41IDMuMi0xLjQgNS45LTMgOC4xLTQuNXoiIGZpbGw9IiNBMDk5RjAiLz48cGF0aCBkPSJNMTE5LjggNjQuM2MuMS0xNy4xLTEwLjQtMjgtMTIuNS0zMC4xQzk1IDIyLjEgNzkuOSAyMS44IDc2LjkgMjEuOGMtMTcuNiAwLTMzLjMgMTAuNS0zOS45IDI2LjctLjYgMS4zLTEuOCAyLjMtMy40IDIuM2gtLjRjLTUuOCAwLTEwLjYgNC44LTEwLjYgMTAuN3YuNWMwIDEuNC0uOCAyLjYtMS45IDMuM0MxMy40IDY5IDguOCA3Ni44IDguOCA4NWMwIDEyLjIgOS45IDIyLjMgMjIuMiAyMi4zaDQ1LjJjMy42LS4xIDE3LjYtLjkgMjkuNi0xMiAyLjktMi44IDEzLjktMTMuNyAxNC0zMXoiIGZpbGw9IiM1NzRBQjgiLz48cGF0aCBkPSJNMTEwLjggNTcuNGwuMiAzLjNjMCAxLjMtMS4xIDIuNC0yLjMgMi40LTEuMyAwLTIuMy0xLjEtMi4zLTIuNGwtLjEtMi44di0uM2MwLTEuMi45LTIuMiAyLjEtMi4zaC4zYy43IDAgMS4zLjMgMS43LjctLjIuMS4zLjUuNCAxLjR6bS0zLjMtMTAuM2MwIDEuMi0xIDIuMy0yLjIgMi4zaC0uMWMtLjggMC0xLjYtLjUtMi0xLjItNC42LTguMy0xMy4zLTEzLjUtMjIuOC0xMy41LTEuMiAwLTIuMy0xLTIuMy0yLjJ2LS4xYzAtMS4yIDEtMi4zIDIuMi0yLjNoLjFhMzAuMzcgMzAuMzcgMCAwIDEgMTUuOCA0LjRjNC42IDIuOCA4LjQgNi44IDExLjEgMTEuNS4xLjMuMi43LjIgMS4xek04OC4zIDczLjhMNzMuNSA5My4yYy0xLjUgMS45LTMuNSAzLjEtNS43IDMuNWgtLjJjLS40LjEtLjguMS0xLjIuMS0uNiAwLTEuMS0uMS0xLjYtLjItMi4yLS40LTQuMi0xLjctNS42LTMuNUw0NC4zIDczLjljLTItMi42LTIuNS01LjQtMS40LTcuNy4xLS4xLjEtLjIuMi0uMiAxLjItMiAzLjUtMy4yIDYuNC0zLjJoNi42di01LjdjMC02LjggNC43LTEyIDEwLjktMTIgNC44IDAgOC41IDIuNiAxMC4zIDcuMi41IDEuMy0uMiAyLjctMS41IDMuMnMtMi44LS4xLTMuMy0xLjRjLTEuMS0yLjctMi45LTQtNS41LTQtMy41IDAtNiAzLTYgN3Y4LjFjMCAuNS0uMiAxLS42IDEuNC0uNi43LTEuNyAxLjEtMi42IDEuMWgtOC40Yy0xLjMgMC0yIC40LTIuMS43LS4yLjQgMCAxLjMuOSAyLjRMNjMuMSA5MGMuOSAxLjIgMi4xIDEuOCAzLjMgMS44czIuMy0uNiAzLjEtMS43bDE0LjgtMTkuM2MuOS0xLjEgMS4xLTIgLjktMi40LS4yLS4zLS45LS43LTIuMS0uN2gtNy42Yy0uOSAwLTEuNy0uNS0yLjEtMS4yLS4zLS40LS40LS44LS40LTEuMyAwLTEuNCAxLjEtMi41IDIuNS0yLjVoNy42YzMuMSAwIDUuNSAxLjMgNi42IDMuNWwuMy43Yy43IDIuMS4xIDQuNi0xLjcgNi45eiIgZmlsbD0iI2ZmZiIvPjwvZz48Zz48cGF0aCBkPSJNMCAxMDAgUTY0IDExNSAxMjggMTAwIEwxMjggMTI4IEwwIDEyOCBaIiBmaWxsPSIjRDMyRjJGIi8+PHBhdGggZD0iTTAgMTAwIFE2NCAxMTUgMTI4IDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dvbGRHcmFkaWVudCkiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjY0IiB5PSIxMjEiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InVybCgjZ29sZEdyYWRpZW50KSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgc3R5bGU9InRleHQtc2hhZG93OiAwcHggMXB4IDJweCByZ2JhKDAsMCwwLDAuMyk7Ij7liIYg5LiNIOi1t+OAgOe6ryDpnaAg54ixPC90ZXh0PjwvZz48L3N2Zz4=
-// @description       基于【LinkSwift】修改 | 支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 | 改界面・添功能・修Bug | 相对原版增加了一些我认为有用的功能
-// @copyright         © 2022 hmjz100
+// @description       基于 LinkSwift 修改（dx-y 维护版） | 支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 | 改界面・添功能・修Bug | 相对原版增加了一些我认为有用的功能
+// @copyright         © 2026 dx-y
 // @license           AGPL-3.0-or-later
 // @source            https://github.com/dx-y/linkswift-enhanced/
 // @website           https://github.com/dx-y/linkswift-enhanced/
@@ -106,13 +106,13 @@
 /**
  * @name LinkSwift
  * @template （改）网盘直链下载助手
- * @author 油小猴
- * @author hmjz100
- * @namespace github.com/hmjz100
+ * @author dx-y
+ * @author dx-y
+ * @namespace github.com/dx-y
  * @description  一个基于 JavaScript 盘的文件下载地址获取工具  支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘  代码改自 “网盘直链下载助手”，作者油小猴
  * @version 1.1.17
  * @license AGPL-3.0-or-later
- * @see {@link https://github.com/hmjz100/LinkSwift/ Github 仓库}
+ * @see {@link https://github.com/dx-y/linkswift-enhanced/ Github 仓库}
  */
 (function linkSwift($) {
 	// 严格模式，确保代码安全执行，不越界
@@ -162,8 +162,8 @@
 
 	/**
 	 * SweetAlert2 的 Toast 指示框基础配置
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 * @description 创建一个全局通用的 Toast 指示框实例，支持自动关闭、鼠标悬停暂停、右上角弹出等特性。
 	 *
 	 * @type{Sweetalert2.Toast}
@@ -187,7 +187,7 @@
 
 	/**
 	 * 消息提示工具类
-	 * @author 油小猴
+	 * @author dx-y
 	 * @description 提供统一的提示信息展示方法，基于 SweetAlert2 的 Toast 实现；
 	 * 包含 success / error / warning / info / question 等类型。
 	 */
@@ -442,8 +442,8 @@
 
 	/**
 	 * 基础配置集合
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let config = {
 		base: {
@@ -453,7 +453,7 @@
 				account: "https://pic.rmb.bdstatic.com/bjh/8b9e14345b3cdf96aedac2f3971adcb02681.png"
 			},
 			dom: {
-				footer: `o(≧▽≦)o 十分感谢您的支持！来给此项目一个 <a href="https://github.com/hmjz100/LinkSwift" target="_blank" class="pl-a" data-no-instant="1"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-star"></use></svg>Star</a> 吧~`,
+				footer: `o(≧▽≦)o 十分感谢您的支持！来给此项目一个 <a href="https://github.com/dx-y/linkswift-enhanced" target="_blank" class="pl-a" data-no-instant="1"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-star"></use></svg>Star</a> 吧~`,
 				button: {
 					api: {
 						title: "API 下载",
@@ -669,8 +669,8 @@
 
 	/**
 	 * 基础工具集合
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let base = {
 		/**
@@ -688,8 +688,8 @@
 
 		/**
 		 * 注册 GreaseMonkey-Compatible-Manager 扩展菜单命令
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 包含 "设置"、"美化"、"更新" 和 "调试" 四个功能入口
 		 */
 		registerMenuCommand() {
@@ -715,7 +715,7 @@
 
 		/**
 		 * 判断 JavaScript 对象类型
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 通过 Object.prototype.toString 精确识别对象类型
 		 * @param {*} obj - 待检测对象
 		 * @returns {String} 类型名称（全小写），如：array/number/null/date 等
@@ -729,7 +729,7 @@
 
 		/**
 		 * 获取 GreaseMonkey-Compatible-Manager 存储的值
-		 * @author 油小猴
+		 * @author dx-y
 		 * @param {String} name - 存储键名
 		 * @returns {*} 存储的值
 		 */
@@ -739,7 +739,7 @@
 
 		/**
 		 * 设置 GreaseMonkey-Compatible-Manager 存储的值
-		 * @author 油小猴
+		 * @author dx-y
 		 * @param {String|Array} path - 存储键名或路径数组
 		 * @param {*} value - 要存储的值
 		 */
@@ -762,7 +762,7 @@
 
 		/**
 		 * 删除 GreaseMonkey-Compatible-Manager 存储的值
-		 * @author 油小猴
+		 * @author dx-y
 		 * @param {String|Array} key - 单个键名
 		 */
 		delValue(key) {
@@ -772,7 +772,7 @@
 		/**
 		 * 从 localStorage 获取存储值
 		 * @description 自动解析 JSON 格式内容
-		 * @author 油小猴
+		 * @author dx-y
 		 * @param {String} key - 存储键名
 		 * @returns {*} 存储的原始值或解析后的对象
 		 */
@@ -786,7 +786,7 @@
 
 		/**
 		 * 设置 localStorage 存储值
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 自动 `JSON.stringify` `对象` `数组` 类型的数据
 		 * @param {String} key - 存储键名
 		 * @param {*} value - 要存储的值
@@ -800,7 +800,7 @@
 
 		/**
 		 * 删除 localStorage 存储值
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 没什么特别的
 		 * @param {String} key - 存储键名
 		 */
@@ -810,7 +810,7 @@
 
 		/**
 		 * 剪贴板写入
-		 * @author 油小猴
+		 * @author dx-y
 		 * @param {String} text - 要复制的文本内容
 		 */
 		setClipboard(text) {
@@ -819,8 +819,8 @@
 
 		/**
 		 * Base64-URI 编码处理
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 自动执行 URI 兼容性编码转换
 		 * @param {String} str - 待编码的字符串
 		 * @returns {String} Base64 编码结果字符串
@@ -832,8 +832,8 @@
 
 		/**
 		 * Base64-URI 解码处理
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 自动执行 URI 兼容性解码转换
 		 * @param {String} str - Base64 编码字符串
 		 * @returns {String} 解码后的原始字符串
@@ -847,7 +847,7 @@
 
 		/**
 		 * 数字补零格式化
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 对 1-9 的数字自动补前导零
 		 * @param {Number} i - 待格式化的数字
 		 * @returns {String} 格式化后的字符串（如"05"）
@@ -862,7 +862,7 @@
 
 		/**
 		 * 获取文件扩展名并转为大写
-		 * @author 油小猴
+		 * @author dx-y
 		 * @param {String} name - 完整文件名
 		 * @returns {String} 大写的文件扩展名（如 `TXT`）
 		 */
@@ -877,7 +877,7 @@
 
 		/**
 		 * 文件大小格式化
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 自动转换单位到最合适的存储单位（如 `1.2MB`），支持 1000/1024 进制切换
 		 * @param {Number} value - 文件字节大小
 		 * @returns {String} 可读格式的大小描述
@@ -951,8 +951,8 @@
 
 		/**
 		 * 文件列表排序
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 按中文拼音顺序对文件数组进行排序
 		 * @param {Array} arr - 包含文件对象的数组
 		 * @param {String} arr[].filename - 文件名属性（兼容 server_filename）
@@ -969,7 +969,7 @@
 
 		/**
 		 * 文件名安全处理
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 替换非法字符为下划线
 		 * @param {String} name - 原始文件名
 		 * @returns {String} 修正后的安全文件名
@@ -981,7 +981,7 @@
 
 		/**
 		 * 头标准化
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 标准化请求头、响应头的键，使用驼峰命名
 		 * @param {String|Object} headers - 请求头、响应头的字符串或对象
 		 * @param {Boolean} addDeafult - 是否不添加默认头
@@ -1017,8 +1017,8 @@
 
 		/**
 		 * 生成 cURL 下载命令
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 根据终端类型生成对应 curl 命令，支持断点续传，自动处理文件名特殊字符
 		 * @param {String} link - 下载链接
 		 * @param {String} filename - 文件名
@@ -1033,8 +1033,8 @@
 
 		/**
 		 * 生成 Aria2 下载命令
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 将链接转换为 Aria2 格式命令，自动处理文件名特殊字符
 		 * @param {String} link - 下载链接
 		 * @param {String} filename - 文件名
@@ -1048,8 +1048,8 @@
 
 		/**
 		 * 生成 BC 协议下载链接
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 将链接转换为 BC 协议格式，自动处理 URL 编码
 		 * @param {String} link - 下载链接
 		 * @param {String} filename - 文件名
@@ -1063,143 +1063,91 @@
 		},
 
 		/**
-		 * 发送链接到 IDM 下载器
-		 * @author hmjz100
-		 * @author Night-stars-1
-		 * @description IDM 下载必备
+		 * 发送链接到 IDM 下载器（v2：IDM 6.43+ 桥接通道）
 		 * @param {String} link - 下载链接
 		 * @param {String} filename - 文件名
-		 * @param {Array} [headers] - 自定义请求头参数（可选）
+		 * @param {Object} [headers] - 自定义请求头参数（可选，取 Referer/Cookie/User-Agent）
 		 * @returns {Promise<"success"|"fail">} 发送态结果
 		 */
-		async probeIDMClient(seq) {
-			// IDM 扩展升级/重装后 client id 会变化，导致旧 id 404（IDM Client X Not Found）。
-			// 自动探测 1..16 中能被 IDM 本地服务成功应答的 client id。
-			for (let i = 1; i <= 16; i++) {
-				let url = `http://127.0.0.1:1001/client/${i}?seq=${seq}`;
-				let data = `MSG#${seq}#13#1#10241:${seq + 1000}:0:${Date.now()}:0:1:2:1:0,4=3:txt,6=8:http://p,7=10:http://p/,11=2:\n,100=1:p,122=1:4;`;
-				let res = await base.post(url, data, {}, "text").catch(() => false);
-				if (res && String(res).endsWith(`${seq}:3;`)) return String(i);
-			}
-			return null;
-		},
+		// ---------- IDM 6.43+ 桥接通道（linkswift-bridge 接收端 @ 127.0.0.1:16888） ----------
+		BRIDGE_BASE: "http://127.0.0.1:16888/",
 
-		/**
-		 * 诊断 IDM 推送失败的具体原因
-		 * @author WHATIFAAA
-		 * @description 区分三类失败：404(id 漂移) / status0(扩展会话未激活) / 连接失败(IDM 未运行)
-		 * @param {String|Boolean} res - base.post 的返回值（body 文本；false=网络层失败）
-		 * @param {Number} seq - 本次推送序号
-		 * @returns {String} "ok" | "id-missing" | "session-inactive" | "idm-down" | "unknown"
-		 */
-		diagnoseIDMFailure(res, seq) {
-			let s = String(res || "");
-			if (res && s.endsWith(`${seq}:3;`)) return "ok";
-			// 网络层失败（连接不上 / 连接被重置 / 连接被意外关闭 / 超时 / 拒连等）→ IDM 服务未就绪，归入 idm-down
-			if (!res || /连接|closed|reset|refused|timeout|超时|ECONN|ETIMEDOUT/i.test(s)) return "idm-down";                 // 连不上 127.0.0.1:1001，IDM 未运行
-			// HTTP 404（含响应体为空时透传的 "HTTP 404"）→ client id 未注册会话，归为 id-missing
-			if (s.includes("404") || /Client .* Not Found/i.test(s)) return "id-missing";
-			if (s.includes("X-IDM-Status: 0") || /:0;$/.test(s)) return "session-inactive";
-			return "unknown";
-		},
-
-		/**
-		 * 自动恢复 IDM 扩展会话（status 0 自愈）
-		 * @author WHATIFAAA
-		 * @description 扩展 SW 休眠导致 WebSocket 会话断开时，推送给 IDM 无效果。
-		 * 脚本无法直接拉起扩展 SW，但可做两层自动恢复：
-		 *   A. 自动重试：等待扩展 SW 被浏览器事件唤醒后自动重连 WS（延续 maxRetries 次）；
-		 *   B. 聚焦重推：监听 window 聚焦，用户点击浏览器工具栏 IDM 扩展图标唤活 SW 回到本页后，
-		 *      自动补推一次，做到“点一下就恢复”，无需手动重点下载。
-		 * @param {Function} pushOnce - 执行单次推送的回调，返回 body 文本
-		 * @param {Object} opts - { seq, maxRetries, interval, link, filename, idmDown }
-		 * idmDown=true 表示 IDM 服务未就绪（连接失败），进入增强版等待：默认 60 次 × 2 秒 ≈ 120 秒，
-		 * 配合系统守护自动重启 IDM 服务后自动重推。
-		 * @returns {Promise<"success"|"fail">}
-		 */
-		/**
-		 * 主动唤醒 IDM 扩展 Service Worker（自动唤活，替代手动点图标）
-		 * @author Marvis
-		 * @description 油猴脚本无法直接操纵扩展生命周期；但 Chrome 版 IDM 扩展为 MV3(Service Worker)，
-		 * 其 background.js 注册了 webNavigation.onHistoryStateUpdated 监听。页面 history.pushState 改变 URL
-		 * 会触发该事件，Chrome 事件驱动机制随即唤醒休眠中的 SW，SW 重建 native messaging 会话并重新注册
-		 * client id，RPC 推送随之恢复。副作用仅限 URL hash 短暂变化（随后还原），不刷新页面、不动登录态。
-		 * Edge 版扩展为 MV2 常驻后台页（persistent），永不休眠，本逻辑对其无害。
-		 * @returns {Promise<void>}
-		 */
-		async wakeIDMExtension() {
-			try {
-				let origHash = location.hash;
-				let clean = location.href.slice(0, location.href.length - origHash.length);
-				let marker = origHash ? origHash + "-idm-wake-" + Date.now() : "#idm-wake-" + Date.now();
-				history.pushState({ idmWake: Date.now() }, "", clean + marker);
-				// 等待 SW 启动 + nativeMessaging 握手 + client 会话注册
-				await new Promise(r => setTimeout(r, 1800));
-				history.replaceState({}, "", clean + origHash);
-				base.console.log("【LinkSwift】已尝试自动唤醒 IDM 扩展 SW（pushState 触发 webNavigation.onHistoryStateUpdated）");
-			} catch (e) {
-				base.console.warn("【LinkSwift】自动唤醒 IDM 扩展 SW 失败", e);
-			}
-		},
-
-		async recoverIDMSession(pushOnce, opts = {}) {
-			let { seq, maxRetries = 8, interval = 800, link = "", filename = "", idmDown = false } = opts;
-			let delay = (ms) => new Promise(r => setTimeout(r, ms));
-
-			// A. 自动重试等待服务恢复
-			//    - 默认：主动唤醒扩展 SW 后等待其重连 WS（前 3 轮先唤醒，免去手动点图标）；
-			//    - idmDown：IDM 服务未就绪，等待系统守护自动重启 IDM 后重推（60 次 × 2 秒 ≈ 120 秒）
-			if (idmDown) {
-				base.console.log("【LinkSwift】IDM 服务未就绪（IDM 可能未运行或正在启动）。已进入自动等待：最长约 120 秒，系统守护会自动重启 IDM，服务恢复后自动重新推送。");
-				try {
-					message.warning("IDM 服务未就绪（IDM 可能未运行或正在启动）。已进入自动等待，最长约 120 秒；服务恢复后将自动重新推送，无需手动操作。");
-				} catch (e) { }
-			} else {
-				base.console.log("【LinkSwift】IDM 会话未激活，将自动唤醒扩展 SW（pushState 触发 webNavigation 事件）并重推，免去手动点图标");
-			}
-			for (let i = 1; i <= maxRetries; i++) {
-				if (!idmDown && i <= 3) await this.wakeIDMExtension();
-				await delay(interval);
-				let res = await pushOnce().catch(() => false);
-				if (res && String(res).endsWith(`${seq}:3;`)) return "success";
-			}
-
-			if (idmDown) {
-				base.console.log("【LinkSwift】IDM 服务长时间未恢复（已等待约 120 秒）。请检查 IDM 是否已安装并运行；服务恢复后回到本页将自动重新推送。");
-				try {
-					message.warning("IDM 服务长时间未恢复，请检查 IDM 是否已安装并处于运行状态；服务恢复后回到本页将自动重新推送。");
-				} catch (e) { }
-			}
-
-			// B. 窗口聚焦自动补推：最多等 90s，期间用户只要回到页面即可恢复
-			base.console.log("【LinkSwift】IDM 会话未激活，已启用聚焦自动重推（点击扩展图标唤活后回本页即可自动恢复）");
-			try {
-				message.warning("IDM 会话未激活。请点击浏览器工具栏的 IDM 扩展图标（或重载页面），回到本页后会自动重新推送。");
-			} catch (e) { }
-			return await new Promise((resolve) => {
-				let timer = setTimeout(() => {
-					window.removeEventListener("focus", onFocus);
-					resolve("fail");
-				}, 90 * 1000);
-				async function onFocus() {
-					let res = await pushOnce().catch(() => false);
-					if (res && String(res).endsWith(`${seq}:3;`)) {
+		/** 探测接收端是否就绪（300ms 快速失败） */
+		async probeBridge() {
+			return new Promise((resolve) => {
+				let settled = false;
+				let timer = setTimeout(() => { settled = true; resolve(false); }, 300);
+				base.get(this.BRIDGE_BASE + "v1/ping", {}, "text")
+					.then((res) => {
+						if (settled) return;
+						settled = true;
 						clearTimeout(timer);
-						window.removeEventListener("focus", onFocus);
-						resolve("success");
-					}
-				}
-				window.addEventListener("focus", onFocus);
+						// base.get 已解析 JSON 为对象，兼容字符串与对象两种形态
+						try {
+							let data = (typeof res === "string") ? JSON.parse(res || "null") : res;
+							resolve(!!data && data.ok === true);
+						} catch (e) { resolve(false); }
+					})
+					.catch(() => {
+						if (settled) return;
+						settled = true;
+						clearTimeout(timer);
+						resolve(false);
+					});
 			});
 		},
 
+		/** 通过 linkswift:// 协议拉起接收端（HKCU 注册表关联，一次性） */
+		launchBridge() {
+			try {
+				let a = document.createElement("a");
+				a.href = "linkswift://ping";
+				a.style.display = "none";
+				document.body.appendChild(a);
+				a.click();
+				setTimeout(() => a.remove(), 100);
+			} catch (e) { }
+		},
+
+		/** 等待接收端就绪（轮询 ≤2s） */
+		async waitBridgeReady() {
+			for (let i = 0; i < 10; i++) {
+				await new Promise(r => setTimeout(r, 200));
+				if (await this.probeBridge().catch(() => false)) return true;
+			}
+			return false;
+		},
+
+		/** 预热：页面加载后静默探测并按需拉起接收端（不阻塞页面、不打扰用户） */
+		ensureBridgeWarmup() {
+			if (this.ensureBridgeWarmup.done) return;
+			this.ensureBridgeWarmup.done = true;
+			setTimeout(async () => {
+				try {
+					if (await this.probeBridge().catch(() => false)) return;
+					this.launchBridge();
+					await this.waitBridgeReady().catch(() => false);
+				} catch (e) { }
+			}, 800);
+		},
+
+		/** POST JSON 到接收端，返回解析后的应答对象或 null */
+		async postBridge(path, payload) {
+			try {
+				let res = await base.post(this.BRIDGE_BASE + path, JSON.stringify(payload), {}, "text");
+				// base.post 已解析 JSON 为对象，兼容字符串与对象两种形态
+				if (typeof res === "string") {
+					try { return JSON.parse(res || "null"); } catch (e) { return null; }
+				}
+				return res;
+			} catch (e) {
+				return null;
+			}
+		},
+
 		async sendLinkToIDM(link, filename, filesize, headers = {}) {
-			// 【修复 v5】恢复 RPC 直推为主方案：
-			// IDM 6.43 本地 RPC 端点为 127.0.0.1:1001（旧版 1001 已废弃，此前死代码端口写老导致不可用）。
-			// 直推由 IDM 主程序发起下载（携带 Referer/Cookie/UA 等完整请求头），不依赖浏览器扩展接管链路，
-			// 不会出现"发送成功但浏览器原生下载"的假成功；成功以 IDM 本地服务确认响应为准。
 			if (!link || typeof link !== "string" || !/^https?:\/\//i.test(link)) {
-				base.console.error("【LinkSwift】IDM 推送失败：下载链接为空或无效", String(link).slice(0, 100));
+				base.console.error("【IDMPush】IDM 推送失败：下载链接为空或无效", String(link).slice(0, 100));
 				return "fail";
 			}
 			filename = (typeof filename === "string" && filename) ? filename : "";
@@ -1208,123 +1156,52 @@
 			if (!this.sendLinkToIDM.lock) this.sendLinkToIDM.lock = Promise.resolve();
 			return this.sendLinkToIDM.lock = this.sendLinkToIDM.lock.then(async () => {
 				headers = this.standHeaders(headers);
-
-				if (!this.sendLinkToIDM.seq) this.sendLinkToIDM.seq = 1;
-				let seq = this.sendLinkToIDM.seq;
-				let time = Date.now();
-				let idmRpcList = base.getValue("setting_idm_rpc");
-				let rpc = (Array.isArray(idmRpcList) && idmRpcList.find(i => i.default)) || { id: "1", default: true };
-				if (!rpc || rpc.id === undefined || rpc.id === null || rpc.id === "") rpc.id = "1";
-				let url = `http://127.0.0.1:1001/client/${rpc.id}?seq=${seq}`;
-				let ext = base.getExtension(filename);
-
-				let headersText = Object.entries(headers).map(([key, value]) => `${key}: ${value}`).join("\n") + "\n";
-
-				function format(key, val) {
-					if (val === undefined || val === null) return "";
-					var strVal = String(val);
-					var len = new Blob([strVal]).size;
-					return `${key}=${len}:${strVal}`;
-				};
-
-				let fields = [
-					format(4, ext),
-					format(6, link),
-					format(7, location.origin),
-					format(11, headersText),
-					format(100, filename),
-					format(122, 4),
-				];
-
-				let data = `MSG#${seq}#13#1#10241:${seq + 1000}:0:${time}:0:1:2:${filesize}:0,${fields.join(",")};`;
-
-				let request = base.post(url, data, {}, "text").catch(() => false);
-				let timeout = new Promise((_, reject) => {
-					setTimeout(() => {
-						if (request.abort) request.abort();
-						reject(new Error("timeout"));
-					}, 15 * 1000);
-				})
-
-				let res = await Promise.race([request, timeout]).catch(() => false);
-
-				// 成功判据：IDM 本地服务确认接收（seq:3; 为旧版确认；新版返回 MSG# 响应头或含 :seq: 确认均可）
-				if (res && (res.endsWith(`${seq}:3;`) || res.indexOf("MSG#") === 0 || res.indexOf(`:${seq}:`) >= 0)) {
-					this.sendLinkToIDM.seq++;
-					return "success";
-				};
-
-				// 失败诊断：区分 id 漂移(404) / 会话未激活(status 0) / IDM 未运行(连接失败)
-				let idmErr = this.diagnoseIDMFailure(res, seq);
-				let lastCause = idmErr;
-				let rePush = () => {
-					let r = base.post(url, data, {}, "text").catch(() => false);
-					return Promise.race([r, timeout]).catch(() => false);
-				};
-
-				// ① id 漂移：IDM 扩展 client id 变更（重装/升级）后旧 id 会 404，自动探测正确 id 并重推一次
-				if (idmErr === "id-missing") {
-					let newId = await this.probeIDMClient(seq).catch(() => null);
-					if (newId && String(newId) !== String(rpc.id)) {
-						base.console.log("【LinkSwift】IDM client id 已变更，自动探测到新 id：" + newId);
-						try {
-							let list = base.getValue("setting_idm_rpc");
-							if (Array.isArray(list)) {
-								let def = list.find(i => i.default);
-								if (def) { def.id = newId; base.setValue("setting_idm_rpc", list); }
-							}
-						} catch (e) { }
-						rpc.id = newId;
-						url = `http://127.0.0.1:1001/client/${newId}?seq=${seq}`;
-						let retry = await rePush();
-						if (retry && (retry.endsWith(`${seq}:3;`) || retry.indexOf("MSG#") === 0 || retry.indexOf(`:${seq}:`) >= 0)) {
-							this.sendLinkToIDM.seq++;
-							return "success";
-						}
-						lastCause = this.diagnoseIDMFailure(retry, seq);
-					}
-				}
-
-				// ② 会话未激活(status 0) / IDM 未运行 / 未知：进入自动恢复流程
-				if (idmErr === "session-inactive" || idmErr === "idm-down" || idmErr === "unknown") {
-					// idm-down：进入 120 秒等待前先探测一遍可用 client id，避免服务在线但旧 id 失效时长时间傻等
-					if (idmErr === "idm-down") {
-						let newId = await this.probeIDMClient(seq).catch(() => null);
-						if (newId) {
-							base.console.log("【LinkSwift】IDM client id 已变更，自动探测到新 id：" + newId);
-							if (String(newId) !== String(rpc.id)) {
-								rpc.id = newId;
-								url = `http://127.0.0.1:1001/client/${newId}?seq=${seq}`;
-							}
-							let retry = await rePush();
-							if (retry && (retry.endsWith(`${seq}:3;`) || retry.indexOf("MSG#") === 0 || retry.indexOf(`:${seq}:`) >= 0)) {
-								this.sendLinkToIDM.seq++;
-								return "success";
-							}
-							idmErr = this.diagnoseIDMFailure(retry, seq);
-						} else {
-							// 1..16 全部 404：无任何 client 会话注册，给出可执行指引，不再进入 120 秒傻等
-							base.console.error("【LinkSwift】IDM 扩展会话未激活：RPC client 1..16 均无会话（404）");
-							try {
-								message.warning("IDM 扩展会话未激活：请点击浏览器工具栏的 IDM 图标或刷新页面后重试。");
-							} catch (e) { }
+				try {
+					// ① 探测接收端；未就绪则协议拉起后重试
+					let ready = await this.probeBridge().catch(() => false);
+					if (!ready) {
+						this.launchBridge();
+						ready = await this.waitBridgeReady().catch(() => false);
+						if (!ready) {
+							base.console.error("【IDMPush】IDM 推送失败：接收端(linkswift-bridge)未运行");
+							try { message.warning("IDM 接收端未运行，请先启动 linkswift-bridge 后再推送。"); } catch (e) { }
 							return "fail";
 						}
 					}
-					let healOpts = { seq, link, filename };
-					if (idmErr === "idm-down") { healOpts.maxRetries = 60; healOpts.interval = 2000; healOpts.idmDown = true; }
-					let healed = await this.recoverIDMSession(rePush, healOpts).catch(() => "fail");
-					if (healed === "success") {
-						this.sendLinkToIDM.seq++;
+					// ② 组装载荷（仅 6 字段：url/filename/filesize/referer/cookie/ua）
+					let payload = {
+						v: 1,
+						url: link,
+						filename: filename,
+						filesize: filesize,
+						referer: headers.Referer || "",
+						cookie: headers.Cookie || "",
+						ua: headers["User-Agent"] || navigator.userAgent
+					};
+					// ③ 推送并判成功（以接收端 ok=true 为准）
+					let res = await this.postBridge("v1/push", payload).catch(() => null);
+					if (res && res.ok === true) {
+						base.console.log("【IDMPush】IDM 推送成功：" + String(link).slice(0, 200));
 						return "success";
 					}
+					// ④ 失败分诊（单条提示，不再多级诊断）
+					let err = (res && res.error) || "unknown";
+					if (err === "idm-unavailable") {
+						base.console.error("【IDMPush】IDM 推送失败：IDM 未运行或未注册");
+						try { message.warning("IDM 未运行，请先启动 IDM 再推送。"); } catch (e) { }
+					} else {
+						base.console.error("【IDMPush】IDM 推送失败", { 链接: String(link).slice(0, 200), 错误: err, 返回: String(res).slice(0, 200) });
+						try { message.warning("IDM 推送失败（" + err + "），请确认接收端与 IDM 正常后重试。"); } catch (e) { }
+					}
+					return "fail";
+				} catch (err) {
+					base.console.error("【IDMPush】IDM 推送链异常", err);
+					try { message.error("IDM 推送发生异常，请稍后重试。"); } catch (e) { }
+					return "fail";
 				}
-
-				base.console.error("【LinkSwift】IDM 推送失败", { 链接: String(link).slice(0, 200), RPC_ID: rpc && rpc.id, 地址: url, IDM返回: String(res).slice(0, 300), 原因: idmErr, 兜底结果: lastCause });
-				return "fail";
 			}).catch((err) => {
-				// 兜底：防止 Promise 链中意外异常污染串行锁，导致后续所有推送全部 reject
-				base.console.error("【LinkSwift】IDM 推送链异常，已复位串行锁", err);
+				// 兜底：异常不得污染串行锁
+				base.console.error("【IDMPush】IDM 推送链异常，已复位串行锁", err);
 				try { message.error("IDM 推送发生异常，请稍后重试。"); } catch (e) { }
 				return "fail";
 			});
@@ -1332,8 +1209,8 @@
 
 		/**
 		 * 发送链接到 Aria2 下载器
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description Aria2 下载必备
 		 * @param {String} link - 下载链接
 		 * @param {String} filename - 文件名
@@ -1464,7 +1341,7 @@
 
 		/**
 		 * 发送链接到比特彗星下载器
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 比特彗星下载必备
 		 * @param {String} link - 下载链接
 		 * @param {String} filename - 文件名
@@ -1516,7 +1393,7 @@
 
 		/**
 		 * 发送链接到 AB Download Manager 下载器
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description AB Download Manager 下载必备
 		 * @param {String} link - 下载链接
 		 * @param {String} filename - 文件名
@@ -1592,7 +1469,7 @@
 
 		/**
 		 * Blob 文件下载
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 通过创建临时链接实现文件下载
 		 * @param {Blob} blob - 要下载的 Blob 对象
 		 * @param {String} filename - 下载时提示保存的文件名
@@ -1611,7 +1488,7 @@
 
 		/**
 		 * 可跨域 xmlhttpRequest 请求
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 封装 `GreaseMonkey-Compatible_xmlhttpRequest` 实现的跨域请求，与原始函数参数相同，支持回调和 await 两种用法
 		 * @param {Object} option - 请求配置对象
 		 * @returns {XMLHttpRequest|Promise} 请求对象实例或 Promise
@@ -1625,8 +1502,8 @@
 
 		/**
 		 * 发送 POST 请求
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 一般用于请求 API，支持智能格式化数据、智能编码请求数据
 		 * @param {String} url - 请求地址
 		 * @param {Object|String} data - 请求数据
@@ -1649,13 +1526,13 @@
 					url, headers, data,
 					method: "POST", responseType: type,
 					onloadstart: (res) => {
-						base.console.log("【LinkSwift】Post(start)\n请求地址：" + url + "\n请求数据：", _data, "\n请求头部：", headers);
+						base.console.log("【IDMPush】Post(start)\n请求地址：" + url + "\n请求数据：", _data, "\n请求头部：", headers);
 					},
 					onload: (res) => {
 						const rawHeaders = res.responseHeaders || (request?.getAllResponseHeaders?.() || "") || "";
 						res.responseHeaders = base.standHeaders(typeof rawHeaders === 'string' ? rawHeaders.trim() : "", true);
 						if (type === "blob") {
-							base.console.log("【LinkSwift】Post(load) Blob\n请求地址：" + url + "\n请求数据：", _data, "\n请求结果：", res);
+							base.console.log("【IDMPush】Post(load) Blob\n请求地址：" + url + "\n请求数据：", _data, "\n请求结果：", res);
 							resolve(res);
 							return;
 						}
@@ -1669,7 +1546,7 @@
 						if (res.responseDecode === res.responseText) res.responseDecode = null;
 						if (this.isType(res.response) === "object") res.responseDecode = res.response;
 
-						base.console.log("【LinkSwift】Post(load)\n请求地址：" + url + "\n请求数据：", _data, "\n请求头部：", headers, "\n请求结果：", res);
+						base.console.log("【IDMPush】Post(load)\n请求地址：" + url + "\n请求数据：", _data, "\n请求头部：", headers, "\n请求结果：", res);
 						// 响应体为空时透传 HTTP 状态码（如 "HTTP 404"），避免空响应被上层误判为连接失败
 						let body = res.responseDecode ?? res.response ?? res.responseText;
 						if (body === null || body === undefined || body === "") body = (res.status && res.status > 0) ? `HTTP ${res.status}` : body;
@@ -1678,7 +1555,7 @@
 					onerror: (error) => {
 						let msg = "请求失败";
 						if (error && typeof error === "object") msg += ": " + JSON.stringify(error, null, 2);
-						base.console.error("【LinkSwift】Post(error)\n请求出现错误，可能是网络问题。", error);
+						base.console.error("【IDMPush】Post(error)\n请求出现错误，可能是网络问题。", error);
 						reject(new Error(msg));
 					}
 				});
@@ -1687,13 +1564,20 @@
 				var methods = Object.getOwnPropertyNames(request).filter(key => typeof request[key] === 'function' && !promise.hasOwnProperty(key) && !['then', 'catch', 'finally'].includes(key)); // 自动收集 request 上的函数属性进行绑定，并能智能排除 Promise 原生方法
 				methods.forEach(method => { promise[method] = (...args) => request[method](...args); }); // 动态绑定到 Promise
 			}
-			return promise;
+			// 超时兜底：请求 8 秒未完成按失败处理，避免接收端无响应/浏览器挂起时 UI 无限转圈、串行锁永久占用（v1.1.34）
+			return Promise.race([
+				promise,
+				new Promise((_, reject) => setTimeout(() => {
+					base.console.error("【IDMPush】Post 请求超时(8s): " + String(url).slice(0, 120));
+					reject(new Error("post-timeout"));
+				}, 8000))
+			]);
 		},
 
 		/**
 		 * 发送 GET 请求
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 一般用于请求 API，支持智能格式化数据
 		 * @param {String} url - 请求地址
 		 * @param {Object} headers - 请求头配置
@@ -1708,13 +1592,13 @@
 					url, headers,
 					method: "GET", responseType: type,
 					onloadstart: (res) => {
-						base.console.log("【LinkSwift】Get(start)\n请求地址：" + url + "\n请求头部：", headers);
+						base.console.log("【IDMPush】Get(start)\n请求地址：" + url + "\n请求头部：", headers);
 					},
 					onload: (res) => {
 						const rawHeaders = res.responseHeaders || (request?.getAllResponseHeaders?.() || "") || "";
 						res.responseHeaders = base.standHeaders(typeof rawHeaders === 'string' ? rawHeaders.trim() : "", true);
 						if (type === "blob") {
-							base.console.log("【LinkSwift】Get(load) Blob\n请求地址：" + url, "\n请求结果：", res);
+							base.console.log("【IDMPush】Get(load) Blob\n请求地址：" + url, "\n请求结果：", res);
 							resolve(res);
 							return;
 						}
@@ -1724,13 +1608,13 @@
 						if (res.responseDecode === res.responseText) res.responseDecode = null;
 						if (this.isType(res.response) === "object") res.responseDecode = res.response;
 
-						base.console.log("【LinkSwift】Get(load)\n请求地址：" + url + "\n请求头部：", headers, "\n请求结果：", res);
+						base.console.log("【IDMPush】Get(load)\n请求地址：" + url + "\n请求头部：", headers, "\n请求结果：", res);
 						resolve(res.responseDecode ?? res.response ?? res.responseText);
 					},
 					onerror: (error) => {
 						let msg = "请求失败";
 						if (error && typeof error === "object") msg += ": " + JSON.stringify(error, null, 2);
-						base.console.error("【LinkSwift】Get(error)\n请求出现错误，可能是网络问题。", error);
+						base.console.error("【IDMPush】Get(error)\n请求出现错误，可能是网络问题。", error);
 						reject(new Error(msg));
 					}
 				});
@@ -1739,11 +1623,18 @@
 				var methods = Object.getOwnPropertyNames(request).filter(key => typeof request[key] === 'function' && !promise.hasOwnProperty(key) && !['then', 'catch', 'finally'].includes(key)); // 自动收集 request 上的函数属性进行绑定，并能智能排除 Promise 原生方法
 				methods.forEach(method => { promise[method] = (...args) => request[method](...args); }); // 动态绑定到 Promise
 			}
-			return promise;
+			// 超时兜底：请求 8 秒未完成按失败处理，避免接收端无响应/浏览器挂起时 UI 无限转圈、串行锁永久占用（v1.1.34）
+			return Promise.race([
+				promise,
+				new Promise((_, reject) => setTimeout(() => {
+					base.console.error("【IDMPush】Get 请求超时(8s): " + String(url).slice(0, 120));
+					reject(new Error("get-timeout"));
+				}, 8000))
+			]);
 		},
 		/**
 		 * 发送 HEAD 请求
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 用于获取请求地址返回的请求头，支持智能降级为轻量 GET (`Range: bytes=0-0`)，返回结构化响应头
 		 * @param {String} url - 请求地址
 		 * @param {Object} headers - 请求头配置
@@ -1760,14 +1651,14 @@
 					url,
 					headers,
 					onloadstart: () => {
-						base.console.log(`【LinkSwift】Head${usingGET ? " Get" : ""}(start)\n请求地址：${url}\n请求头部：`, headers);
+						base.console.log(`【IDMPush】Head${usingGET ? " Get" : ""}(start)\n请求地址：${url}\n请求头部：`, headers);
 					},
 					onload: function (res) {
 						if (!_aborted) {
 							const rawHeaders = res.responseHeaders || (request?.getAllResponseHeaders?.() || "") || "";
 							res.responseHeaders = base.standHeaders(typeof rawHeaders === 'string' ? rawHeaders.trim() : "", true);
 
-							base.console.log(`【LinkSwift】Head${usingGET ? " Get" : ""}(load)\n请求地址：${res.finalUrl}\n响应状态：${res.status}\n响应内容：`, res);
+							base.console.log(`【IDMPush】Head${usingGET ? " Get" : ""}(load)\n请求地址：${res.finalUrl}\n响应状态：${res.status}\n响应内容：`, res);
 
 							if (!usingGET && !res.responseHeaders.hasOwnProperty("Range") && !(res?.status >= 200 && res?.status < 400)) {
 								base.head(res.finalUrl, { ...headers, Range: "bytes=0-0" }, true).then(resolve).catch(reject);
@@ -1785,7 +1676,7 @@
 							const rawHeaders = res.responseHeaders || (request?.getAllResponseHeaders?.() || "") || "";
 							res.responseHeaders = base.standHeaders(typeof rawHeaders === 'string' ? rawHeaders.trim() : "", true);
 
-							base.console.log(`【LinkSwift】Head${usingGET ? " Get" : ""}(load) RS2\n请求地址：${res.finalUrl}\n响应状态：${res.status}\n响应内容：`, res);
+							base.console.log(`【IDMPush】Head${usingGET ? " Get" : ""}(load) RS2\n请求地址：${res.finalUrl}\n响应状态：${res.status}\n响应内容：`, res);
 
 							if (!usingGET && !res.responseHeaders.hasOwnProperty("Range") && !(res?.status >= 200 && res?.status < 400)) {
 								base.head(res.finalUrl, { ...headers, Range: "bytes=0-0" }, true).then(resolve).catch(reject);
@@ -1797,7 +1688,7 @@
 					},
 					onerror: function (err) {
 						if (!_aborted) {
-							base.console.error(`【LinkSwift】Head${usingGET ? " Get" : ""}(error)\n请求出现错误，可能是网络问题。`, err);
+							base.console.error(`【IDMPush】Head${usingGET ? " Get" : ""}(error)\n请求出现错误，可能是网络问题。`, err);
 							reject(err);
 						}
 					}
@@ -1807,8 +1698,8 @@
 
 		/**
 		 * 获取最终重定向
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 使用 GET、Head，智能追踪 HTTP 30x 重定向，返回最终访问地址
 		 * @param {String} url - 初始请求地址
 		 * @param {Object} headers - 请求头配置
@@ -1832,7 +1723,7 @@
 
 		/**
 		 * 下载文件
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 发送 GET 请求，一般用于文件下载，支持进度监控、自动重试、断点续传、非断回退
 		 * @param {String} url - 请求地址
 		 * @param {Object} headers - 请求头配置
@@ -1847,7 +1738,7 @@
 			this.download.taskCount = this.download.taskCount || 0; // 当前正在运行的 download 任务数
 			var global_maxThreads = 8; // 整个允许的最大并发数
 
-			if (extra) base.console.log(`【LinkSwift】Download\n收到数据：`, extra);
+			if (extra) base.console.log(`【IDMPush】Download\n收到数据：`, extra);
 			if (!extra || !extra.index || !extra.name || !extra.size) throw new Error("extra 缺少内容。");
 
 			let status = {
@@ -1879,7 +1770,7 @@
 					var supportRange = finalHead.status == 206 && (responseHeaders?.["Accept-Ranges"]?.includes("bytes") || responseHeaders?.["Content-Range"]?.includes("bytes"));
 
 					if (!!supportRange || size > 0) {
-						base.console.log(`【LinkSwift】Download(Start)\n文件名称：${extra.name}\n断点续传：支持`);
+						base.console.log(`【IDMPush】Download(Start)\n文件名称：${extra.name}\n断点续传：支持`);
 
 						var maxRetry = extra.retry || 10;
 						let index = 0;
@@ -2050,7 +1941,7 @@
 
 		/**
 		 * Aria2 RPC 服务测试
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 验证 `JSON-RPC` 接口可用性
 		 * @param {String} domain - 服务域名
 		 * @param {String} port - 服务端口
@@ -2072,10 +1963,10 @@
 					method: "POST", url, headers: {}, data: JSON.stringify(rpcData),
 					responseType: "json",
 					onloadstart() {
-						base.console.log("【LinkSwift】Post(start) Aria2Test\n请求地址：" + url + "\n请求内容：", rpcData);
+						base.console.log("【IDMPush】Post(start) Aria2Test\n请求地址：" + url + "\n请求内容：", rpcData);
 					},
 					onload: function (res) {
-						base.console.log("【LinkSwift】Post(load) Aria2Test\n请求地址：" + url + "\n请求结果：", res);
+						base.console.log("【IDMPush】Post(load) Aria2Test\n请求地址：" + url + "\n请求结果：", res);
 						if (!res.response) return resolve("fail");
 						if (res.response?.error) {
 							resolve("fail");
@@ -2084,7 +1975,7 @@
 						}
 					},
 					onerror: function (err) {
-						base.console.error("【LinkSwift】Post(error) Aria2Test\n请求失败", err);
+						base.console.error("【IDMPush】Post(error) Aria2Test\n请求失败", err);
 						resolve("fail");
 					},
 				});
@@ -2093,7 +1984,7 @@
 
 		/**
 		 * AB Download Manager RPC 服务测试
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 验证 `JSON-RPC` 接口可用性
 		 * @param {String} domain - 服务域名
 		 * @param {String} port - 服务端口
@@ -2107,15 +1998,15 @@
 					method: "POST", url, headers: {}, data: new Date().getTime(),
 					responseType: "text",
 					onloadstart() {
-						base.console.log("【LinkSwift】Post(start) ABDMTest\n请求地址：" + url + "\n请求内容：", new Date().getTime());
+						base.console.log("【IDMPush】Post(start) ABDMTest\n请求地址：" + url + "\n请求内容：", new Date().getTime());
 					},
 					onload: function (res) {
-						base.console.log("【LinkSwift】Post(load) ABDMTest\n请求地址：" + url + "\n请求结果：", res);
+						base.console.log("【IDMPush】Post(load) ABDMTest\n请求地址：" + url + "\n请求结果：", res);
 						if (!res.response || res.response !== "pong") return resolve("fail");
 						resolve("success");
 					},
 					onerror: function (err) {
-						base.console.error("【LinkSwift】Post(error) ABDMTest\n请求失败", err);
+						base.console.error("【IDMPush】Post(error) ABDMTest\n请求失败", err);
 						resolve("fail");
 					},
 				});
@@ -2124,7 +2015,7 @@
 
 		/**
 		 * 重置请求相关数据
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 中止所有进行中的请求，清除进度记录和定时器
 		 */
 		_resetAllData() {
@@ -2137,7 +2028,7 @@
 
 		/**
 		 * 重置请求相关数据
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 中止指定的进行中的请求，清除进度记录和定时器
 		 */
 		_resetData(i) {
@@ -2146,7 +2037,7 @@
 
 		/**
 		 * 将对象转换为 URL 编码字符串
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 递归处理嵌套数组，自动进行 URI 编码
 		 * @param {Object} obj - 待转换的键值对对象
 		 * @returns {String} URL 编码格式字符串（如`key1=value1&key2=value2`）
@@ -2170,8 +2061,8 @@
 
 		/**
 		 * 动态注入样式表
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 支持 `样式标签` `外链CSS` 注入，提供精准的 DOM 定位和插入位置控制
 		 * @param {String} id - 样式元素 ID
 		 * @param {"style"|"link"} tag - 标签类型（`style` 或 `link`）
@@ -2208,7 +2099,7 @@
 
 		/**
 		 * 十六进制颜色转 RGBA
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 支持 4 位和 8 位十六进制格式，自动解析透明度通道
 		 * @param {String} hex - 十六进制颜色值（如 `#09f` 或 `#0099ffaa` ）
 		 * @returns {String} RGBA 格式字符串（如 `15, 170, 255, 0.67`）
@@ -2236,7 +2127,7 @@
 
 		/**
 		 * RGBA 颜色转十六进制
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 支持透明度转换，自动补全缩写格式
 		 * @param {String} rgba - RGBA 格式颜色值（如 `rgba(15,170,255,0.67)`）
 		 * @returns {String} 十六进制颜色值（如 `#09aaffaa`）
@@ -2262,7 +2153,7 @@
 
 		/**
 		 * 自适应样式颜色替换器
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 支持全局样式替换和资源路径修正，处理颜色渐变过渡效果等
 		 * @param {String} cssText - 原始 CSS 内容
 		 * @param {String} baseURI - 资源基础路径
@@ -2346,7 +2237,7 @@
 
 		/**
 		 * 自适应全局主题颜色修改器
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 自动遍历并替换 `页面所有样式表` `SVG 元素` 的颜色值
 		 * @param {Array<[String, String]>} colorMap - 颜色映射表
 		 * @param {"default"|"other"} type - 替换模式
@@ -2433,7 +2324,7 @@
 
 		/**
 		 * 延时执行
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 仅可于 `async` 函数中执行，否则无法倒计时。
 		 * @param {Number} time - 等待时间（毫秒）
 		 * @returns {Promise<void>} 延时完成的 `Promise`
@@ -2444,7 +2335,7 @@
 
 		/**
 		 * 判断版本号新旧
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 该函数将版本号按 `.` 分割为数字数组，逐段比较大小。
 		 * 若某段 a 的数字大于 b，则 a 更新；
 		 * 若所有段均相等，则版本相等（返回 false）。
@@ -2467,7 +2358,7 @@
 
 		/**
 		 * 提取版本号主版本
-		 * @author 油小猴
+		 * @author dx-y
 		 * @param {String} version - 完整版本号（如 `1.2.3`）
 		 * @returns {String|null} 主版本号（如 `1`）或 `null`（格式错误时）
 		 */
@@ -2478,7 +2369,7 @@
 
 		/**
 		 * 查找 React 组件实例
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 支持 Fiber 架构遍历，可指定向上查找层级
 		 * @param {HTMLElement} dom - 起始 DOM 元素
 		 * @param {Number} [traverseUp=0] - 向上遍历层级
@@ -2514,7 +2405,7 @@
 
 		/**
 		 * 深拷贝
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 完全复制某个东西
 		 */
 		clone(value) {
@@ -2533,7 +2424,7 @@
 
 		/**
 		 * 迁移旧版本配置
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 将旧版配置项目迁移到新版配置
 		 */
 		initConfigMigration(latest) {
@@ -2592,14 +2483,14 @@
 					}
 				}
 			} catch (e) {
-				base.console.error("【LinkSwift】迁移旧版本配置到新配置时出错", e);
+				base.console.error("【IDMPush】迁移旧版本配置到新配置时出错", e);
 			}
 		},
 
 		/**
 		 * 初始化默认配置
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 创建基础配置、主题设置等存储项（仅当不存在时）
 		 */
 		initDefaultConfig() {
@@ -2781,8 +2672,8 @@
 
 		/**
 		 * 显示设置界面
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 构建包含 RPC 配置、终端类型等设置项的交互界面
 		 * @see {@link https://www.youxiaohou.com/zh-cn/motrix.html#使用指南 RPC 配置说明}、 {@link https://www.youxiaohou.com/zh-cn/curl.html cURL 使用教程}
 		 */
@@ -2851,7 +2742,7 @@
 
 		/**
 		 * 显示 IDM 服务设置界面
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 包含 RPC 配置的交互界面
 		 */
 		showIDMSetting(event) {
@@ -2920,7 +2811,7 @@
 
 		/**
 		 * 显示 Aria2 服务设置界面
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 包含 RPC 配置的交互界面
 		 * @see {@link https://www.youxiaohou.com/zh-cn/motrix.html#使用指南 RPC 配置说明}
 		 */
@@ -2994,7 +2885,7 @@
 
 		/**
 		 * 显示比特彗星服务设置界面
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 包含 RPC 配置的交互界面
 		 */
 		showBitcometSetting(event) {
@@ -3070,7 +2961,7 @@
 
 		/**
 		 * 显示 AB Download Manager 服务设置界面
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 包含 RPC 配置的交互界面
 		 */
 		showABDMSetting(event) {
@@ -3135,7 +3026,7 @@
 
 		/**
 		 * 显示美化设置界面
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 提供主题颜色选择器和各网盘界面美化配置
 		 * @fires .listener-color - 主题色选择事件
 		 * @fires .listener-theme - 网盘主题配置变更事件
@@ -3199,7 +3090,7 @@
 		/**
 		 * 显示调试信息面板
 		 * @description 展示脚本运行时环境、版本信息及依赖状态
-		 * @author hmjz100
+		 * @author dx-y
 		 * @property{String} manageHandler - 外部管理器名称
 		 * @property{String} manageVersion - 外部管理器版本
 		 */
@@ -3228,7 +3119,7 @@
 
 		/**
 		 * 显示版本更新日志
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 按时间倒序展示所有历史版本更新内容
 		 */
 		async showUpdate() {
@@ -3243,8 +3134,14 @@
 						<div>俏也不争春，只把春来报。待到山花烂漫时，她在丛中笑。</div>
 					</blockquote>
 				</div>
-				<div class="block">(ﾉ◕ヮ◕)ﾉ 遇到 Bug 要记得去 <a class="pl-a" href="https://github.com/hmjz100/LinkSwift/issues" target="_blank">Github 议题</a> 向我报告哦~</div>
-				<div class="block">(o゜▽゜)o☆ 觉得好用？来一同完善本项目吧~ 欢迎提交<a class="pl-a" href="https://github.com/hmjz100/LinkSwift/pulls" target="_blank">拉取请求</a>为本项目做贡献~</div>
+				<div class="block">(ﾉ◕ヮ◕)ﾉ 遇到 Bug 要记得去 <a class="pl-a" href="https://github.com/dx-y/linkswift-enhanced/issues" target="_blank">Github 议题</a> 向我报告哦~</div>
+				<div class="block">(o゜▽゜)o☆ 觉得好用？来一同完善本项目吧~ 欢迎提交<a class="pl-a" href="https://github.com/dx-y/linkswift-enhanced/pulls" target="_blank">拉取请求</a>为本项目做贡献~</div>
+				<div class="block">
+					<name>V1.1.34</name>
+					<div>
+					<div>1、修复 - 推送至IDM 偶发无限转圈/无响应：请求层缺少超时兜底，接收端无响应或浏览器挂起时 Promise 永不结束，串行锁被永久占用，之后每次点击都排队转圈；新增 8 秒超时自动判失败并复位锁，转圈最多 8 秒必出结果；</div>
+					</div>
+				</div>
 				<div class="block">
 					<name>V1.1.28</name>
 					<div>
@@ -3860,8 +3757,8 @@
 		/**
 		 * 创建浮动指示框
 		 * @description 一个究极好用的指示框，支持监听元素悬停事件动态改变位置，亦能显示文件名与大小
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @fires .listener-tip - 鼠标移动事件触发指示框定位
 		 * @see {@link temp.color} 使用全局主题色渲染文件大小信息
 		 */
@@ -3971,7 +3868,7 @@
 
 		/**
 		 * 创建加载状态弹窗
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 生成包含旋转动画的加载容器
 		 */
 		createLoading() {
@@ -3980,7 +3877,7 @@
 
 		/**
 		 * 创建用于下载的隐藏 iframe
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 该方法会创建一个隐藏的 iframe 元素，并将其插入到指定的挂载点中，用于后续的下载操作。
 		 * iframe 的 src 设置为 "javascript:;" 以避免加载额外资源，提升性能。
 		 */
@@ -3991,8 +3888,8 @@
 
 		/**
 		 * 创建用于下载页面的 HTML
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @param {Array} configs - 用于配置生成 HTML 的参数
 		 * @returns {String} 生成的 HTML 内容
 		 * @description 详见代码
@@ -4208,7 +4105,7 @@
 
 		/**
 		 * 获取镜像列表
-		 * @author 油小猴
+		 * @author dx-y
 		 * @description 根据原始链接和镜像域名列表生成多个镜像链接，支持多线程下载。
 		 * 每个镜像地址会根据 thread 参数生成多个重复链接（通过添加 `&` 符号区分）。
 		 * @param {String} link - 原始下载链接
@@ -4242,8 +4139,8 @@
 
 		/**
 		 * 添加页面元素监听
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 详见代码
 		 */
 		addPageListener() {
@@ -4567,7 +4464,7 @@
 									message.warning(`推送完成：成功 ${ok} 个，失败 ${fail} 个`);
 								}
 							} catch (error) {
-								console.error("【LinkSwift】IDM 批量推送获取链接失败", error);
+								console.error("【IDMPush】IDM 批量推送获取链接失败", error);
 								Swal.close();
 								message.error("获取链接失败，请刷新页面后重试");
 							}
@@ -4715,7 +4612,7 @@
 						try {
 							await temp.main.getLink();
 						} catch (e) {
-							console.error("【LinkSwift】获取下载链接失败", e);
+							console.error("【IDMPush】获取下载链接失败", e);
 							Swal.close();
 							message.error("获取下载链接失败，请刷新页面后重试");
 						}
@@ -4831,8 +4728,8 @@
 
 		/**
 		 * 创建基础样式
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 为组件添加默认的公共样式，包括浅色和深色模式适配样式。
 		 */
 		addPanLinkerStyle() {
@@ -5042,8 +4939,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 		/**
 		 * 初始化引导弹窗
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 显示初始化对话框，引导用户进行配置或跳过流程。
 		 * 支持输入特定数字触发彩蛋，并自动注入默认设置点亮功能。
 		 * @returns {Promise<void>} 弹窗关闭后返回空值，可能触发页面刷新
@@ -5060,7 +4957,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					<p>
 						如果您喜欢这个脚本的话<br/>
 						请支持原版作者 <a class="listener-tip pl-a" target="_blank" href="https://www.youxiaohou.com" data-title='${config.base.service.account ? `的微信公众号……<br/><img style="width:250px" src="${config.base.service.account}">` : ""}'><svg class="pl-icon"><use xlink:href="#pl-icon-si-tampermonkey"></use></svg> 油小猴</a><br/>
-						并给此改版点个 <a class="listener-tip pl-a" target="_blank" href="https://github.com/hmjz100/LinkSwift/" data-title="来看看此项目的 Github 页面吧~"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-star"></use></svg> Star</a>？
+						并给此改版点个 <a class="listener-tip pl-a" target="_blank" href="https://github.com/dx-y/linkswift-enhanced/" data-title="来看看此项目的 Github 页面吧~"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-star"></use></svg> Star</a>？
 					</p>
 					<p>脚本不仅能精简网盘界面<br/>点亮后还能修改多个网盘的主题色哦！</p>
 				</div><style>.pl-init-content p{margin:10px 0!important}</style>`,
@@ -5139,8 +5036,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 		/**
 		 * 显示主对话框
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 使用 SweetAlert2 显示一个自定义样式的对话框，用于展示信息或操作提示。
 		 * @param {String} title - 对话框标题
 		 * @param {String} html - 对话框内容的 HTML 字符串
@@ -5174,7 +5071,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 		/**
 		 * 等待指定元素加载完成并执行回调
-		 * @author hmjz100
+		 * @author dx-y
 		 * @description 监听 DOM 元素是否出现，若未出现则每隔一段时间重试，直到找到为止。
 		 * 支持在 iframe 内部查找元素，适用于异步加载场景。
 		 * @param {String} selectorElem - 要等待的目标元素选择器
@@ -5245,8 +5142,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 		/**
 		 * 状态工厂
-		 * @author 油小猴
-		 * @author hmjz100
+		 * @author dx-y
+		 * @author dx-y
 		 * @description 接受被监听的 DOM 元素的状态，根据状态确定元素是谁
 		 * @param {Event} event - 元素状态
 		 */
@@ -5267,8 +5164,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 	/**
 	 * 百度网盘
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let $baidu = {
 		async getToken() {
@@ -5435,7 +5332,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						status.down_enhance_downing.find(".pl-progress .text").html(`下载完成~ 浏览器下载框应该弹出来了哦~`);
 					})
 					.catch(async (error) => {
-						base.console.error("【LinkSwift】Download(load)", error);
+						base.console.error("【IDMPush】Download(load)", error);
 						status.down_enhance_downing.find(".stop").hide();
 						status.down_enhance_downing.find(".back").show();
 						status.down_enhance_downing.find(".pl-progress").css("--width", "100%");
@@ -5703,7 +5600,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					<div class="__yunguanjiaTips radio-tips" style="display:block;">
 						用电脑下载并登录最新百度网盘客户端，即自动完成添加。
 						<a href="//pan.baidu.com/download" target="_blank">下载百度网盘客户端</a>
-						<br/>由 <a href="https://github.com/hmjz100/LinkSwift/" target="_blank">LinkSwift</a> 修复该选项
+						<br/>由 <a href="https://github.com/dx-y/linkswift-enhanced/" target="_blank">LinkSwift</a> 修复该选项
 					</div>
 				</div>`);
 			}, true)
@@ -6493,8 +6390,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 	/**
 	 * 阿里云盘
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let $aliyun = {
 		addPageListener() {
@@ -6594,7 +6491,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						status.down_enhance_downing.find(".pl-progress .text").html(`下载完成~ 浏览器下载框应该弹出来了哦~`);
 					})
 					.catch(async (error) => {
-						base.console.error("【LinkSwift】Download(load)", error);
+						base.console.error("【IDMPush】Download(load)", error);
 						status.down_enhance_downing.find(".stop").hide();
 						status.down_enhance_downing.find(".back").show();
 						status.down_enhance_downing.find(".pl-progress").css("--width", "100%");
@@ -6913,8 +6810,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 	/**
 	 * 中国移动云盘 / 和彩云
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let $mcloud = {
 		addPageListener() {
@@ -6995,7 +6892,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						status.down_enhance_downing.find(".pl-progress .text").html(`下载完成~ 浏览器下载框应该弹出来了哦~`);
 					})
 					.catch(async (error) => {
-						base.console.error("【LinkSwift】Download(load)", error);
+						base.console.error("【IDMPush】Download(load)", error);
 						status.down_enhance_downing.find(".stop").hide();
 						status.down_enhance_downing.find(".back").show();
 						status.down_enhance_downing.find(".pl-progress").css("--width", "100%");
@@ -7398,8 +7295,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 	/**
 	 * 天翼云盘
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let $tcloud = {
 		addPageListener() {
@@ -7471,7 +7368,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						status.down_enhance_downing.find(".pl-progress .text").html(`下载完成~ 浏览器下载框应该弹出来了哦~`);
 					})
 					.catch(async (error) => {
-						base.console.error("【LinkSwift】Download(load)", error);
+						base.console.error("【IDMPush】Download(load)", error);
 						status.down_enhance_downing.find(".stop").hide();
 						status.down_enhance_downing.find(".back").show();
 						status.down_enhance_downing.find(".pl-progress").css("--width", "100%");
@@ -7781,8 +7678,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 	/**
 	 * 迅雷云盘
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let $xunlei = {
 		addPageListener() {
@@ -7864,7 +7761,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						status.down_enhance_downing.find(".pl-progress .text").html(`下载完成~ 浏览器下载框应该弹出来了哦~`);
 					})
 					.catch(async (error) => {
-						base.console.error("【LinkSwift】Download(load)", error);
+						base.console.error("【IDMPush】Download(load)", error);
 						status.down_enhance_downing.find(".stop").hide();
 						status.down_enhance_downing.find(".back").show();
 						status.down_enhance_downing.find(".pl-progress").css("--width", "100%");
@@ -8158,8 +8055,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 	/**
 	 * 夸克网盘
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let $quark = {
 		addPageListener() {
@@ -8248,7 +8145,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						status.down_enhance_downing.find(".pl-progress .text").html(`下载完成~ 浏览器下载框应该弹出来了哦~`);
 					})
 					.catch(async (error) => {
-						base.console.error("【LinkSwift】Download(load)", error);
+						base.console.error("【IDMPush】Download(load)", error);
 						status.down_enhance_downing.find(".stop").hide();
 						status.down_enhance_downing.find(".back").show();
 						status.down_enhance_downing.find(".pl-progress").css("--width", "100%");
@@ -8279,7 +8176,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						target.addClass("pl-btn-danger").text("发送失败!").animate({ opacity: "0.5" }, "slow");
 					}
 				} catch (err) {
-					base.console.error("【LinkSwift】IDM 推送异常", err);
+					base.console.error("【IDMPush】IDM 推送异常", err);
 					target.addClass("pl-btn-danger").text("推送异常!").animate({ opacity: "0.5" }, "slow");
 					try { message.error("IDM 推送发生异常：" + ((err && err.message) || err)); } catch (e) { }
 				} finally {
@@ -8660,8 +8557,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 	/**
 	 * UC网盘
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let $uc = {
 		addPageListener() {
@@ -8743,7 +8640,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						status.down_enhance_downing.find(".pl-progress .text").html(`下载完成~ 浏览器下载框应该弹出来了哦~`);
 					})
 					.catch(async (error) => {
-						base.console.error("【LinkSwift】Download(load)", error);
+						base.console.error("【IDMPush】Download(load)", error);
 						status.down_enhance_downing.find(".stop").hide();
 						status.down_enhance_downing.find(".back").show();
 						status.down_enhance_downing.find(".pl-progress").css("--width", "100%");
@@ -9088,8 +8985,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 	/**
 	 * 123云盘
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let $123pan = {
 		addPageListener() {
@@ -9161,7 +9058,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						status.down_enhance_downing.find(".pl-progress .text").html(`下载完成~ 浏览器下载框应该弹出来了哦~`);
 					})
 					.catch(async (error) => {
-						base.console.error("【LinkSwift】Download(load)", error);
+						base.console.error("【IDMPush】Download(load)", error);
 						status.down_enhance_downing.find(".stop").hide();
 						status.down_enhance_downing.find(".back").show();
 						status.down_enhance_downing.find(".pl-progress").css("--width", "100%");
@@ -9742,8 +9639,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 
 	/**
 	 * 光鸭云盘
-	 * @author 油小猴
-	 * @author hmjz100
+	 * @author dx-y
+	 * @author dx-y
 	 */
 	let $guangya = {
 		addPageListener() {
@@ -10132,11 +10029,11 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		async init() {
 			/**
 			 * 控制台输出
-			 * @author 油小猴
-			 * @author hmjz100
+			 * @author dx-y
+			 * @author dx-y
 			 * @description 来自【网盘智能识别助手】，有改动
 			 */
-			base.console.log(`%c %c LinkSwift\n一个基于 JavaScript 的网盘文件下载地址获取工具\n仓库：https://github.com/hmjz100/LinkSwift\n版本：${info.version}\n领域：${(window.self !== window.top ? "[iframe] " : "") + (document.title ? (document.title + " (" + location.origin + location.pathname + ")") : location.href)}`, `background:url(${info.icon}) center center no-repeat;background-size:12px;padding:3px`, `padding:2px`);
+			base.console.log(`%c %c LinkSwift\n一个基于 JavaScript 的网盘文件下载地址获取工具\n仓库：https://github.com/dx-y/linkswift-enhanced\n版本：${info.version}\n领域：${(window.self !== window.top ? "[iframe] " : "") + (document.title ? (document.title + " (" + location.origin + location.pathname + ")") : location.href)}`, `background:url(${info.icon}) center center no-repeat;background-size:12px;padding:3px`, `padding:2px`);
 			// 创建挂载点
 			let mountElem = $(`<${mount} class="${mount}" />`);
 			temp.mount = mountElem;

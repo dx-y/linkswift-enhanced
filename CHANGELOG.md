@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.35] - 2026-10-14
+
+- 新增 IDMPush.exe 本地接收端按需拉起：注册 `linkswift://` 自定义协议（HKCU\Software\Classes\linkswift → URL Protocol，open\command 指向 IDMPush.exe），脚本 init 增加 `ensureBridgeWarmup`，页面加载 800ms 后静默 GET /v1/ping 探测，接收端未运行时自动拉起；零常驻、零自启、无任何提示。
+- 接收端 IDMPush.exe 修复中文推送死锁：body 由按字符数读取改为逐字节读取，补齐 CORS 响应头与日志输出；中文标题/文件名推送实测约 25ms 返回 ok:true。
+- 接收端发布为 .NET 8 单文件（约 67MB，self-contained + single-file），GUI 子系统无黑窗；监听 127.0.0.1:16888（GET /v1/ping、POST /v1/push），经官方命令行 `idman.exe /d` 投递（IDM 6.43+ 已移除 COM Send 接口）。
+
+## [1.1.34] - 2026-10-14
+
+- 修复「推送至 IDM」按钮无限转圈：base.get / base.post 增加 8s Promise.race 超时兜底，超时 reject 走失败分支复位串行锁，任何点击最多 8 秒必出结果。
+- 修复 probeBridge / postBridge 对响应体 JSON 二次解析导致返回异常的问题。
+
 ## [1.1.29] - 2026-10-12
 - 修复夸克网盘「推送至 IDM」按钮可能永久卡死的问题：点击 handler 增加 try/catch/finally，推送完成/异常均恢复按钮状态，异常时给出可见错误提示
 - 修复 sendLinkToIDM 串行锁被 rejected Promise 污染导致后续推送全部失败的问题：锁链尾增加 catch 兜底
