@@ -1,10 +1,17 @@
 # Changelog
 
+## [1.1.37] - 2026-10-28
+
+- 新增光鸭云盘支持，修复 123、百度、移动云、天翼、UC 等网盘取链与适配问题。
+- 九种下载方式可分别开关；推送 IDM 可携带请求头，可先选择保存位置。
+- 123 云盘可查看客户端进度，额度不足时提示剩余额度。
+- 页面监听开销降低，主题换色与下载按钮异常问题修复；仅申请实际使用的域名。
+
 ## [1.1.35] - 2026-10-14
 
 - 新增 IDMPush.exe 本地接收端按需拉起：注册 `linkswift://` 自定义协议（HKCU\Software\Classes\linkswift → URL Protocol，open\command 指向 IDMPush.exe），脚本 init 增加 `ensureBridgeWarmup`，页面加载 800ms 后静默 GET /v1/ping 探测，接收端未运行时自动拉起；零常驻、零自启、无任何提示。
 - 接收端 IDMPush.exe 修复中文推送死锁：body 由按字符数读取改为逐字节读取，补齐 CORS 响应头与日志输出；中文标题/文件名推送实测约 25ms 返回 ok:true。
-- 接收端发布为 .NET 8 单文件（约 67MB，self-contained + single-file），GUI 子系统无黑窗；监听 127.0.0.1:16888（GET /v1/ping、POST /v1/push），经官方命令行 `idman.exe /d` 投递（IDM 6.43+ 已移除 COM Send 接口）。
+- 接收端发布为 .NET 8 单文件（约 67MB，self-contained + single-file），GUI 子系统无黑窗；监听 127.0.0.1:16888（GET /v1/ping、POST /v1/push），经命令行 `idman.exe /d` 投递（IDM 6.43+ 已移除 COM Send 接口）。
 
 ## [1.1.34] - 2026-10-14
 
@@ -14,7 +21,7 @@
 ## [1.1.29] - 2026-10-12
 - 修复夸克网盘「推送至 IDM」按钮可能永久卡死的问题：点击 handler 增加 try/catch/finally，推送完成/异常均恢复按钮状态，异常时给出可见错误提示
 - 修复 sendLinkToIDM 串行锁被 rejected Promise 污染导致后续推送全部失败的问题：锁链尾增加 catch 兜底
-- 补充 @connect 127.0.0.1 显式声明，规避部分油猴管理器（Violentmonkey 旧版 / Greasemonkey 4+）对 IP 字面量连接的白名单差异
+- 补充 @connect 127.0.0.1 显式声明，兼容部分油猴管理器对 IP 字面量连接的白名单差异
 - 修复文件名/链接含特殊字符（" & < > '）时拼接 HTML 导致推送链接损坏的问题：增加 HTML 转义
 - 修复全局菜单取链失败时界面卡在「获取中」无提示的问题：增加 try/catch 与错误提示
 - 新增「下载助手」主菜单「推送 IDM」入口，无需打开 API 下载对话框即可推送 IDM
@@ -68,7 +75,7 @@
 
 ## [1.1.8] - 2026-08-26
 
-首次基于官方 LinkSwift v1.1.3 的增强版发布到本仓库。相较官方原版的功能差异见 README「相对官方原版的改动」。
+首次基于 LinkSwift v1.1.3 的增强版发布到本仓库。功能差异见 README「我们优化改进了什么」。
 
 ### 维护性改进（本版）
 - 清理未调用的死代码：删除 `handleTransferTask`、以及百度网盘 / 123 网盘两套相互冲突的转存存储逻辑，统一收敛为一套 `linkswift_transfer_*` 存储链路（活跃的自动转存 / 云添加 / 离线下载功能完整保留）。
