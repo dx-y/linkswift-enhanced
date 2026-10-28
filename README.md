@@ -13,16 +13,20 @@
 - 下载历史记录、下载过滤、批量重命名等日常整理功能。
 - 123 云盘可查看客户端下载进度与速度，直链额度不足时提示剩余额度。
 
-## IDM Push 本地接收端
+## IDM Push 本地接收端（可选）
 
 「推送至 IDM」经由本地接收端中转：油猴脚本 → `127.0.0.1:16888` → IDM，可携带 Referer / Cookie，夸克、123 等需要请求头的直链也能正常下载。
 
-### 运行办法
+> 不装也能用：接收端不可用时会自动降级为「复制 IDM 命令到剪贴板」，`Win+R` 粘贴回车同样能导入 IDM。
+> 只有夸克 / 123 这类必须带请求头的直链才推荐装接收端。
 
-1. 从 Release 下载 **bridge-server.js**，放到一个**纯英文路径**目录，例如 `E:\LinkSwiftBridge`。
-2. 在该目录打开命令行，执行一次 `node bridge-server.js --setup`：会自动写入 `config.txt`、生成启动器并注册 `linkswift://` 协议。若提示没找到 IDMan.exe，把它的完整路径填到 `config.txt` 第 2 行即可。
-3. 双击目录里的 `launch-hidden.vbs` 启动接收端（无窗口）。此后打开网盘页面点「推送 IDM」即可；接收端只需配置一次。
-4. 端口固定 `127.0.0.1:16888`，只在本机使用，不对外开放；没启动时推送会自动改为「复制 IDM 命令」兜底。
+### 三步装好（一次即可）
+
+1. **下载**：[`IDMPush.exe`](https://github.com/dx-y/linkswift-enhanced/releases/download/v1.1.35/IDMPush.exe)（约 64 MB，.NET 8 单文件，免安装）
+2. **双击运行一次**：自动注册 `linkswift://` 协议；若提示找不到 IDM，把 `IDMan.exe` 的完整路径填进去即可。
+3. 回到网盘页面点「推送至 IDM」，脚本会自动唤起接收端，之后不用再管它。
+
+详细说明见 [`docs/idm-receiver.md`](docs/idm-receiver.md)。端口固定 `127.0.0.1:16888`，只监听本机、不对外开放、不常驻。
 
 ## 安装
 
