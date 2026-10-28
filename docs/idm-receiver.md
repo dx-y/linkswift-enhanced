@@ -5,7 +5,7 @@
 
 ### 三步（只需一次，不用装 Node / .NET）
 
-1. **下载**：[`IDMPush.exe`](https://github.com/dx-y/linkswift-enhanced/releases/latest/download/IDMPush.exe)（约 64 MB 单文件）
+1. **下载**：[`IDMPush.exe`](https://github.com/dx-y/linkswift-enhanced/releases/latest/download/IDMPush.exe)（约 11 MB 单文件）
 2. **双击运行一次**：自动注册 `linkswift://`、自动找到 `IDMan.exe`、写好配置；弹出「配置完成」后点确定关闭即可（不用保持运行）
 3. 回到网盘页面点 **「推送至 IDM」**
 
