@@ -20,13 +20,16 @@
 > 不装也能用：接收端不可用时会自动降级为「复制 IDM 命令到剪贴板」，`Win+R` 粘贴回车同样能导入 IDM。
 > 只有夸克 / 123 这类必须带请求头的直链才推荐装接收端。
 
-### 三步装好（一次即可）
+### 三步装好（一次即可，不需要安装 Node / .NET 等任何环境）
 
-1. **下载**：[`IDMPush.exe`](https://github.com/dx-y/linkswift-enhanced/releases/download/v1.1.35/IDMPush.exe)（约 64 MB，.NET 8 单文件，免安装）
-2. **双击运行一次**：自动注册 `linkswift://` 协议；若提示找不到 IDM，把 `IDMan.exe` 的完整路径填进去即可。
-3. 回到网盘页面点「推送至 IDM」，脚本会自动唤起接收端，之后不用再管它。
+1. **下载**：[`IDMPush.exe`](https://github.com/dx-y/linkswift-enhanced/releases/latest/download/IDMPush.exe)（约 63 MB，单文件，免安装）
+2. **双击运行一次**：自动注册 `linkswift://` 协议、自动找到 `IDMan.exe`、写好配置，弹一个「配置完成」提示框，点确定关闭即可（**不需要保持运行**）。
+3. 回到网盘页面点「推送至 IDM」，脚本会自动唤起接收端，空闲 120 秒自动退出。
 
-详细说明见 [`docs/idm-receiver.md`](docs/idm-receiver.md)。端口固定 `127.0.0.1:16888`，只监听本机、不对外开放、不常驻。
+> 接收端**不常驻、不开机自启、不需要管理员权限、只监听 `127.0.0.1`**，且只接受本脚本的请求。
+> 若提示找不到 IDM：`IDMPush.exe --idm "C:\Program Files (x86)\Internet Download Manager\IDMan.exe"`。
+
+详细说明见 [`docs/idm-receiver.md`](docs/idm-receiver.md)。
 
 ## 安装
 
