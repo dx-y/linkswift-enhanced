@@ -22,7 +22,7 @@
 
 ### 三步装好（一次即可，不需要安装 Node / .NET 等任何环境）
 
-1. **下载**：[`IDMPush.exe`](https://github.com/dx-y/linkswift-enhanced/releases/latest/download/IDMPush.exe)（约 63 MB，单文件，免安装）
+1. **下载**：[`IDMPush.exe`](https://github.com/dx-y/linkswift-enhanced/releases/latest/download/IDMPush.exe)（约 64 MB，单文件，免安装）
 2. **双击运行一次**：自动注册 `linkswift://` 协议、自动找到 `IDMan.exe`、写好配置，弹一个「配置完成」提示框，点确定关闭即可（**不需要保持运行**）。
 3. 回到网盘页面点「推送至 IDM」，脚本会自动唤起接收端，空闲 120 秒自动退出。
 
